@@ -1,0 +1,92 @@
+<?php
+
+/**
+ * @file
+ * Contains sysop_common.module.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Component\Serialization\Json;
+use Drupal\views\Views;
+
+/**
+ * Implements hook_entity_insert().
+ */
+function sysop_common_entity_insert(EntityInterface $entity) {
+  $templateType = ['global_pages'];
+  if(in_array($entity->bundle(), $templateType)) {
+    $obj = \Drupal::service('sysop_common.api_response');
+    $obj->createJsonApiResponse($entity);
+  }
+}
+
+/**
+ * Implements hook_entity_update().
+ */
+function sysop_common_entity_update(EntityInterface $entity) {
+  $templateType = ['global_pages'];
+  if(in_array($entity->bundle(), $templateType)) {
+    $obj = \Drupal::service('sysop_common.api_response');
+    $obj->createJsonApiResponse($entity);
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function sysop_common_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $ids = ['node_global_pages_form', 'node_global_pages_edit_form'];
+  if (in_array($form_id, $ids)) {
+    $form['#attached']['library'][] = 'sysop_common/sysop_common.template_assets';
+  }
+}
+
+
+function _getViewsData($viewName, $viewId, $id = NULL) {
+    $view = Views::getView($viewName);
+    $view->setDisplay($viewId);
+    if (is_array($id) && !empty($id)) {
+      $view->setArguments($id);
+      $view->execute();
+    }
+    elseif (empty($id)) {
+      $view->execute();
+    }
+    else {
+      $nid = [$id];
+      $view->setArguments($nid);
+      $view->execute();
+    }
+    $view_render = $view->render();
+    $result = \Drupal::service('renderer')->render($view_render);
+    return Json::decode($result, TRUE);
+  }
+
+/**
+ * Implements hook_editor_js_settings_alter().
+ */
+function sysop_common_editor_js_settings_alter(array &$settings) {
+  foreach ($settings['editor']['formats'] as $name => $value) {
+    $settings['editor']['formats'][$name]['editorSettings']['autoParagraph'] = FALSE;
+  }
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function sysop_common_theme() {
+  $theme = [];
+
+  $theme['color_field_formatter_swatch'] = [
+    'variables' => [
+      'color' => NULL,
+      'width' => NULL,
+      'height' => NULL,
+      'attributes' => NULL,
+    ],
+  ];
+
+  return $theme;
+}

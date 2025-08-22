@@ -1,0 +1,21 @@
+uuid: 06e935b3-077a-4ed8-8c6c-27187c72debe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero_banner.field_single_content
+    - paragraphs.paragraphs_type.hero_banner
+id: paragraph.hero_banner.default
+targetEntityType: paragraph
+bundle: hero_banner
+mode: default
+content:
+  field_single_content:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

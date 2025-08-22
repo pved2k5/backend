@@ -1,0 +1,17 @@
+uuid: 6e43f001-3d79-4b84-a5a9-6ac9554f9b54
+langcode: en
+status: true
+dependencies:
+  module:
+    - serialization
+    - simple_oauth
+    - sysop_common
+id: common_get_rest_resource
+plugin_id: common_get_rest_resource
+granularity: method
+configuration:
+  GET:
+    supported_formats:
+      - json
+    supported_auth:
+      - oauth2

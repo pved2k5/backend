@@ -1,0 +1,57 @@
+uuid: 7f9e16cb-a217-4f8c-b943-8326c1bc12ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.global_pages.field_content
+    - field.field.node.global_pages.field_meta_tags
+    - node.type.global_pages
+  module:
+    - layout_paragraphs
+    - metatag
+    - path
+id: node.global_pages.default
+targetEntityType: node
+bundle: global_pages
+mode: default
+content:
+  field_content:
+    type: layout_paragraphs
+    weight: 1
+    region: content
+    settings:
+      view_mode: default
+      preview_view_mode: default
+      form_display_mode: default
+      nesting_depth: 0
+      require_layouts: 0
+      empty_message: ''
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 26
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

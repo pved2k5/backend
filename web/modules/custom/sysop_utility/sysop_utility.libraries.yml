@@ -1,0 +1,17 @@
+#Color Picker Library
+colorpicker:
+  version: 1.x
+  js:
+    assets/js/color.js: {}
+
+#Login Form
+login_form:
+  css:
+    theme:
+      assets/css/login-form.css: {}
+
+#Admin Pages
+admin_pages:
+  css:
+    theme:
+      assets/css/admin_pages.css: {}      

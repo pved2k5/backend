@@ -1,0 +1,177 @@
+<?php
+
+/**
+ * @file
+ * Contains sysop_roiforms.module
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\webform\Utility\WebformFormHelper;
+
+/**
+ * Implements hook_form_webform_ui_element_form_alter().
+ */
+function sysop_roiforms_form_webform_ui_element_form_alter(array &$form, FormStateInterface $form_state) {
+  $elements = WebformFormHelper::flattenElements($form);
+  $properties = [
+    'title',
+    'type',
+    'title_display',
+    'description_display',
+    'tab_access',
+    'tab_advanced',
+    'multiple',
+    'options',
+    'empty_option',
+    'empty_value',
+    'field_prefix',
+    'field_suffix',
+    'tree_delimiter',
+    'multiple_error',
+    'minlength',
+    'maxlength',
+    'autocomplete',
+    'input_mask',
+    'input_hide',
+    'disabled',
+    'readonly',
+    'prepopulate',
+    'validation',
+    'multiple',
+    'select2',
+    'breadcrumb',
+    'help_title',
+    'more_title',
+    'size',
+    'element_description',
+    'description',
+    'breadcrumb_delimiter',
+    'uri_public_warning',
+    'uri_private_warning',
+    'file_help',
+    'file_placeholder',
+    'file_name',
+    'file_preview',
+    'sanitize',
+    'file_name_warning',
+    'uri_scheme',
+  ];
+  foreach ($properties as $property) {
+    $elementType = $form_state->getFormObject()->getElement();
+    if (isset($elements[$property])) {
+      if ($property == 'validation') {
+        unset($elements[$property]['unique_container']);
+        unset($elements[$property]['unique_error']);
+      } 
+      elseif ($property == 'title') {
+        $elements[$property]['#title'] = $elements['#type'];
+      }
+      elseif ($property == 'title_display') {
+        $elements[$property]['#title'] = 'Field Width';
+        $elements[$property]['#options'] = ['before' => '50%'];
+      }
+      elseif ($elementType['#type'] == 'managed_file'  ) {
+        $elements['file'][$property]['#access'] = FALSE;
+        $elements['file']['button']['#default_value'] = TRUE;
+        $elements['file']['button']['#title'] = 'file upload button attributes';
+      }
+      elseif ($elementType['#type'] == 'url' && $property == 'field_prefix' ) {
+        $elements[$property]['#title'] = 'Tooltip';
+        $elements[$property]['#description'] = 'Add tooltip text that can be used as a field help text.';
+        $elements[$property]['#size'] = 50;
+      }
+      elseif ($elementType['#type'] == 'url' && $property == 'minlength' ) {
+        $elements[$property]['#title'] = 'Base Price';
+        $elements[$property]['#description'] = 'Domain Base Price';
+      }
+      elseif ($elementType['#type'] == 'url' && $property == 'maxlength' ) {
+        $elements[$property]['#title'] = 'Discounted Price';
+        $elements[$property]['#description'] = 'Domain Discounted Price';
+      }
+      else {
+        $elements[$property]['#access'] = FALSE;
+      }
+    }
+  }
+  
+}
+
+
+/**
+ * Implements hook_webform_element_default_properties_alter().
+ */
+function sysop_roiforms_webform_element_default_properties_alter(array &$properties, array &$definition) {
+  // Add custom data property to all webform elements.
+  // Setting the custom property to an empty string makes the corresponding
+  // element defined via hook_webform_element_configuration_form_alter()
+  // automatically visible.
+  $properties['sf_key'] = '';
+  $properties['shop_key'] = '';
+  $properties['netcore_key'] = '';
+}
+
+/**
+ * Implements hook_webform_element_translatable_properties_alter().
+ */
+function sysop_roiforms_webform_element_translatable_properties_alter(array &$properties, array &$definition) {
+  // Make the custom data property translatable.
+  $properties[] = 'sf_key';
+  $properties[] = 'shop_key';
+  $properties[] = 'netcore_key';
+}
+
+/**
+ * Implements hook_webform_element_configuration_form_alter().
+ */
+function sysop_roiforms_webform_element_configuration_form_alter(&$form, FormStateInterface $form_state) {
+  // If you want add element properties to specific element type, you can use
+  // the below code to the current element's type and more.
+  /** @var Drupal\webform_ui\Form\WebformUiElementEditForm $form_object */
+  $form_object = $form_state->getFormObject();
+  $element_plugin = $form_object->getWebformElementPlugin();
+  $element_label = $element_plugin->getPluginLabel();
+  $element_type = $element_plugin->getTypeName();
+
+  
+  $form['target_field'] = [
+    '#type' => 'details',
+    '#title' => t('Target Field Mapping'),
+    '#description' => t('The below custom properties are provided and managed by the sysop_roiforms.module.'),
+    '#open' => TRUE,
+    '#weight' => -10,
+  ];
+
+  $form['target_field']['sf_key'] = [
+    '#type' => 'textfield',
+    '#title' => t('Sales Force Key'),
+    '#attributes' => ['placeholder' => ['Enter the name of the SF Target field. Ex- Segment__c']],
+  ];
+
+  $form['target_field']['shop_key'] = [
+    '#type' => 'textfield',
+    '#title' => t('Magento Key'),
+    '#attributes' => ['placeholder' => ['Enter the name of the Magento Target field. Ex- company_name']],
+  ];
+
+  $form['target_field']['netcore_key'] = [
+    '#type' => 'textfield',
+    '#title' => t('Net Core Key'),
+    '#attributes' => ['placeholder' => ['Enter the name of the NetCore Target field. Ex- FIRSTNAME']],
+  ];
+}
+
+/**
+ * Implements hook_webform_element_alter().
+ */
+function sysop_roiforms_webform_element_alter(array &$element, FormStateInterface $form_state, array $context) {
+  // Add data-custom to the element's attributes.
+  if (!empty($element['#sf_key'])) {
+    $element['#attributes']['data-custom'] = $element['#sf_key'];
+  }
+  if (!empty($element['#shop_key'])) {
+    $element['#attributes']['data-custom'] = $element['#shop_key'];
+  }
+  if (!empty($element['#netcore_key'])) {
+    $element['#attributes']['data-custom'] = $element['#netcore_key'];
+  }
+}

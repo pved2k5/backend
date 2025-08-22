@@ -1,0 +1,15 @@
+uuid: d289103e-e1aa-4f63-b2ac-5e7594c7a09d
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: roi_forms
+label: 'Roi Forms'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

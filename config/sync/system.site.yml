@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+langcode: en
+uuid: d9616e55-5e39-4a17-9189-390d1fb2ddac
+name: SP
+mail: ved.nitd@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/52
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null

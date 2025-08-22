@@ -1,0 +1,142 @@
+
+/* Login page stype */
+.path-user .content-header, .path-user .region-breadcrumb,
+.path-user .messages--error a {display:none;}
+.path-user .region-content .block-system-main-block {padding-top: 20%;}
+.path-user main .region-content{
+  max-width: 40%;
+  background: white;
+  padding: 1rem 1rem;
+  margin: 0 auto;
+  border-radius: 0.3rem; }
+
+body.path-user .field--label-inline .field__label {
+  width: 100px;
+  color: #ff4e2e; }
+
+body.path-user .field--label-inline .field__item {
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  background: #e9ecef;
+  min-width: 250px;
+  margin: 0.25rem 0; }
+
+body.path-user .field--label-above .field__label {
+  color: #ff4e2e; }
+
+body.path-user .field--label-above .field__item {
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  background: #e9ecef;
+  width: 100%;
+  margin: 0.25rem 0; }
+
+  /**
+ * @file
+ * Theme styling for user module.
+ */
+/* Visual styling for the Password strength indicator */
+.password-strength__meter {
+  margin-top: 0.5em;
+  background-color: #e9ecef; }
+
+.password-strength__indicator {
+  background-color: #28a745;
+  -webkit-transition: width 0.5s ease-out;
+  -o-transition: width 0.5s ease-out;
+  transition: width 0.5s ease-out; }
+
+.password-strength__indicator.is-weak {
+  background-color: #dc3545; }
+
+.password-strength__indicator.is-fair {
+  background-color: #ffc107; }
+
+.password-strength__indicator.is-good {
+  background-color: #17a2b8; }
+
+.password-strength__indicator.is-strong {
+  background-color: #28a745; }
+
+.password-confirm,
+.password-field,
+.password-strength,
+.password-confirm-match {
+  width: 55%; }
+
+.password-suggestions {
+  padding: 0.2em 0.5em;
+  margin: 0.7em 0;
+  max-width: 34.7em;
+  border: 1px solid #dee2e6; }
+
+.password-suggestions ul {
+  margin-bottom: 0; }
+
+.confirm-parent,
+.password-parent {
+  clear: left;
+  /* LTR */
+  margin: 0;
+  max-width: 33em;
+  overflow: hidden; }
+
+[dir="rtl"] .confirm-parent,
+[dir="rtl"] .password-parent {
+  clear: right; }
+
+/* Styling for the status indicator of the passwords match test.  */
+.password-confirm .ok {
+  color: #28a745;
+  font-weight: bold; }
+
+.password-confirm .error {
+  color: #dc3545;
+  font-weight: bold; }
+
+#user-login-form {
+	background: #fff;
+    padding: 4.3125rem 5.3125rem 6.6875rem;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 24px 0 rgb(0 0 0 / 11%);
+    box-shadow: 0 0 24px 0 rgb(0 0 0 / 11%);
+}
+
+.user-login-form input {
+	width: 100% !important;
+    padding: 0.625rem 0 !important;
+    font-size: 1rem !important;
+    color: #000000 !important;
+    margin-bottom: .5rem !important;
+    border: none !important;
+    border-bottom: 1px solid #d4d4d4 !important;
+    outline: none !important;
+    background: transparent !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+#user-login-form .btn {
+    width: 150px !important;
+    float: right;
+    border-color: #009bdf !important;
+    border-radius: 4px !important;
+    background-color: #009bdf !important;
+    font-family: inherit !important;
+    font-size: 0.875rem !important;
+    font-weight: 600 !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: 2.14 !important;
+    letter-spacing: 0.01875rem !important;
+    color: #ffffff !important;
+    text-transform: uppercase !important;
+    margin-bottom: 0 !important;
+}
+#user-login-form .btn:hover {
+    color: #fff !important;
+    background-color: #0080b9 !important;
+    border-color: #0078ac !important;
+    cursor: pointer !important;
+}

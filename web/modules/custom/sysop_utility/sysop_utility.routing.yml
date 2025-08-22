@@ -1,0 +1,9 @@
+#User Dashboard
+sysop_utility.dashboard:
+  path: '/dashboard'
+  defaults:
+    _controller: '\Drupal\sysop_utility\Controller\DashboardController::details'
+    _title: 'Dashboard'
+  requirements:
+    _permission: 'access content'    
+

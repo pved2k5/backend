@@ -1,0 +1,23 @@
+
+# sysop_common.rest_menu_attr_config_form:
+#   path: '/admin/config/services/rest_menu_attr'
+#   defaults:
+#     _form: '\Drupal\sysop_common\Form\Settings\ConfigRestMenuItemsForm'
+#     _title: 'Menu API'
+#   requirements:
+#     _permission: 'administer site configuration'
+#   options:
+#     _admin_route: TRUE
+
+# sysop_common.routing.yml
+sysop_common.menu_api:
+  path: '/api/getContent/V1/menus/{menu_name}'
+  defaults:
+    _controller: '\Drupal\sysop_common\Controller\MenuApiController::getMenuItems'
+    _format: 'json'
+  methods: [GET]
+  requirements:
+    _permission: 'access content'
+  options:
+    _auth:
+      - oauth2

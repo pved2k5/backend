@@ -1,0 +1,5 @@
+name: 'Sysop Common'
+type: module
+description: 'Common Classes & Methods'
+core_version_requirement: ^9 || ^10 || ^11
+package: 'Sysop'

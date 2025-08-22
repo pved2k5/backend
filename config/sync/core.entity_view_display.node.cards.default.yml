@@ -1,0 +1,63 @@
+uuid: 49fecd82-940e-453c-b311-8bdf1621b2ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cards.body
+    - field.field.node.cards.field_background_color
+    - field.field.node.cards.field_card_image
+    - field.field.node.cards.field_cta
+    - node.type.cards
+  module:
+    - color_field
+    - link
+    - text
+    - user
+id: node.cards.default
+targetEntityType: node
+bundle: cards
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_background_color:
+    type: color_field_formatter_text
+    label: above
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_card_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_cta:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,35 @@
+
+.edit-field-component-list-entity-form-0-field-roi-form-id-0-settings,
+.layout-paragraphs-disabled-items {
+	display: none !important;
+}
+
+.layout-region-node-main, .layout-region-node-footer {width:75%;}
+.layout-region-node-secondary {width:25%;}
+
+.layout-paragraphs-add-more-menu {width: 450px!important;}
+.field--name-moderation-state {   
+	width: 200px;
+    float: left;
+}
+#edit-actions {float: right;}
+
+.field--type-product-attributes .product-attributes-wrapper {
+	width: 100%;
+    float: left;
+}
+
+
+.layout-paragraphs-form .field--name-field-insight-component-type .form-radios {
+    width: 100%;
+    float: left;
+}
+.layout-paragraphs-form .field--name-field-insight-component-type .form-radios .form-item {
+    border: 2px solid #e2e2e2;
+    margin-right: 7px;
+    padding: 10px 11px;
+    border-radius: 7px;
+    float: left;
+    width: 200px;
+    margin-bottom: 0.4em;
+}

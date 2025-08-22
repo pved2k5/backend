@@ -1,0 +1,74 @@
+# =========================================
+# Drupal 10 .gitignore
+# =========================================
+
+# Ignore core, contrib modules and themes (use Composer to manage)
+web/core/
+vendor/
+web/modules/contrib/
+web/themes/contrib/
+profiles/contrib/
+
+# Custom modules, themes, profiles SHOULD be committed
+!modules/custom/
+!themes/custom/
+!profiles/custom/
+
+# Site-specific files
+web/sites/*/files/
+web/sites/*/private/
+web/sites/*/translations/
+
+# Ignore settings files that contain env-specific config
+web/sites/*/settings*.php
+web/sites/*/services*.yml
+
+# Ignore configuration sync if you export locally
+# (if you want it versioned, remove this line)
+sites/*/config/
+
+# Ignore cache and logs
+web/sites/*/files/php/twig/
+web/sites/*/files/styles/
+web/sites/*/files/js/
+web/sites/*/files/css/
+web/sites/*/files/sync/
+web/sites/simpletest/
+
+# Ignore local dev files
+.env
+.phpunit.result.cache
+.phpunit.xml
+.phpunit.xml.dist
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.bak
+*.tmp
+
+# Ignore Composer lock if deploying via Composer
+# (optional: keep if you want exact lock on dependencies)
+# composer.lock
+
+# Ignore Drush local state
+.drush/
+.drush-local.php
+.drush.yml
+
+# Ignore SimpleTest files
+sites/*/files/simpletest
+
+# Ignore test outputs
+coverage/
+reports/
+
+# Ignore node_modules if using front-end tooling
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore compiled assets
+/dist/
+build/

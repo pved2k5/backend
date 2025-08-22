@@ -1,0 +1,87 @@
+<?php
+
+/**
+ * @file
+ * Contains sysop_utility.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_help().
+ */
+function sysop_utility_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the sysop_utility module.
+    case 'help.page.sysop_utility':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Pluggable Fiels &amp; libraries') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function sysop_utility_theme() {
+  $theme = [];
+  $theme['node__content_body'] = [
+    'template' => 'node--content-body',
+    'base hook' => 'node',
+  ];
+  return $theme;
+}
+
+/**
+ * Implements hook_form_user_login_form_alter().
+ */
+function sysop_utility_form_user_login_form_alter(&$form, &$form_state, $form_id) {
+    $form['actions']['submit']['#attributes']['class'][] = 'btn btn-primary';
+    $form['name']['#title'] = t('Username');
+    $form['pass']['#title'] = t('Password');
+    $form['name']['#attributes']['placeholder']['name'] = t('Enter User name');
+    $form['pass']['#attributes']['placeholder']['password'] = t('Enter Password');
+    $form['#attached']['library'][] = 'sysop_utility/login_form';
+    unset($form['links']);
+}
+
+/**
+ * User Login Redirect
+ */
+function sysop_utility_user_login(AccountInterface $account) {
+ // $destination = Url::fromUserInput('/dashboard')->toString();
+ // \Drupal::service('request_stack')->getCurrentRequest()->query->set('destination', $destination);
+}
+
+/**
+ * Celcom Toolbar Options for Content Editor.
+ */
+function sysop_utility_toolbar() {
+  $uid = \Drupal::currentUser()->id();
+  $items['dashboard'] = [
+    '#type' => 'toolbar_item',
+    'tab' => [
+      '#type' => 'link',
+      '#title' => t('Dashboard'),
+      '#url' => Url::fromRoute('sysop_utility.dashboard'),
+      '#attributes' => [
+        'title' => t('Celcom Toolbar Icon'),
+        'class' => ['toolbar-icon', 'toolbar-celcom-icon'],
+      ],
+    ],
+    '#weight' => 100,
+    '#attached' => [
+      'library' => [
+        'sysop_utility/admin_pages',
+      ],
+    ],
+  ];
+
+  return $items;
+}

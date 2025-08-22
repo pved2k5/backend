@@ -1,0 +1,49 @@
+uuid: 64af074f-d1d9-48e3-9186-b6bf21166888
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.roi_forms.field_background_color
+    - field.field.paragraph.roi_forms.field_header
+    - field.field.paragraph.roi_forms.field_roi_form
+    - paragraphs.paragraphs_type.roi_forms
+  module:
+    - color_field
+    - webform
+id: paragraph.roi_forms.default
+targetEntityType: paragraph
+bundle: roi_forms
+mode: default
+content:
+  field_background_color:
+    type: color_field_widget_box
+    weight: 0
+    region: content
+    settings:
+      default_colors: |-
+
+        #ac725e,#d06b64,#f83a22,#fa573c,#ff7537,#ffad46
+        #42d692,#16a765,#7bd148,#b3dc6c,#fbe983
+        #92e1c0,#9fe1e7,#9fc6e7,#4986e7,#9a9cff
+        #b99aff,#c2c2c2,#cabdbf,#cca6ac,#f691b2
+        #cd74e6,#a47ae2
+    third_party_settings: {  }
+  field_header:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_roi_form:
+    type: webform_entity_reference_select
+    weight: 2
+    region: content
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

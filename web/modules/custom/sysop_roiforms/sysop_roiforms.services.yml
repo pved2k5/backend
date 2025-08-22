@@ -1,0 +1,5 @@
+services:
+  #Webform Structure.
+  sysop_roiforms.webform:
+    class: Drupal\sysop_roiforms\Services\RoiFormResponseServices
+    arguments: ['@entity_type.manager', '@path_alias.manager']

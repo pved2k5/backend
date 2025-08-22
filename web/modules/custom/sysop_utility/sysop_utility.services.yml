@@ -1,0 +1,6 @@
+# services:
+#   sysop_utility.anonymouse_user:
+#     class: Drupal\sysop_utility\EventSubscriber\RedirectAnonymousSubscriber
+#     arguments: []
+#     tags:
+#       - {name: event_subscriber}

@@ -1,0 +1,12 @@
+#Global Template Javascript
+sysop_common.template_assets:
+  js:
+    assets/js/template.js: {}
+  css:
+    theme:
+      assets/css/template.css: {}
+#Color Picker Library
+colorpicker:
+  version: 1.x
+  js:
+    assets/js/colorpicker.js: {}      

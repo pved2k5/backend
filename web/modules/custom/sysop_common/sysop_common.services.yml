@@ -1,0 +1,19 @@
+services:
+ # Construct API Response.
+  sysop_common.api_response:
+    class: Drupal\sysop_common\Services\SysopCommonJsonApiService
+    arguments: ['@current_user', '@entity_type.manager', '@path_alias.manager', '@logger.factory', '@metatag.manager', '@metatag.token']
+  # Construct Menu API Response.
+  # sysop_common.menu_api_response:
+  #   class: Drupal\sysop_common\Services\MenuItemApiService
+  #   arguments: ['@path_alias.manager', '@config.factory', '@entity_type.manager']
+  # Construct API Response.
+  # sysop_common.entity_storage:
+  #   class: Drupal\sysop_common\Services\SysopCommonEntityStorageService
+  #   arguments: ['@entity_type.manager', '@logger.factory']
+  # Twig Sanitizer  
+  sysop_common.twig_sanitizer:
+    arguments: ['@renderer']
+    class: Drupal\sysop_common\TwigExtension
+    tags:
+      - {name: twig.extension}

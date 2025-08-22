@@ -1,0 +1,15 @@
+/**
+ * @file
+ * Styling for the user module icons.
+ */
+
+/**
+ * celcom Toolbar tab icon.
+ */
+.toolbar-bar .toolbar-celcom-icon:before {
+  background-image: url(../images/celcom-admin.svg);
+}
+.toolbar-bar .toolbar-celcom-icon:active:before,
+.toolbar-bar .toolbar-celcom-icon.active:before {
+  background-image: url(../images/celcom-admin.svg);
+}

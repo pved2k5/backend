@@ -1,0 +1,17 @@
+uuid: 5bccfbbd-a7d6-40ae-81d7-6f3d8407b2de
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Cards
+type: cards
+description: null
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

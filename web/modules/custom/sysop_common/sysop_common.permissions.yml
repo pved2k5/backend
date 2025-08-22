@@ -1,0 +1,20 @@
+add api response entities:
+  title: 'Create new Api response entities'
+
+administer api response entities:
+  title: 'Administer Api response entities'
+  description: 'Allow to access the administration form to configure Api response entities.'
+  restrict access: true
+
+delete api response entities:
+  title: 'Delete Api response entities'
+
+edit api response entities:
+  title: 'Edit Api response entities'
+
+view published api response entities:
+  title: 'View published Api response entities'
+
+view unpublished api response entities:
+  title: 'View unpublished Api response entities'
+

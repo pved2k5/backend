@@ -1,0 +1,45 @@
+uuid: 7894c08a-f766-47b6-b249-3babf9b005df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.roi_forms.field_background_color
+    - field.field.paragraph.roi_forms.field_header
+    - field.field.paragraph.roi_forms.field_roi_form
+    - paragraphs.paragraphs_type.roi_forms
+  module:
+    - color_field
+    - webform
+id: paragraph.roi_forms.default
+targetEntityType: paragraph
+bundle: roi_forms
+mode: default
+content:
+  field_background_color:
+    type: color_field_formatter_text
+    label: inline
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_header:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_roi_form:
+    type: webform_entity_reference_link
+    label: hidden
+    settings:
+      label: 'Go to [webform:title] webform'
+      dialog: ''
+      attributes: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
