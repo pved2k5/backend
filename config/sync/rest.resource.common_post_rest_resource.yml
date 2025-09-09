@@ -1,18 +1,16 @@
-uuid: c734c7da-4bc5-42e2-a7e2-d13747e020ff
+uuid: 7e09e2a2-2b1b-4681-a3c7-239fc2918b0a
 langcode: en
 status: true
 dependencies:
   module:
-    - node
     - serialization
     - simple_oauth
-_core:
-  default_config_hash: 6ONvVCbif1qZnRfa8XmPzMwNKLDhF6K7eTrTgIVtP5E
-id: entity.node
-plugin_id: 'entity:node'
+    - sysop_common
+id: common_post_rest_resource
+plugin_id: common_post_rest_resource
 granularity: method
 configuration:
-  GET:
+  POST:
     supported_formats:
       - json
     supported_auth:

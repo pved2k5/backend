@@ -28,6 +28,7 @@
         "drupal/metatag": "^2.1",
         "drupal/paragraphs": "^1.19",
         "drupal/pathauto": "^1.13",
+        "drupal/quick_node_clone": "^1.22",
         "drupal/realistic_dummy_content": "^4.0@beta",
         "drupal/rest_menu_items": "^3.0",
         "drupal/restui": "^1.22",
