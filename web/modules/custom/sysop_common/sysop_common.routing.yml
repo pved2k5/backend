@@ -21,3 +21,4 @@ sysop_common.menu_api:
   options:
     _auth:
       - oauth2
+    _no_cache: TRUE

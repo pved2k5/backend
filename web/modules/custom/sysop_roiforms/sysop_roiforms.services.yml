@@ -3,3 +3,6 @@ services:
   sysop_roiforms.webform:
     class: Drupal\sysop_roiforms\Services\RoiFormResponseServices
     arguments: ['@entity_type.manager', '@path_alias.manager']
+  sysop_roiforms.webform_submission:
+    class: Drupal\sysop_roiforms\Services\RoiFormSubmissionServices
+    arguments: ['@entity_type.manager']

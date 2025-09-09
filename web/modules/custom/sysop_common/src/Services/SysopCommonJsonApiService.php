@@ -104,7 +104,7 @@ class SysopCommonJsonApiService {
         $components['Header'][] = [
           'Name' => "header",
           'Key' => "mega_menu_header",
-          'Api' => "api/menu_items/main?_format=json"
+          'Api' => "api/getContent/V1/menus/main?_format=json"
         ];
         // $content[] = [
         //   'Name' => "Insights Summery",
@@ -197,7 +197,7 @@ class SysopCommonJsonApiService {
         $components['Footer'][] = [
           'Name' => "Footer",
           'Key' => "footer",
-          'Api' => "api/menu_items/footer?_format=json",
+          'Api' => "api/getContent/V1/menus/footer?_format=json",
           'IsRecommender' => null
         ];
     }

@@ -50,10 +50,10 @@ class FooterComponent {
     return [
       'Name' => 'Footer',
       'Key' => 'footer', 
-      'Api' => 'api/menu_items/main?_format=json', 
+      'Api' => 'api/getContent/V1/menus/footer?_format=json', 
       'IsRecommender' => $recommender,
-      'IsContactUs' => \Drupal::state()->get('global_contact_us') ? 'api/getContent/V1/custom?_format=json&type=roi_form&id=' . \Drupal::state()->get('global_contact_us') : '',
-      'IsChatbot' => \Drupal::state()->get('chatbot'),
+    // 'IsContactUs' => \Drupal::state()->get('global_contact_us') ? 'api/getContent/V1/custom?_format=json&type=roi_form&id=' . \Drupal::state()->get('global_contact_us') : '',
+      //'IsChatbot' => \Drupal::state()->get('chatbot'),
     ];
   }
 

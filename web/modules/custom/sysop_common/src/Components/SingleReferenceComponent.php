@@ -3,9 +3,10 @@
 namespace Drupal\sysop_common\Components;
 
 use Drupal\Core\Entity\EntityInterface;
-use Drupal\sysop_common\Helper\GetApiDataHelper;
+//use Drupal\sysop_common\Helper\GetApiDataHelper;
 
-include_once dirname(dirname(__DIR__)) . '/constants/Constant.inc';
+//include_once dirname(dirname(__DIR__)) . '/constants/Constant.inc';
+
 /**
  * Class SingleReferenceComponent.
  */
@@ -34,10 +35,6 @@ class SingleReferenceComponent {
     }
 
     $endPoint = 'api/getContent/V1/view/' . $itemId . '?_format=json&id=' . $nid;
-    if($itemId == 'fiberChecker') {
-      $endPoint = 'rest/V1/hsbbaddress-retrieve';
-    }
-
     $response = [
           'Name' => ucwords(str_replace('_', ' ', $key)),
           'Key' => $key,

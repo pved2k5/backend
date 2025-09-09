@@ -35,7 +35,7 @@ class HeaderComponent {
       return [
         'Name' => 'header', 
         'Key' => $entity->entity->get('field_option_list')->value, 
-        'Api' => 'api/menu_items/main?_format=json'
+        'Api' => 'api/getContent/V1/menus/main?_format=json'
       ];
     }
     return FALSE;

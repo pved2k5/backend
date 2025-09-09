@@ -10,7 +10,9 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\RequestStack;
 use Drupal\Core\State\StateInterface;
+use Drupal\sysop_roiforms\Services\RoiFormSubmissionServices;
 
 /**
  * Provides a resource to get view modes by entity and bundle.
@@ -48,6 +50,13 @@ class CommonPostRestResource extends ResourceBase {
   protected $_state;
 
   /**
+   * The state keyvalue collection.
+   *
+   * @var \Drupal\Core\State\StateInterface
+   */
+  protected $webformSubmission;
+
+  /**
    * Constructs a new CommonPostRestResource object.
    *
    * @param array $configuration
@@ -76,11 +85,13 @@ class CommonPostRestResource extends ResourceBase {
     LoggerInterface $logger,
     AccountProxyInterface $currentUser,
     Request $currentRequest,
-    StateInterface $state) {
+    StateInterface $state,
+    RoiFormSubmissionServices $webform_submission) {
     parent::__construct($configuration, $plugin_id, $plugin_definition, $serializer_formats, $logger);
     $this->_currentUser = $currentUser;
     $this->_currentRequest = $currentRequest;
     $this->_state = $state;
+    $this->webformSubmission = $webform_submission;
   }
 
   /**
@@ -95,7 +106,8 @@ class CommonPostRestResource extends ResourceBase {
       $container->get('logger.factory')->get('sysop_common'),
       $container->get('current_user'),
       $container->get('request_stack')->getCurrentRequest(),
-      $container->get('state')
+      $container->get('state'),
+      $container->get('sysop_roiforms.webform_submission')
     );
   }
 
@@ -114,7 +126,9 @@ class CommonPostRestResource extends ResourceBase {
   public function post(array $data = []) {
     // You must to implement the logic of your REST Resource here.
     // Use current user after pass authentication to validate access.
+    
     $service_name = $this->_currentRequest->get('name');
+   // print_r($service_name); print_r($data);die();
     switch ($service_name) {
       case 'shop_sitemap':
         try {
@@ -138,6 +152,30 @@ class CommonPostRestResource extends ResourceBase {
         }
         catch (RequestException $e) {
           $logger->critical('Error on Sitemap Post Request: ' . $e->getMessage());
+        }
+        break;
+
+        case 'webform_submission':
+        try {
+          $result = [];
+          //echo 'hhgggg';
+         // print_r($data); die();
+          if (isset($data['webform_id']) && !empty($data['webform_id'])) {
+            $fid = $this->webformSubmission->manageRoiFormSubmission($data);
+            if (intval($fid['Id'])) {
+              $result['data'] = $fid['data'];
+              $result['StatusMessage'] = 'SUCCESS';
+            }
+            else {
+              $result['data'] = $fid;
+              $result['StatusMessage'] = 'FAILURE';
+            }
+          }
+          $result['Status'] = 'OKq';
+          return new ModifiedResourceResponse($result);
+        }
+        catch (RequestException $e) {
+          \Drupal::logger('roi_forms')->critical('Error on ROI Form Post Request: ' . $e->getMessage());
         }
         break;
 
