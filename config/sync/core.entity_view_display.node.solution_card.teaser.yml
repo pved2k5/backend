@@ -1,0 +1,40 @@
+uuid: b2713e60-7f7e-46bb-b687-4939df075a41
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.solution_card.field_button_primary
+    - field.field.node.solution_card.field_desktop_image
+    - field.field.node.solution_card.field_plan_long
+    - field.field.node.solution_card.field_rich_text
+    - field.field.node.solution_card.field_title_plain
+    - field.field.node.solution_card.field_title_plain_long
+    - field.field.node.solution_card.field_title_plan_v1
+    - node.type.solution_card
+  module:
+    - user
+id: node.solution_card.teaser
+targetEntityType: node
+bundle: solution_card
+mode: teaser
+content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_button_primary: true
+  field_desktop_image: true
+  field_plan_long: true
+  field_rich_text: true
+  field_title_plain: true
+  field_title_plain_long: true
+  field_title_plan_v1: true
+  search_api_excerpt: true

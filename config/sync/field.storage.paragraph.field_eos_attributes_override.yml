@@ -1,0 +1,19 @@
+uuid: 6208f9e5-8dc0-4376-abe9-d4fe398a2777
+langcode: en
+status: true
+dependencies:
+  module:
+    - celcom_eos
+    - paragraphs
+id: paragraph.field_eos_attributes_override
+field_name: field_eos_attributes_override
+entity_type: paragraph
+type: product_attributes
+settings: {  }
+module: celcom_eos
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

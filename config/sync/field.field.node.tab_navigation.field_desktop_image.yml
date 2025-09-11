@@ -1,0 +1,29 @@
+uuid: 26bdaf8e-093c-4dc1-b2d6-704f6c0e16a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_desktop_image
+    - media.type.icon
+    - node.type.tab_navigation
+id: node.tab_navigation.field_desktop_image
+field_name: field_desktop_image
+entity_type: node
+bundle: tab_navigation
+label: 'Default Icon'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      icon: icon
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

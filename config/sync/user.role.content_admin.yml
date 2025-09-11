@@ -1,0 +1,35 @@
+uuid: ac11253b-9645-448d-9ef9-fc3ed4045040
+langcode: en
+status: true
+dependencies:
+  module:
+    - celcom_configuration
+    - celcom_entity
+    - celcom_roaming
+    - file
+    - path
+    - simple_sitemap
+    - system
+    - webform
+id: content_admin
+label: 'Content Admin'
+weight: 6
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access celcom configuration and settings page'
+  - 'add celcom roaming entities'
+  - 'add common entity entities'
+  - 'administer celcom roaming entities'
+  - 'administer sitemap settings'
+  - 'administer url aliases'
+  - 'adminiter celcom configuration and settings page'
+  - 'create url aliases'
+  - 'delete celcom roaming entities'
+  - 'delete own files'
+  - 'edit celcom roaming entities'
+  - 'edit common entity entities'
+  - 'edit webform source'
+  - 'view published celcom roaming entities'
+  - 'view the administration theme'
+  - 'view unpublished celcom roaming entities'

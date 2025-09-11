@@ -1,4 +1,4 @@
-uuid: a6652075-1215-4b00-9d62-bb4cba0897b2
+uuid: b983bdeb-31e5-4d53-a338-109b7f698ec4
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ third_party_settings:
     parent: ''
 name: 'Global Pages'
 type: global_pages
-description: 'Global Pages'
+description: 'Common Page type to create a Page Template'
 help: null
-new_revision: false
+new_revision: true
 preview_mode: 0
 display_submitted: false

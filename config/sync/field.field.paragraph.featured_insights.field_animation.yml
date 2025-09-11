@@ -1,0 +1,21 @@
+uuid: dff87b8f-7eba-4771-b689-436dd4c7eb69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_animation
+    - paragraphs.paragraphs_type.featured_insights
+  module:
+    - options
+id: paragraph.featured_insights.field_animation
+field_name: field_animation
+entity_type: paragraph
+bundle: featured_insights
+label: Animation
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

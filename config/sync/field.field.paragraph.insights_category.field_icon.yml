@@ -1,0 +1,29 @@
+uuid: 28b642ab-5c94-430d-92c1-83484b9fc03b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon
+    - media.type.mobile_images
+    - paragraphs.paragraphs_type.insights_category
+id: paragraph.insights_category.field_icon
+field_name: field_icon
+entity_type: paragraph
+bundle: insights_category
+label: 'Mobile Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      mobile_images: mobile_images
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

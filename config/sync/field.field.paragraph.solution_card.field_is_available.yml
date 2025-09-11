@@ -1,0 +1,23 @@
+uuid: d23f379b-18e3-4ce4-898b-023e7531d474
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_is_available
+    - paragraphs.paragraphs_type.solution_card
+id: paragraph.solution_card.field_is_available
+field_name: field_is_available
+entity_type: paragraph
+bundle: solution_card
+label: 'Is Carousal?'
+description: 'Check this box to enable carousal'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

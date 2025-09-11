@@ -1,0 +1,19 @@
+uuid: c394b24f-1954-4753-bedc-cd26daea3ba5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_product_category
+    - paragraphs.paragraphs_type.roi_forms
+id: paragraph.roi_forms.field_product_category
+field_name: field_product_category
+entity_type: paragraph
+bundle: roi_forms
+label: 'Confirmation Message'
+description: 'Enter the confirmation message which will display when the User click on Submit button.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

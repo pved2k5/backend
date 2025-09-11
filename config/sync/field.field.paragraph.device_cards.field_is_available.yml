@@ -1,0 +1,23 @@
+uuid: 8bbc30b3-eb6f-46d4-bbe8-4adde37dc3fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_is_available
+    - paragraphs.paragraphs_type.device_cards
+id: paragraph.device_cards.field_is_available
+field_name: field_is_available
+entity_type: paragraph
+bundle: device_cards
+label: 'Is Carousal?'
+description: 'Check this box to convert the default stack view into carousel.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

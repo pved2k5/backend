@@ -1,0 +1,183 @@
+uuid: 43bcbf48-c1e6-4fb6-b3ba-157313ccf7fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.device_card.field_authored_by
+    - field.field.node.device_card.field_button_primary
+    - field.field.node.device_card.field_desktop_image
+    - field.field.node.device_card.field_font_color
+    - field.field.node.device_card.field_pill_element
+    - field.field.node.device_card.field_term_select
+    - field.field.node.device_card.field_title_plain
+    - field.field.node.device_card.field_title_plain_long
+    - field.field.node.device_card.field_title_plan_v1
+    - node.type.device_card
+    - workflows.workflow.content_workflow
+  module:
+    - celcom_utility
+    - content_moderation
+    - cshs
+    - field_group
+    - link_attributes
+    - media_library
+third_party_settings:
+  field_group:
+    group_device_detail:
+      children:
+        - field_desktop_image
+        - field_title_plain_long
+        - field_pill_element
+      label: 'Device Detail'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: device-table-detail
+        open: true
+        description: ''
+        required_fields: true
+    group_device_only:
+      children:
+        - field_title_plain
+        - field_font_color
+      label: 'Device Only'
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: device-only
+        open: true
+        description: ''
+        required_fields: true
+    group_device_bundle:
+      children:
+        - field_authored_by
+        - field_title_plan_v1
+      label: 'Device Bundle'
+      region: content
+      parent_name: ''
+      weight: 3
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: device-bundle
+        open: true
+        description: ''
+        required_fields: true
+id: node.device_card.default
+targetEntityType: node
+bundle: device_card
+mode: default
+content:
+  field_authored_by:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Ex- Device Bundle'
+    third_party_settings: {  }
+  field_button_primary:
+    type: link_attribute_field_widget
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: 'Add Product Url'
+      placeholder_title: 'Add CTA button'
+      link_attributes_link_size: '1'
+      link_attributes_link_variant: '1'
+      link_attributes_link_icon: 0
+      link_attributes_link_analytic: 0
+    third_party_settings: {  }
+  field_desktop_image:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_font_color:
+    type: string_textfield
+    weight: 29
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Enter the product price'
+    third_party_settings: {  }
+  field_pill_element:
+    type: pill_color_field_widget
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_term_select:
+    type: cshs
+    weight: 5
+    region: content
+    settings:
+      save_lineage: false
+      force_deepest: false
+      parent: null
+      level_labels: 'Brand, Model'
+      hierarchy_depth: 0
+      required_depth: 0
+      none_label: '- Please select -'
+    third_party_settings: {  }
+  field_title_plain:
+    type: string_textfield
+    weight: 28
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Ex- Device Only'
+    third_party_settings: {  }
+  field_title_plain_long:
+    type: string_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+  field_title_plan_v1:
+    type: string_textfield
+    weight: 28
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Enter the product price'
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Use for internal reference only'
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

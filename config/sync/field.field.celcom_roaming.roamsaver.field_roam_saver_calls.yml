@@ -1,0 +1,21 @@
+uuid: 26cb4e17-13b1-4c4f-8eb1-255188bf2651
+langcode: en
+status: true
+dependencies:
+  config:
+    - celcom_roaming.celcom_roaming_type.roamsaver
+    - field.storage.celcom_roaming.field_roam_saver_calls
+  module:
+    - celcom_roaming
+id: celcom_roaming.roamsaver.field_roam_saver_calls
+field_name: field_roam_saver_calls
+entity_type: celcom_roaming
+bundle: roamsaver
+label: 'Roam Saver Calls'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: combo_field

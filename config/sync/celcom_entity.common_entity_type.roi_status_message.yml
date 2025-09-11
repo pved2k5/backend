@@ -1,0 +1,7 @@
+uuid: 3ded3040-bbef-4e01-b745-e1dfc9000d91
+langcode: en
+status: true
+dependencies: {  }
+id: roi_status_message
+label: 'ROI Status Message'
+description: 'ROI Status Message Entity Type'

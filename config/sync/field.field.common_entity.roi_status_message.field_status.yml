@@ -1,0 +1,124 @@
+uuid: 49857c68-c5d8-436c-b1d7-8626051be7c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - celcom_entity.common_entity_type.roi_status_message
+    - field.storage.common_entity.field_status
+    - paragraphs.paragraphs_type.icon_title_description
+  module:
+    - entity_reference_revisions
+id: common_entity.roi_status_message.field_status
+field_name: field_status
+entity_type: common_entity
+bundle: roi_status_message
+label: Status
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      icon_title_description: icon_title_description
+    negate: 0
+    target_bundles_drag_drop:
+      advertisement_banner:
+        weight: 33
+        enabled: false
+      benefit_banner:
+        weight: 34
+        enabled: false
+      cards:
+        weight: 35
+        enabled: false
+      cloudshop_plan:
+        weight: 36
+        enabled: false
+      device_cards:
+        weight: 37
+        enabled: false
+      faq:
+        weight: 38
+        enabled: false
+      featured_insights:
+        weight: 39
+        enabled: false
+      fiber_checker:
+        weight: 40
+        enabled: false
+      flip_card:
+        weight: 41
+        enabled: false
+      footer:
+        weight: 42
+        enabled: false
+      free_text:
+        weight: 43
+        enabled: false
+      header:
+        weight: 44
+        enabled: false
+      hero_banner:
+        weight: 45
+        enabled: false
+      icon_layout:
+        weight: 46
+        enabled: false
+      icon_title_description:
+        weight: 47
+        enabled: true
+      image_cards:
+        weight: 48
+        enabled: false
+      insights_category:
+        weight: 49
+        enabled: false
+      latest_insights:
+        weight: 50
+        enabled: false
+      partners_cards:
+        weight: 51
+        enabled: false
+      plan_cards:
+        weight: 52
+        enabled: false
+      plan_recommender:
+        weight: 53
+        enabled: false
+      plan_table_cms:
+        weight: 54
+        enabled: false
+      product_category:
+        weight: 55
+        enabled: false
+      promo_banner:
+        weight: 56
+        enabled: false
+      promo_card_layout_wrapper:
+        weight: 57
+        enabled: false
+      related_insights:
+        weight: 58
+        enabled: false
+      roaming_rates:
+        weight: 59
+        enabled: false
+      roi_forms:
+        weight: 60
+        enabled: false
+      social_share:
+        weight: 61
+        enabled: false
+      story_telling:
+        weight: 62
+        enabled: false
+      tab_navigation:
+        weight: 63
+        enabled: false
+      twitter_feed:
+        weight: 64
+        enabled: false
+field_type: entity_reference_revisions

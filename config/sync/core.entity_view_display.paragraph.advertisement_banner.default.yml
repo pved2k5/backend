@@ -1,0 +1,22 @@
+uuid: 4dfab3ea-7abe-4c11-9568-6cbfd01c2b51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.advertisement_banner.field_entity_ref_multi_content
+    - paragraphs.paragraphs_type.advertisement_banner
+id: paragraph.advertisement_banner.default
+targetEntityType: paragraph
+bundle: advertisement_banner
+mode: default
+content:
+  field_entity_ref_multi_content:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

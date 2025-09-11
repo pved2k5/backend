@@ -1,0 +1,130 @@
+uuid: 8bb4a443-39d5-48f3-8f57-3837381de7cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_multiple
+    - paragraphs.paragraphs_type.campaign
+    - paragraphs.paragraphs_type.video_campaign
+  module:
+    - entity_reference_revisions
+id: paragraph.video_campaign.field_paragraph_multiple
+field_name: field_paragraph_multiple
+entity_type: paragraph
+bundle: video_campaign
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      campaign: campaign
+    negate: 0
+    target_bundles_drag_drop:
+      advertisement_banner:
+        weight: 35
+        enabled: false
+      benefit_banner:
+        weight: 36
+        enabled: false
+      campaign:
+        weight: 37
+        enabled: true
+      cards:
+        weight: 38
+        enabled: false
+      cloudshop_plan:
+        weight: 39
+        enabled: false
+      device_cards:
+        weight: 40
+        enabled: false
+      faq:
+        weight: 41
+        enabled: false
+      featured_insights:
+        weight: 42
+        enabled: false
+      fiber_checker:
+        weight: 43
+        enabled: false
+      flip_card:
+        weight: 44
+        enabled: false
+      footer:
+        weight: 45
+        enabled: false
+      free_text:
+        weight: 46
+        enabled: false
+      header:
+        weight: 47
+        enabled: false
+      hero_banner:
+        weight: 48
+        enabled: false
+      icon_layout:
+        weight: 49
+        enabled: false
+      icon_title_description:
+        weight: 50
+        enabled: false
+      image_cards:
+        weight: 51
+        enabled: false
+      insights_category:
+        weight: 52
+        enabled: false
+      latest_insights:
+        weight: 53
+        enabled: false
+      partners_cards:
+        weight: 54
+        enabled: false
+      plan_cards:
+        weight: 55
+        enabled: false
+      plan_recommender:
+        weight: 56
+        enabled: false
+      plan_table_cms:
+        weight: 57
+        enabled: false
+      product_category:
+        weight: 58
+        enabled: false
+      promo_banner:
+        weight: 59
+        enabled: false
+      promo_card_layout_wrapper:
+        weight: 60
+        enabled: false
+      related_insights:
+        weight: 61
+        enabled: false
+      roaming_rates:
+        weight: 62
+        enabled: false
+      roi_forms:
+        weight: 63
+        enabled: false
+      social_share:
+        weight: 64
+        enabled: false
+      story_telling:
+        weight: 65
+        enabled: false
+      tab_navigation:
+        weight: 66
+        enabled: false
+      twitter_feed:
+        weight: 67
+        enabled: false
+      video_campaign:
+        weight: 68
+        enabled: false
+field_type: entity_reference_revisions

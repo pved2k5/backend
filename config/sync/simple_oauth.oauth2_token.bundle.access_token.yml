@@ -1,9 +1,9 @@
-uuid: 539eace6-74fb-426f-8687-a37b55d353dd
+uuid: d15d881c-d724-497c-826c-004480e8ab75
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: f7Fq1Sh24P1luZf4RRdeDs4be4diwuU5P-XkpuxjyLk
+  default_config_hash: z9ULI9nj9yt73YKI3ZE8v9yXhkVfvQsDJToEDzijcxY
 id: access_token
 label: 'Access Token'
 description: 'The access token type.'

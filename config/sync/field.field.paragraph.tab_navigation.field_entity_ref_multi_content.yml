@@ -1,0 +1,29 @@
+uuid: 914dae6e-f313-4d4e-8089-de8362e2e547
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_entity_ref_multi_content
+    - node.type.tab_navigation
+    - paragraphs.paragraphs_type.tab_navigation
+id: paragraph.tab_navigation.field_entity_ref_multi_content
+field_name: field_entity_ref_multi_content
+entity_type: paragraph
+bundle: tab_navigation
+label: 'Tab Reference'
+description: "<em>Steps to Add the Tabs in a Global Pages:</em>\r\n<ul><li>Click <a href=\"/admin/structure/common_entity/add/cloudshop_api\">here</a> to add Magento API in Drupal System.</li>\r\n<li>Above API is now available to add in the tab now click <a href=\"/node/add/tab_navigation\">here</a> to create/add Tab.</li>\r\n<li>Now the Tab Component is ready to add in the Global Pages.</li></ul>\r\n"
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      tab_navigation: tab_navigation
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: 575e72e4-3642-49fe-babe-495f3ac76228
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pill_element
+    - node.type.insights
+  module:
+    - celcom_utility
+id: node.insights.field_pill_element
+field_name: field_pill_element
+entity_type: node
+bundle: insights
+label: Badge
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: title_desc_field

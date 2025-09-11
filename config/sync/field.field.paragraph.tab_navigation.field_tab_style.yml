@@ -1,0 +1,23 @@
+uuid: 0af85765-212b-4799-94e2-5af9042d93bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tab_style
+    - paragraphs.paragraphs_type.tab_navigation
+  module:
+    - options
+id: paragraph.tab_navigation.field_tab_style
+field_name: field_tab_style
+entity_type: paragraph
+bundle: tab_navigation
+label: 'Tab Style'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings: {  }
+field_type: list_string

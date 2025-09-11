@@ -1,0 +1,50 @@
+uuid: 1f2975c0-2424-4f05-9fb9-023b4459f4e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.plan_table.field_authored_by
+    - field.field.node.plan_table.field_badges
+    - field.field.node.plan_table.field_branding_color_scheme
+    - field.field.node.plan_table.field_button_primary
+    - field.field.node.plan_table.field_common_ent_multi
+    - field.field.node.plan_table.field_common_ent_multi_v1
+    - field.field.node.plan_table.field_font_color
+    - field.field.node.plan_table.field_pill_element
+    - field.field.node.plan_table.field_plan_long
+    - field.field.node.plan_table.field_title_plain
+    - field.field.node.plan_table.field_title_plain_long
+    - field.field.node.plan_table.field_title_plan_v1
+    - node.type.plan_table
+  module:
+    - user
+id: node.plan_table.teaser
+targetEntityType: node
+bundle: plan_table
+mode: teaser
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_authored_by: true
+  field_badges: true
+  field_branding_color_scheme: true
+  field_button_primary: true
+  field_common_ent_multi: true
+  field_common_ent_multi_v1: true
+  field_font_color: true
+  field_pill_element: true
+  field_plan_long: true
+  field_title_plain: true
+  field_title_plain_long: true
+  field_title_plan_v1: true
+  search_api_excerpt: true

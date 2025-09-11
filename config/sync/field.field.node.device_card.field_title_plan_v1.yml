@@ -1,0 +1,19 @@
+uuid: 5fd8a0da-53d6-4e90-ba4a-a58aca745543
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title_plan_v1
+    - node.type.device_card
+id: node.device_card.field_title_plan_v1
+field_name: field_title_plan_v1
+entity_type: node
+bundle: device_card
+label: 'Product Price (Device Bundle)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

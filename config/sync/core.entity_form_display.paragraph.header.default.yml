@@ -1,0 +1,30 @@
+uuid: e9981e32-af44-43ed-bc45-a12ace60db12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.header.field_option_list
+    - field.field.paragraph.header.field_title_plain
+    - paragraphs.paragraphs_type.header
+id: paragraph.header.default
+targetEntityType: paragraph
+bundle: header
+mode: default
+content:
+  field_option_list:
+    type: options_buttons
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_title_plain:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Enter the Header Name'
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

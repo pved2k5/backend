@@ -1,0 +1,23 @@
+uuid: 400c42dd-03b4-49ab-a2a3-a64f7b9b3bc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_is_available
+    - paragraphs.paragraphs_type.image_cards
+id: paragraph.image_cards.field_is_available
+field_name: field_is_available
+entity_type: paragraph
+bundle: image_cards
+label: 'Is Mobile Carousal?'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

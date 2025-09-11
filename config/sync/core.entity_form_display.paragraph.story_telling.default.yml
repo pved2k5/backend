@@ -1,0 +1,75 @@
+uuid: 6ccce4ea-7912-471f-94ce-6a82bcff3005
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.story_banner
+    - field.field.paragraph.story_telling.field_colorpicker_v1
+    - field.field.paragraph.story_telling.field_description_formatted_long
+    - field.field.paragraph.story_telling.field_entity_ref_multi_content
+    - field.field.paragraph.story_telling.field_layout_order
+    - field.field.paragraph.story_telling.field_selector
+    - field.field.paragraph.story_telling.field_st_type
+    - paragraphs.paragraphs_type.story_telling
+  module:
+    - celcom_common
+    - chosen_field
+    - entity_browser
+    - text
+id: paragraph.story_telling.default
+targetEntityType: paragraph
+bundle: story_telling
+mode: default
+content:
+  field_colorpicker_v1:
+    type: celcom_common_colorpicker_widget
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_description_formatted_long:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_entity_ref_multi_content:
+    type: entity_browser_entity_reference
+    weight: 5
+    region: content
+    settings:
+      entity_browser: story_banner
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      field_widget_replace: true
+      open: true
+      field_widget_display_settings:
+        view_mode: content_body
+      selection_mode: selection_append
+    third_party_settings: {  }
+  field_layout_order:
+    type: chosen_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_selector:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 30
+      placeholder: ''
+    third_party_settings: {  }
+  field_st_type:
+    type: chosen_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

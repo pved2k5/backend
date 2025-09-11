@@ -1,0 +1,52 @@
+uuid: 4dd93360-0065-4a63-a0fa-857daab3745d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.solution_card.field_colorpicker_v1
+    - field.field.paragraph.solution_card.field_description_formatted_long
+    - field.field.paragraph.solution_card.field_entity_ref_multi_content
+    - field.field.paragraph.solution_card.field_is_available
+    - paragraphs.paragraphs_type.solution_card
+  module:
+    - celcom_common
+    - text
+id: paragraph.solution_card.default
+targetEntityType: paragraph
+bundle: solution_card
+mode: default
+content:
+  field_colorpicker_v1:
+    type: celcom_common_colorpicker_widget
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_description_formatted_long:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+  field_entity_ref_multi_content:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_is_available:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

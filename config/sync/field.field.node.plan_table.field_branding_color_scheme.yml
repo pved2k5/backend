@@ -1,0 +1,21 @@
+uuid: 16c7fe37-42f9-4eda-add6-b5ed4e95af6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_branding_color_scheme
+    - node.type.plan_table
+  module:
+    - options
+id: node.plan_table.field_branding_color_scheme
+field_name: field_branding_color_scheme
+entity_type: node
+bundle: plan_table
+label: 'Branding Color Scheme'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

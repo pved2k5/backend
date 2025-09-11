@@ -1,0 +1,103 @@
+uuid: 107ca4e5-fe5a-4907-9d23-da6586d3a45b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.main-menu.field_icon
+    - field.field.menu_link_content.main-menu.field_menu_description_cta_label
+    - field.field.menu_link_content.main-menu.field_menu_description_cta_link
+    - field.field.menu_link_content.main-menu.field_menu_description_long
+    - field.field.menu_link_content.main-menu.field_menu_description_short
+    - field.field.menu_link_content.main-menu.field_menu_type
+    - field.field.menu_link_content.main-menu.field_short_description
+    - system.menu.main-menu
+  module:
+    - field_group
+    - link
+    - media_library
+third_party_settings:
+  field_group:
+    group_menu_description:
+      children:
+        - field_menu_description_long
+        - field_menu_description_short
+        - field_menu_description_cta_label
+        - field_menu_description_cta_link
+      label: 'Menu Description'
+      region: content
+      parent_name: ''
+      weight: 5
+      format_type: fieldset
+      format_settings:
+        classes: main-menu-fieldset
+        id: main-menu-fieldset
+        description: ''
+        required_fields: false
+id: menu_link_content.main-menu.default
+targetEntityType: menu_link_content
+bundle: main-menu
+mode: default
+content:
+  field_icon:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_menu_description_cta_label:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_menu_description_cta_link:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_menu_description_long:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_menu_description_short:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_menu_type:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_short_description:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  view_mode: true

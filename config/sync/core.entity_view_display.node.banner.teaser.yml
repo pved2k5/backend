@@ -1,28 +1,28 @@
-uuid: 00d99f9c-083b-4e82-85fc-2df09ffac677
+uuid: 8bfb2c0c-08fa-4089-86fd-d553c6988a32
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.banner.body
-    - field.field.node.banner.field_card_image
-    - field.field.node.banner.field_cta
+    - field.field.node.banner.field_banner_text
+    - field.field.node.banner.field_banner_type
+    - field.field.node.banner.field_button_primary
+    - field.field.node.banner.field_button_secondry
+    - field.field.node.banner.field_desktop_image
+    - field.field.node.banner.field_mobile_image
+    - field.field.node.banner.field_pill_element
     - node.type.banner
   module:
-    - text
     - user
 id: node.banner.teaser
 targetEntityType: node
 bundle: banner
 mode: teaser
 content:
-  body:
-    type: text_summary_or_trimmed
-    label: hidden
-    settings:
-      trim_length: 600
+  content_moderation_control:
+    weight: -20
+    settings: {  }
     third_party_settings: {  }
-    weight: 101
     region: content
   links:
     settings: {  }
@@ -30,5 +30,11 @@ content:
     weight: 100
     region: content
 hidden:
-  field_card_image: true
-  field_cta: true
+  field_banner_text: true
+  field_banner_type: true
+  field_button_primary: true
+  field_button_secondry: true
+  field_desktop_image: true
+  field_mobile_image: true
+  field_pill_element: true
+  search_api_excerpt: true

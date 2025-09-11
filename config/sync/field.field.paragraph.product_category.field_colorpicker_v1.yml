@@ -1,0 +1,21 @@
+uuid: aceae02c-ad59-4289-af74-4928f7f020dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_colorpicker_v1
+    - paragraphs.paragraphs_type.product_category
+  module:
+    - celcom_common
+id: paragraph.product_category.field_colorpicker_v1
+field_name: field_colorpicker_v1
+entity_type: paragraph
+bundle: product_category
+label: 'Background Color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: celcom_common_colorpicker

@@ -1,0 +1,20 @@
+uuid: 281f7fa5-96dd-42c5-8576-25166570d3a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: promo_card_layout_wrapper
+label: 'Promo Card Set'
+icon_uuid: null
+icon_default: null
+description: 'Promo Card Set Paragraph Type'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      layout_gridvone_section: 'Bricks Wrapper'
+      layout_gridvtwo_section: 'Equal Column + Cards Wrapper'
+      layout_gridequalcards_section: 'Equal Column Wrapper'
+      layout_gridvthree_section: 'Promo Banner+Equal Column Wrapper'
+      layout_gridpromobanner_section: 'Promo Banner Wrapper'

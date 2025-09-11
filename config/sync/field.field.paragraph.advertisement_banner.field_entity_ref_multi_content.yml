@@ -1,0 +1,29 @@
+uuid: 6b7bd8b8-9f09-4a7e-acf3-4de5e35e2787
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_entity_ref_multi_content
+    - node.type.banner
+    - paragraphs.paragraphs_type.advertisement_banner
+id: paragraph.advertisement_banner.field_entity_ref_multi_content
+field_name: field_entity_ref_multi_content
+entity_type: paragraph
+bundle: advertisement_banner
+label: Banner
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      banner: banner
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

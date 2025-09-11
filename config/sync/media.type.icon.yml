@@ -1,0 +1,14 @@
+uuid: 9ed57efa-5586-44a0-a033-f95b89a38f13
+langcode: en
+status: true
+dependencies: {  }
+id: icon
+label: Icon
+description: 'Use Icon for Reusable files'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_document
+field_map:
+  name: name

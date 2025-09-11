@@ -1,0 +1,67 @@
+uuid: 8bc63269-202c-45a6-866f-09f81a69f15f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.featured_insights.field_alignment
+    - field.field.paragraph.featured_insights.field_animation
+    - field.field.paragraph.featured_insights.field_colorpicker_v1
+    - field.field.paragraph.featured_insights.field_description_formatted_long
+    - field.field.paragraph.featured_insights.field_entity_ref_multi_content
+    - field.field.paragraph.featured_insights.field_selector
+    - paragraphs.paragraphs_type.featured_insights
+  module:
+    - celcom_common
+    - options
+    - text
+id: paragraph.featured_insights.default
+targetEntityType: paragraph
+bundle: featured_insights
+mode: default
+content:
+  field_alignment:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_animation:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_colorpicker_v1:
+    type: celcom_common_colorswatch_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_description_formatted_long:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_entity_ref_multi_content:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_selector:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  search_api_excerpt: true

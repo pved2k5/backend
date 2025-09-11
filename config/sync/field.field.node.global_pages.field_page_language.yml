@@ -1,0 +1,21 @@
+uuid: 36478e14-4abb-4703-b050-43635e2d0fe4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_language
+    - node.type.global_pages
+  module:
+    - options
+id: node.global_pages.field_page_language
+field_name: field_page_language
+entity_type: node
+bundle: global_pages
+label: 'Page Language'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

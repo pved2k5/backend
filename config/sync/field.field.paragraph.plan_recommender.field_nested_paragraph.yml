@@ -1,0 +1,88 @@
+uuid: fb653f97-847d-4c72-a5f8-971ea04f2000
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_nested_paragraph
+    - paragraphs.paragraphs_type.plan_recommender
+    - paragraphs.paragraphs_type.roi_forms
+  module:
+    - entity_reference_revisions
+id: paragraph.plan_recommender.field_nested_paragraph
+field_name: field_nested_paragraph
+entity_type: paragraph
+bundle: plan_recommender
+label: 'ROI Form'
+description: 'Please Select the ROI form which has <strong><em>name_of_product</em></strong> field & the field type would be <strong><em>text field</em></strong>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      roi_forms: roi_forms
+    negate: 0
+    target_bundles_drag_drop:
+      benefit_banner:
+        weight: -40
+        enabled: false
+      cards:
+        weight: -39
+        enabled: false
+      cloudshop_plan:
+        weight: -38
+        enabled: false
+      faq:
+        weight: -37
+        enabled: false
+      footer:
+        weight: -36
+        enabled: false
+      free_text:
+        weight: -35
+        enabled: false
+      header:
+        weight: -34
+        enabled: false
+      hero_banner:
+        weight: -33
+        enabled: false
+      icon_layout:
+        weight: -32
+        enabled: false
+      icon_title_description:
+        weight: -31
+        enabled: false
+      insights_category:
+        weight: -30
+        enabled: false
+      partners_cards:
+        weight: -29
+        enabled: false
+      plan_cards:
+        weight: -28
+        enabled: false
+      plan_recommender:
+        weight: -27
+        enabled: false
+      product_category:
+        weight: -26
+        enabled: false
+      promo_banner:
+        weight: -25
+        enabled: false
+      promo_card_layout_wrapper:
+        weight: -24
+        enabled: false
+      roi_forms:
+        weight: -41
+        enabled: true
+      story_telling:
+        weight: -23
+        enabled: false
+      tab_navigation:
+        weight: -22
+        enabled: false
+field_type: entity_reference_revisions

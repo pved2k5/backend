@@ -1,0 +1,19 @@
+uuid: c5f1c7ea-6467-4639-91c2-e20433559fe9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title_plain_long
+    - node.type.device_card
+id: node.device_card.field_title_plain_long
+field_name: field_title_plain_long
+entity_type: node
+bundle: device_card
+label: 'Device Detail'
+description: 'Enter the device name, modal number, quota & other offerings. '
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

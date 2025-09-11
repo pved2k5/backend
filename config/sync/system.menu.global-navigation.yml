@@ -1,0 +1,8 @@
+uuid: a8e0a78d-889c-4f70-babd-7b09a14c58ed
+langcode: en
+status: true
+dependencies: {  }
+id: global-navigation
+label: 'Global Navigation'
+description: 'Site Wide Global Navigation Links'
+locked: false

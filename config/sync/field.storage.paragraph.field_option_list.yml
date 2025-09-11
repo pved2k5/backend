@@ -1,0 +1,33 @@
+uuid: a6f9cc46-adea-48d9-86b8-447c0a473531
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_option_list
+field_name: field_option_list
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: default
+      label: Header
+    -
+      value: mega_menu_header
+      label: 'Mega Menu Header'
+    -
+      value: simple_header
+      label: 'Simple Header'
+    -
+      value: celcom_digi
+      label: 'CelcomDigi Header'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

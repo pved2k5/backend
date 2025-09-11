@@ -1,0 +1,55 @@
+uuid: 3989be27-357a-44d5-b689-ee4386c687de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph_unlimited
+    - node.type.icon_layout
+    - paragraphs.paragraphs_type.icon_title_description
+  module:
+    - entity_reference_revisions
+id: node.icon_layout.field_paragraph_unlimited
+field_name: field_paragraph_unlimited
+entity_type: node
+bundle: icon_layout
+label: 'Icon Detail'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      icon_title_description: icon_title_description
+    negate: 0
+    target_bundles_drag_drop:
+      cloudshop_plan:
+        weight: 10
+        enabled: false
+      faq:
+        weight: 11
+        enabled: false
+      footer:
+        weight: 12
+        enabled: false
+      header:
+        weight: 13
+        enabled: false
+      hero_banner:
+        weight: 14
+        enabled: false
+      icon_layout:
+        weight: 15
+        enabled: false
+      icon_title_description:
+        weight: 16
+        enabled: true
+      image_cards:
+        weight: 17
+        enabled: false
+      roi_forms:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

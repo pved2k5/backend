@@ -1,0 +1,10 @@
+uuid: f93ac78e-1add-4c97-860a-424e9916870c
+langcode: en
+status: true
+dependencies: {  }
+id: plan_table_cms
+label: 'Plan Table (CMS)'
+icon_uuid: null
+icon_default: null
+description: 'Plan Table (CMS) Paragraph Type'
+behavior_plugins: {  }

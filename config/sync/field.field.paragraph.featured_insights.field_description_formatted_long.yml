@@ -1,0 +1,21 @@
+uuid: 4bb88901-7d9d-4d67-a159-06e4eb3bd4a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_formatted_long
+    - paragraphs.paragraphs_type.featured_insights
+  module:
+    - text
+id: paragraph.featured_insights.field_description_formatted_long
+field_name: field_description_formatted_long
+entity_type: paragraph
+bundle: featured_insights
+label: Header
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

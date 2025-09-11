@@ -1,0 +1,20 @@
+uuid: 4db9a1ab-4fd4-4827-9f6c-5ef020e3e88e
+langcode: en
+status: true
+dependencies:
+  module:
+    - celcom_entity
+    - paragraphs
+id: paragraph.field_ref_plan_type
+field_name: field_ref_plan_type
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: common_entity
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

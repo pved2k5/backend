@@ -1,0 +1,21 @@
+uuid: 1da47c20-41ec-417c-b11f-c756327fd46c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_formatted_long
+    - paragraphs.paragraphs_type.related_insights
+  module:
+    - text
+id: paragraph.related_insights.field_description_formatted_long
+field_name: field_description_formatted_long
+entity_type: paragraph
+bundle: related_insights
+label: Header
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,29 +1,30 @@
-uuid: c9dfca23-6986-4c47-abaf-55e7e85ae067
+uuid: b541a9c5-e5c7-4f64-8311-455d98e18c9c
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.cards.body
     - field.field.node.cards.field_background_color
-    - field.field.node.cards.field_card_image
-    - field.field.node.cards.field_cta
+    - field.field.node.cards.field_banner_text
+    - field.field.node.cards.field_button_primary
+    - field.field.node.cards.field_button_secondry
+    - field.field.node.cards.field_card_type
+    - field.field.node.cards.field_desktop_image
+    - field.field.node.cards.field_group_richtext
+    - field.field.node.cards.field_mobile_image
+    - field.field.node.cards.field_pill_element
     - node.type.cards
   module:
-    - text
     - user
 id: node.cards.teaser
 targetEntityType: node
 bundle: cards
 mode: teaser
 content:
-  body:
-    type: text_summary_or_trimmed
-    label: hidden
-    settings:
-      trim_length: 600
+  content_moderation_control:
+    settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: -20
     region: content
   links:
     settings: {  }
@@ -32,5 +33,12 @@ content:
     region: content
 hidden:
   field_background_color: true
-  field_card_image: true
-  field_cta: true
+  field_banner_text: true
+  field_button_primary: true
+  field_button_secondry: true
+  field_card_type: true
+  field_desktop_image: true
+  field_group_richtext: true
+  field_mobile_image: true
+  field_pill_element: true
+  search_api_excerpt: true

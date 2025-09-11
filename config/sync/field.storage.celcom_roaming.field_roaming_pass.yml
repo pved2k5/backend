@@ -1,0 +1,20 @@
+uuid: 229d8f15-51e0-4ac2-a3d0-c180e5d087df
+langcode: en
+status: true
+dependencies:
+  module:
+    - celcom_roaming
+    - node
+id: celcom_roaming.field_roaming_pass
+field_name: field_roaming_pass
+entity_type: celcom_roaming
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

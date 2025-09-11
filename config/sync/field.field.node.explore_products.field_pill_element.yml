@@ -1,0 +1,21 @@
+uuid: d413b7b5-3277-412e-a5a0-cb725332f8fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pill_element
+    - node.type.explore_products
+  module:
+    - celcom_utility
+id: node.explore_products.field_pill_element
+field_name: field_pill_element
+entity_type: node
+bundle: explore_products
+label: 'Background Color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: title_desc_field

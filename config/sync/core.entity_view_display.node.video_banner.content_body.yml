@@ -1,0 +1,34 @@
+uuid: 6277e552-4a47-4fbc-92c6-a4f62f310091
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_body
+    - field.field.node.video_banner.field_desktop_image
+    - field.field.node.video_banner.field_mobile_image
+    - image.style.medium
+    - node.type.video_banner
+  module:
+    - media
+    - user
+id: node.video_banner.content_body
+targetEntityType: node
+bundle: video_banner
+mode: content_body
+content:
+  field_desktop_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  content_moderation_control: true
+  field_mobile_image: true
+  links: true
+  search_api_excerpt: true

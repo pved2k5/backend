@@ -1,0 +1,21 @@
+uuid: 5e1b273f-5c4f-47b5-bf2d-850914c57754
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_formatted_long
+    - paragraphs.paragraphs_type.flip_card
+  module:
+    - text
+id: paragraph.flip_card.field_description_formatted_long
+field_name: field_description_formatted_long
+entity_type: paragraph
+bundle: flip_card
+label: Header
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

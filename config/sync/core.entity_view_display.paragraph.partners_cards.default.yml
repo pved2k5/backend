@@ -1,0 +1,50 @@
+uuid: baca2622-8cde-4be6-9e3a-b2c18362932a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.partners_cards.field_colorpicker_v1
+    - field.field.paragraph.partners_cards.field_description_formatted_long
+    - field.field.paragraph.partners_cards.field_entity_ref_multi_content
+    - field.field.paragraph.partners_cards.field_selector
+    - paragraphs.paragraphs_type.partners_cards
+  module:
+    - celcom_common
+    - text
+id: paragraph.partners_cards.default
+targetEntityType: paragraph
+bundle: partners_cards
+mode: default
+content:
+  field_colorpicker_v1:
+    type: celcom_common_colorswatch_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_description_formatted_long:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_entity_ref_multi_content:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_selector:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  search_api_excerpt: true

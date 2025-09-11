@@ -1,0 +1,19 @@
+uuid: 9668d546-5474-493b-900f-a67cad6c1e0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_font_color
+    - node.type.device_card
+id: node.device_card.field_font_color
+field_name: field_font_color
+entity_type: node
+bundle: device_card
+label: 'Product Price (Device Only)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

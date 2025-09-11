@@ -1,0 +1,15 @@
+uuid: ec4ae2bd-9586-4452-95c9-5363f83e3c7f
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+id: super_admin
+label: 'Super Admin'
+weight: 7
+is_admin: null
+permissions:
+  - 'administer users'
+  - 'delete own files'
+  - 'select account cancellation method'
+  - 'view user email addresses'

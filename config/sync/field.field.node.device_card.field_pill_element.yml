@@ -1,0 +1,21 @@
+uuid: 03c357bb-cc4a-467d-ad8e-3c54d30cb2b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pill_element
+    - node.type.device_card
+  module:
+    - celcom_utility
+id: node.device_card.field_pill_element
+field_name: field_pill_element
+entity_type: node
+bundle: device_card
+label: 'Pill Element'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: title_desc_field

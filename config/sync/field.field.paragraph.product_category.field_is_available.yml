@@ -1,0 +1,23 @@
+uuid: b3d21a55-e918-45ac-84b9-b5ddaa397717
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_is_available
+    - paragraphs.paragraphs_type.product_category
+id: paragraph.product_category.field_is_available
+field_name: field_is_available
+entity_type: paragraph
+bundle: product_category
+label: 'Is Trademark Category'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'true'
+  off_label: 'false'
+field_type: boolean

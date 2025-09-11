@@ -1,0 +1,10 @@
+uuid: 99078f3e-cad3-45a8-948c-724f4cbe37d7
+langcode: en
+status: true
+dependencies: {  }
+id: detail_banner
+label: 'Detail Banner'
+icon_uuid: null
+icon_default: null
+description: 'Detail Banner Paragraph Type'
+behavior_plugins: {  }

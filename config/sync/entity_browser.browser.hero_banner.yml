@@ -1,0 +1,31 @@
+uuid: 0584f65f-163f-48f2-8e99-dab3cb9fe83a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.entity_browser
+  module:
+    - views
+name: hero_banner
+label: 'Hero Banner'
+display: modal
+display_configuration:
+  width: '1150'
+  height: '750'
+  link_text: 'Add Content'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  fb215c2d-c055-4885-ae91-9540ad9366f7:
+    id: view
+    uuid: fb215c2d-c055-4885-ae91-9540ad9366f7
+    label: view
+    weight: 1
+    settings:
+      submit_text: Select
+      auto_select: false
+      view: entity_browser
+      view_display: entity_browser_2

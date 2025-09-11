@@ -1,0 +1,29 @@
+uuid: 5624afdd-2f5c-4e1c-8bd8-d65a07653068
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_entity_ref_multi_content
+    - node.type.cards
+    - paragraphs.paragraphs_type.partners_cards
+id: paragraph.partners_cards.field_entity_ref_multi_content
+field_name: field_entity_ref_multi_content
+entity_type: paragraph
+bundle: partners_cards
+label: 'Partner Cards'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      cards: cards
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

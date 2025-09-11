@@ -1,0 +1,18 @@
+uuid: aa37344a-75db-4316-8731-5ff0e919b555
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.icon_layout
+id: node.icon_layout.title
+field_name: title
+entity_type: node
+bundle: icon_layout
+label: 'Admin Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

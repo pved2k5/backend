@@ -1,0 +1,23 @@
+uuid: edbcf86c-a7e4-44d4-9a19-83f3e5e1246d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_insight_component_type
+    - paragraphs.paragraphs_type.insights_category
+  module:
+    - options
+id: paragraph.insights_category.field_insight_component_type
+field_name: field_insight_component_type
+entity_type: paragraph
+bundle: insights_category
+label: Type
+description: 'Select the Type of Insights'
+required: true
+translatable: false
+default_value:
+  -
+    value: insight_by_categories
+default_value_callback: ''
+settings: {  }
+field_type: list_string

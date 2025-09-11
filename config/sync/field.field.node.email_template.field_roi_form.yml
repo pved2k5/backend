@@ -1,0 +1,25 @@
+uuid: afe29d7f-1164-408c-9b4b-b5a0a51ec5a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_roi_form
+    - node.type.email_template
+  module:
+    - webform
+id: node.email_template.field_roi_form
+field_name: field_roi_form
+entity_type: node
+bundle: email_template
+label: 'ROI Form'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

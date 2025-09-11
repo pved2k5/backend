@@ -1,0 +1,61 @@
+uuid: d74f8efd-9df6-411d-8a74-3866f33a896d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_footer
+    - node.type.global_pages
+    - paragraphs.paragraphs_type.footer
+  module:
+    - entity_reference_revisions
+id: node.global_pages.field_footer
+field_name: field_footer
+entity_type: node
+bundle: global_pages
+label: Footer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      footer: footer
+    negate: 0
+    target_bundles_drag_drop:
+      cloudshop_plan:
+        weight: 12
+        enabled: false
+      faq:
+        weight: 13
+        enabled: false
+      footer:
+        weight: 14
+        enabled: true
+      header:
+        weight: 15
+        enabled: false
+      hero_banner:
+        weight: 16
+        enabled: false
+      icon_layout:
+        weight: 17
+        enabled: false
+      icon_title_description:
+        weight: 18
+        enabled: false
+      image_cards:
+        weight: 19
+        enabled: false
+      menu:
+        weight: 20
+        enabled: false
+      roi_forms:
+        weight: 21
+        enabled: false
+      title_description:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

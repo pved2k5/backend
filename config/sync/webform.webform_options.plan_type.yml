@@ -1,0 +1,12 @@
+uuid: b33c92f3-9616-406f-a9fd-4c67ea776447
+langcode: en
+status: true
+dependencies: {  }
+id: plan_type
+label: 'Plan Type'
+category: ''
+likert: false
+options: |-
+  Celcom_Business_Mobile_Gold_Plus: 'Celcom Business Mobile Gold Plus'
+  Celcom_Business_Mobile_Platinum: 'Celcom Business Mobile Platinum'
+  Celcom_Business_Mobile_Platinum_Plus: 'Celcom Business Mobile Platinum Plus'

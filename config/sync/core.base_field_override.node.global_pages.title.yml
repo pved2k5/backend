@@ -1,0 +1,18 @@
+uuid: 96f3b0ea-eeb1-44dc-8b70-48cac12a791d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.global_pages
+id: node.global_pages.title
+field_name: title
+entity_type: node
+bundle: global_pages
+label: 'Admin Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

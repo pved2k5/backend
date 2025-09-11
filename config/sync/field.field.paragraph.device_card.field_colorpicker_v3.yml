@@ -1,0 +1,21 @@
+uuid: c61c97f9-8888-4cb8-b0c7-3efb4fc8a037
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_colorpicker_v3
+    - paragraphs.paragraphs_type.device_card
+  module:
+    - celcom_common
+id: paragraph.device_card.field_colorpicker_v3
+field_name: field_colorpicker_v3
+entity_type: paragraph
+bundle: device_card
+label: 'Tab Inactive Color(Hex Code))'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: celcom_common_colorpicker

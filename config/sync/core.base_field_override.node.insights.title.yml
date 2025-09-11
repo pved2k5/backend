@@ -1,0 +1,18 @@
+uuid: 183b2403-a0fa-4f4c-b50f-8213c1aa2e9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.insights
+id: node.insights.title
+field_name: title
+entity_type: node
+bundle: insights
+label: 'Admin Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

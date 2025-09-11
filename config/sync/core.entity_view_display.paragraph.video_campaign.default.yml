@@ -1,0 +1,52 @@
+uuid: e1491037-28c4-465c-bf34-032b3fd22a74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video_campaign.field_colorpicker_v1
+    - field.field.paragraph.video_campaign.field_description_formatted_long
+    - field.field.paragraph.video_campaign.field_paragraph_image
+    - field.field.paragraph.video_campaign.field_paragraph_multiple
+    - paragraphs.paragraphs_type.video_campaign
+  module:
+    - celcom_common
+    - entity_reference_revisions
+    - text
+id: paragraph.video_campaign.default
+targetEntityType: paragraph
+bundle: video_campaign
+mode: default
+content:
+  field_colorpicker_v1:
+    type: celcom_common_colorswatch_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_description_formatted_long:
+    type: text_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_paragraph_image:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_paragraph_multiple:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  search_api_excerpt: true

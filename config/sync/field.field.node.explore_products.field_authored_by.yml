@@ -1,0 +1,19 @@
+uuid: 98c1c808-235d-4127-a27d-c9f4f6a79360
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_authored_by
+    - node.type.explore_products
+id: node.explore_products.field_authored_by
+field_name: field_authored_by
+entity_type: node
+bundle: explore_products
+label: 'Show Link Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

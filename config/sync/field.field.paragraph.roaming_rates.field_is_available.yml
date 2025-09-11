@@ -1,0 +1,23 @@
+uuid: 31611d72-dbcb-40ef-a916-cdc3f65e2c39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_is_available
+    - paragraphs.paragraphs_type.roaming_rates
+id: paragraph.roaming_rates.field_is_available
+field_name: field_is_available
+entity_type: paragraph
+bundle: roaming_rates
+label: 'Country Dropdown list'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

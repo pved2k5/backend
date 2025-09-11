@@ -1,17 +1,16 @@
-uuid: 01e8bcef-c103-4f9d-b6ee-65631d5a1c88
+uuid: 8c5f6f19-dba8-4b7e-84a7-db8831dfdcc4
 langcode: en
 status: true
 dependencies:
   module:
-    - color_field
+    - celcom_utility
     - node
 id: node.field_background_color
 field_name: field_background_color
 entity_type: node
-type: color_field_type
-settings:
-  format: '#HEXHEX'
-module: color_field
+type: title_desc_field
+settings: {  }
+module: celcom_utility
 locked: false
 cardinality: 1
 translatable: true

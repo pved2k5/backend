@@ -1,0 +1,10 @@
+uuid: fd777c5d-eea7-42cd-9c20-d03871a3382e
+langcode: en
+status: true
+dependencies: {  }
+id: video_banner
+label: 'Video Banner'
+icon_uuid: null
+icon_default: null
+description: 'Video Banner Paragraph Type'
+behavior_plugins: {  }

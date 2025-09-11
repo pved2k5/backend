@@ -1,0 +1,31 @@
+uuid: 8ab593cc-fe60-4263-96ff-956abebec8c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.entity_browser
+  module:
+    - views
+name: detail_banner
+label: 'Detail Banner'
+display: modal
+display_configuration:
+  width: '1150'
+  height: '750'
+  link_text: 'Add Content'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  b8d858b2-33ed-4838-8349-ca8c258125d4:
+    id: view
+    uuid: b8d858b2-33ed-4838-8349-ca8c258125d4
+    label: view
+    weight: 1
+    settings:
+      submit_text: Select
+      auto_select: false
+      view: entity_browser
+      view_display: entity_browser_11

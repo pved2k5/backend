@@ -1,0 +1,18 @@
+uuid: edcb2666-3da9-4afa-869b-2df7ff997270
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.cards
+id: node.cards.title
+field_name: title
+entity_type: node
+bundle: cards
+label: 'Admin Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

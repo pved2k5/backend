@@ -1,0 +1,19 @@
+uuid: cbb3083f-7b4a-423f-af0a-760c51ecf08b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_authored_by
+    - node.type.plan_table
+id: node.plan_table.field_authored_by
+field_name: field_authored_by
+entity_type: node
+bundle: plan_table
+label: 'Dial Help Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

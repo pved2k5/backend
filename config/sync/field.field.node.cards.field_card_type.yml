@@ -1,0 +1,23 @@
+uuid: cca632d3-3ccc-4805-ae1a-1e0730d2e711
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_card_type
+    - node.type.cards
+  module:
+    - options
+id: node.cards.field_card_type
+field_name: field_card_type
+entity_type: node
+bundle: cards
+label: 'Card Type'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: promo_card
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,31 @@
+uuid: 02242a04-40a8-4fc8-9595-1aab5217f457
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.entity_browser
+  module:
+    - views
+name: flip_cards
+label: 'Flip Cards'
+display: modal
+display_configuration:
+  width: '1150'
+  height: '750'
+  link_text: 'Add Content'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  4941f17c-4edb-4b4f-b354-642469645763:
+    id: view
+    uuid: 4941f17c-4edb-4b4f-b354-642469645763
+    label: view
+    weight: 1
+    settings:
+      submit_text: Select
+      auto_select: false
+      view: entity_browser
+      view_display: entity_browser_9

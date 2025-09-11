@@ -1,0 +1,21 @@
+uuid: 7f6b9d4c-e8d9-4507-a516-578541aa8805
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pill_element
+    - node.type.plan_table
+  module:
+    - celcom_utility
+id: node.plan_table.field_pill_element
+field_name: field_pill_element
+entity_type: node
+bundle: plan_table
+label: 'Pill Element'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: title_desc_field

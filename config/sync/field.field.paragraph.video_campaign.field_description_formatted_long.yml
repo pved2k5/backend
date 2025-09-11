@@ -1,0 +1,21 @@
+uuid: c3fdaa9d-e073-441e-8bb2-02c8e011396d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_formatted_long
+    - paragraphs.paragraphs_type.video_campaign
+  module:
+    - text
+id: paragraph.video_campaign.field_description_formatted_long
+field_name: field_description_formatted_long
+entity_type: paragraph
+bundle: video_campaign
+label: Header
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

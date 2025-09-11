@@ -1,105 +1,83 @@
-uuid: 649bf889-9a8f-4167-82a9-ba37caa3f991
+uuid: bcd7d348-e824-47d8-ad28-7a7aff154150
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.full_html
   module:
-    - ckeditor5
+    - ckeditor
 _core:
-  default_config_hash: lurcn8yf33g3Dkzdc55cTfJa9salGp9ytSYyG1s7QMI
+  default_config_hash: 967ijj7p6i7rwrYl7r08WQFeCY_c23YAh0h8u-w_CXM
 format: full_html
-editor: ckeditor5
+editor: ckeditor
 settings:
   toolbar:
-    items:
-      - bold
-      - italic
-      - strikethrough
-      - superscript
-      - subscript
-      - removeFormat
-      - '|'
-      - link
-      - '|'
-      - bulletedList
-      - numberedList
-      - '|'
-      - blockQuote
-      - drupalInsertImage
-      - insertTable
-      - horizontalLine
-      - '|'
-      - heading
-      - codeBlock
-      - '|'
-      - sourceEditing
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Underline
+            - Strike
+            - JustifyCenter
+            - JustifyLeft
+            - JustifyBlock
+            - JustifyRight
+            - '-'
+        -
+          name: Linking
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+            - Table
+        -
+          name: 'Block Formatting'
+          items:
+            - CreateDiv
+            - Format
+            - WidgetTemplateMenu
+            - widgetbootstrapTwoCol
+        -
+          name: Tools
+          items:
+            - ShowBlocks
+            - Source
+            - Maximize
+        -
+          name: Style
+          items:
+            - Styles
+            - '-'
+            - TextColor
+        -
+          name: Template
+          items:
+            - Templates
   plugins:
-    ckeditor5_codeBlock:
-      languages:
-        -
-          label: 'Plain text'
-          language: plaintext
-        -
-          label: C
-          language: c
-        -
-          label: 'C#'
-          language: cs
-        -
-          label: C++
-          language: cpp
-        -
-          label: CSS
-          language: css
-        -
-          label: Diff
-          language: diff
-        -
-          label: HTML
-          language: html
-        -
-          label: Java
-          language: java
-        -
-          label: JavaScript
-          language: javascript
-        -
-          label: PHP
-          language: php
-        -
-          label: Python
-          language: python
-        -
-          label: Ruby
-          language: ruby
-        -
-          label: TypeScript
-          language: typescript
-        -
-          label: XML
-          language: xml
-    ckeditor5_heading:
-      enabled_headings:
-        - heading2
-        - heading3
-        - heading4
-        - heading5
-        - heading6
-    ckeditor5_imageResize:
-      allow_resize: true
-    ckeditor5_list:
-      properties:
-        reversed: true
-        startIndex: true
-      multiBlock: true
-    ckeditor5_sourceEditing:
-      allowed_tags: {  }
+    stylescombo:
+      styles: "h1.text-center|Text Center\r\nh2.text-center|Text Center Paragraph\r\ndiv.text-center|Text Center Div\r\ndiv.freetext-padding|Extra Padding"
+    templates:
+      template_path: ''
+      replace_content: 0
+    colorbutton:
+      colors: '333333,CD74E6,AC725E,D06B64,F83A22,FA573C,FF7537,FFAd46,42D692,16A765,7BD148,B3DC6A,FBE983,92E1C0,9FE1E7,9FC6E7,4986E7,9A9CFF,B99AFF,C2C2C2,CABDBF,CCA6AC,F691B2,A47AE2'
 image_upload:
   status: true
   scheme: public
-  directory: inline-images
-  max_size: null
+  directory: cms-assets/desktop
+  max_size: '5 MB'
   max_dimensions:
-    width: null
-    height: null
+    width: 1600
+    height: 900

@@ -1,0 +1,14 @@
+uuid: 7cb87d0a-bd96-4490-b622-0f3199f0daf2
+langcode: en
+status: true
+dependencies: {  }
+id: media_youtube
+label: 'Media YouTube'
+description: 'Media YouTube Video Support'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name

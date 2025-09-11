@@ -1,0 +1,61 @@
+uuid: e618a0cd-81d3-4ba4-8d4b-62b771af6703
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.plan_table_cms.field_animation
+    - field.field.paragraph.plan_table_cms.field_colorpicker_v1
+    - field.field.paragraph.plan_table_cms.field_description_formatted_long
+    - field.field.paragraph.plan_table_cms.field_entity_ref_multi_content
+    - field.field.paragraph.plan_table_cms.field_selector
+    - paragraphs.paragraphs_type.plan_table_cms
+  module:
+    - celcom_common
+    - chosen_field
+    - text
+id: paragraph.plan_table_cms.default
+targetEntityType: paragraph
+bundle: plan_table_cms
+mode: default
+content:
+  field_animation:
+    type: chosen_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_colorpicker_v1:
+    type: celcom_common_colorpicker_widget
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_description_formatted_long:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_entity_ref_multi_content:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_selector:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 20
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

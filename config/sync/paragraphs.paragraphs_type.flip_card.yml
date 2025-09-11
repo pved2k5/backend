@@ -1,0 +1,10 @@
+uuid: bf6adb31-636c-4b6f-a93d-dd2d034829b8
+langcode: en
+status: true
+dependencies: {  }
+id: flip_card
+label: 'Flip Card'
+icon_uuid: null
+icon_default: null
+description: 'Flip Card Paragraph Type'
+behavior_plugins: {  }

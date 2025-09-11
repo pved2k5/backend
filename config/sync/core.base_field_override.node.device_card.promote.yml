@@ -1,0 +1,22 @@
+uuid: 9af889b6-b032-4d83-a7e1-028c3379d95f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.device_card
+id: node.device_card.promote
+field_name: promote
+entity_type: node
+bundle: device_card
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: 5838b9eb-c31c-4b34-a03c-5a147643330a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.plan_table
+id: node.plan_table.title
+field_name: title
+entity_type: node
+bundle: plan_table
+label: 'Admin Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

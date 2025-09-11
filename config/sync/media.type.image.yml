@@ -1,12 +1,12 @@
-uuid: 1d3a60e2-3d12-4548-ac14-e3e2916e4ac1
+uuid: bf64759c-7544-4630-b3b7-85899459c8e2
 langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: 6Qope5wG7HUpV0tPOBMtDI_GZkHFcF1Xj4hgD9Cu_hM
 id: image
-label: Image
-description: 'Use local images for reusable media.'
+label: 'Media Desktop'
+description: 'Use Desktop images for reusable media.'
 source: image
 queue_thumbnail_downloads: false
 new_revision: true

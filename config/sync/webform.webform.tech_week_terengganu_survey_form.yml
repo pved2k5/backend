@@ -1,0 +1,538 @@
+uuid: 91f1c85a-6b68-4331-b15f-5e3ff244c2bf
+langcode: en
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 47
+template: false
+archive: false
+id: tech_week_terengganu_survey_form
+title: 'Tech Week @Terengganu Survey Form(BM)'
+description: ''
+categories: {  }
+elements: |-
+  personal_details:
+    '#type': webform_section
+    '#title': 'Borang Kaji Selidik Tech Week'
+    '#access_create_roles': {  }
+    '#access_update_roles': {  }
+    '#access_view_roles': {  }
+    '#access': false
+    name:
+      '#type': textfield
+      '#title': Nama
+      '#title_display': before
+      '#placeholder': 'Isikan nama penuh seperti MyKad/Pasport'
+      '#required': true
+      '#required_error': 'Sila isikan nama penuh anda'
+      '#multiple__sorting': false
+      '#multiple__operations': false
+      '#multiple__add': false
+      '#multiple__remove': false
+      '#multiple__add_more': false
+      '#multiple__add_more_input': false
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': name
+    contact_number:
+      '#type': textfield
+      '#title': 'Nombor mudah alih'
+      '#title_display': before
+      '#placeholder': 'Isikan nombor mudah alih anda'
+      '#required': true
+      '#required_error': 'Sila isikan nombor mudah alih anda'
+      '#pattern': '[0-9]{10,11}'
+      '#pattern_error': 'Please enter the correct mobile number'
+      '#multiple__sorting': false
+      '#multiple__operations': false
+      '#multiple__add': false
+      '#multiple__remove': false
+      '#multiple__add_more': false
+      '#multiple__add_more_input': false
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': mob_number
+    company_name:
+      '#type': textfield
+      '#title': 'Nama Syarikat'
+      '#placeholder': 'Isikan nama syarikat '
+      '#required': true
+      '#required_error': 'Sila isikan nama syarikat anda'
+      '#multiple__sorting': false
+      '#multiple__operations': false
+      '#multiple__add': false
+      '#multiple__remove': false
+      '#multiple__add_more': false
+      '#multiple__add_more_input': false
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': company
+    designation:
+      '#type': textfield
+      '#title': Jawatan
+      '#title_display': before
+      '#placeholder': 'Isikan jawatan anda'
+      '#required': true
+      '#required_error': 'SIla isikan jawatan anda'
+      '#multiple__sorting': false
+      '#multiple__operations': false
+      '#multiple__add': false
+      '#multiple__remove': false
+      '#multiple__add_more': false
+      '#multiple__add_more_input': false
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': job_position
+    email_address:
+      '#type': textfield
+      '#title': 'Alamat Emel'
+      '#title_display': before
+      '#placeholder': 'Isikan alamat emel anda'
+      '#required': true
+      '#required_error': 'Sila isikan alamat emel anda'
+      '#pattern': '^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+      '#pattern_error': 'Use only alphanumeric, - , @ , ( _ ), ( . )'
+      '#multiple__sorting': false
+      '#multiple__operations': false
+      '#multiple__add': false
+      '#multiple__remove': false
+      '#multiple__add_more': false
+      '#multiple__add_more_input': false
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': email
+    survey_q0:
+      '#type': select
+      '#title': 'Solusi yang manakah anda berminat?'
+      '#placeholder': 'Pilih solusi yang anda minat'
+      '#options':
+        'Cloud Solutions ': 'Cloud Solutions '
+        'Cybersecurity Solutions': 'Cybersecurity Solutions'
+        'Metaverse Experience': 'Metaverse Experience'
+        'Mixed Reality Hololens (IoT)': 'Mixed Reality Hololens (IoT)'
+        'Mobile and Fixed solutions': 'Mobile and Fixed solutions'
+        'PeopleTracker for Retail': 'PeopleTracker for Retail'
+        'Smart Agriculture (IoT)': 'Smart Agriculture (IoT)'
+        'Smart Fleet Management (IoT)': 'Smart Fleet Management (IoT)'
+        'Smart Poultry (IoT)': 'Smart Poultry (IoT)'
+        'Smart Surveillance (IoT)': 'Smart Surveillance (IoT)'
+        'VR Education / Training ': 'VR Education / Training '
+        'VR Gaming ': 'VR Gaming '
+      '#required': true
+      '#required_error': 'Sila pilih solusi yang anda minat'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': survey_q_zeros
+    survey_q1:
+      '#type': select
+      '#title': 'Sila berikan penilaian anda terhadap pameran ini?'
+      '#placeholder': 'Pilih penilaian anda dari 1 hingga 5'
+      '#options':
+        '5 - Cemerlang': '5 - Cemerlang'
+        '4 - Sangat Baik': '4 - Sangat Baik'
+        '3 - Baik': '3 - Baik'
+        '2 - Memuaskan': '2 - Memuaskan'
+        '1 - Kurang Memuaskan': '1 - Kurang Memuaskan'
+      '#required': true
+      '#required_error': 'Sila pilih penilaian anda dari 1 hingga 5'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': survey_q_one
+    survey_q2a:
+      '#type': select
+      '#title': 'Sila berikan penilaian kualiti solusi tersedia?'
+      '#placeholder': 'Pilih penilaian anda dari 1 hingga 5'
+      '#options':
+        '5 - Cemerlang': '5 - Cemerlang'
+        '4 - Sangat Baik ': '4 - Sangat Baik '
+        '3 - Baik ': '3 - Baik '
+        '2 - Memuaskan': '2 - Memuaskan'
+        '1 - Kurang Memuaskan': '1 - Kurang Memuaskan'
+      '#required': true
+      '#required_error': 'Silah pilih penilaian anda dari 1 hingga 5'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': survey_q_twoa
+    survey_q2b:
+      '#type': select
+      '#title': 'Sila berikan penilaian kualiti informasi yang dikongsikan?'
+      '#placeholder': 'Pilih penilaian anda dari 1 hingga 5'
+      '#options':
+        '5 - Cemerlang': '5 - Cemerlang'
+        '4 - Sangat Baik': '4 - Sangat Baik'
+        '3 - Baik': '3 - Baik'
+        '2 - Memuaskan': '2 - Memuaskan'
+        '1 - Kurang Memuaskan': '1 - Kurang Memuaskan'
+      '#required': true
+      '#required_error': 'Sila pilih penilaian anda dari 1 hingga 5'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': survey_q_twob
+    survey_q3:
+      '#type': select
+      '#title': 'Adakah solusi dipamerkan adalah relevan bagi perusahaan-perusahaan di Malaysia?'
+      '#placeholder': 'Pilih penilaian anda dari 1 hingga 5'
+      '#options':
+        '5 - Sangat Relevan': '5 - Sangat Relevan'
+        '4 - Relevan': '4 - Relevan'
+        '3 - Sederhana': '3 - Kurang relevan'
+        '2 - Kurang relevan': '2 - Kurang relevan'
+        '1 - Tidak relevan ': '1 - Tidak relevan '
+      '#required': true
+      '#required_error': 'Sila pilih penilaian anda dari 1 hingga 5'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': survey_q_three
+    survey_q4a:
+      '#type': select
+      '#title': 'Pameran solusi pertama yang menarik perhatian anda'
+      '#placeholder': 'Pilih pameran solusi pertama anda'
+      '#options':
+        'Cloud Solutions ': 'Cloud Solutions '
+        'Cybersecurity Solutions': 'Cybersecurity Solutions'
+        'Metaverse Experience': 'Metaverse Experience'
+        'Mixed Reality Hololens (IoT)': 'Mixed Reality Hololens (IoT)'
+        'Mobile and Fixed solutions': 'Mobile and Fixed solutions'
+        'PeopleTracker for Retail': 'PeopleTracker for Retail'
+        'Smart Agriculture (IoT)': 'Smart Agriculture (IoT)'
+        'Smart Fleet Management (IoT)': 'Smart Fleet Management (IoT)'
+        'Smart Poultry (IoT)': 'Smart Poultry (IoT)'
+        'Smart Surveillance (IoT)': 'Smart Surveillance (IoT)'
+        'VR Education / Training ': 'VR Education / Training '
+        'VR Gaming ': 'VR Gaming '
+      '#required': true
+      '#required_error': 'Sila pilih pameran solusi pertama anda'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': survey_q_foura
+    survey_q4b:
+      '#type': select
+      '#title': 'Pameran solusi kedua yang menarik perhatian anda'
+      '#placeholder': 'Pilih pameran solusi kedua anda'
+      '#options':
+        'Cloud Solutions ': 'Cloud Solutions '
+        'Cybersecurity Solutions': 'Cybersecurity Solutions'
+        'Metaverse Experience': 'Metaverse Experience'
+        'Mixed Reality Hololens (IoT)': 'Mixed Reality Hololens (IoT)'
+        'Mobile and Fixed solutions': 'Mobile and Fixed solutions'
+        'PeopleTracker for Retail': 'PeopleTracker for Retail'
+        'Smart Agriculture (IoT)': 'Smart Agriculture (IoT)'
+        'Smart Fleet Management (IoT)': 'Smart Fleet Management (IoT)'
+        'Smart Poultry (IoT)': 'Smart Poultry (IoT)'
+        'Smart Surveillance (IoT)': 'Smart Surveillance (IoT)'
+        'VR Education / Training ': 'VR Education / Training '
+        'VR Gaming ': 'VR Gaming '
+      '#required': true
+      '#required_error': 'Sila pilih pameran solusi kedua anda'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': survey_q_fourb
+    survey_q4c:
+      '#type': select
+      '#title': 'Pameran solusi ketiga yang menarik perhatian anda'
+      '#placeholder': 'Pilih pameran solusi ketiga anda'
+      '#options':
+        'Cloud Solutions ': 'Cloud Solutions '
+        'Cybersecurity Solutions': 'Cybersecurity Solutions'
+        'Metaverse Experience': 'Metaverse Experience'
+        'Mixed Reality Hololens (IoT)': 'Mixed Reality Hololens (IoT)'
+        'Mobile and Fixed solutions': 'Mobile and Fixed solutions'
+        'PeopleTracker for Retail': 'PeopleTracker for Retail'
+        'Smart Agriculture (IoT)': 'Smart Agriculture (IoT)'
+        'Smart Fleet Management (IoT)': 'Smart Fleet Management (IoT)'
+        'Smart Poultry (IoT)': 'Smart Poultry (IoT)'
+        'Smart Surveillance (IoT)': 'Smart Surveillance (IoT)'
+        'VR Education / Training ': 'VR Education / Training '
+        'VR Gaming ': 'VR Gaming '
+      '#required': true
+      '#required_error': 'Sila pilih pameran solusi ketiga anda'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': survey_q_fourc
+    survey_q5:
+      '#type': textarea
+      '#title': 'Apakah jenis solusi yang anda ingin lihat lebih lanjut pada masa hadapan?'
+      '#placeholder': 'Sila jelaskan'
+      '#required': true
+      '#required_error': 'Sila jelaskan jenis solusi yang anda ingin lihat lebih lanjut pada masa hadapan'
+      '#multiple__sorting': false
+      '#multiple__operations': false
+      '#multiple__add': false
+      '#multiple__remove': false
+      '#multiple__add_more': false
+      '#multiple__add_more_input': false
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': survey_q_five
+    survey_q6:
+      '#type': select
+      '#title': 'Adakah anda akan mencadangkan Celcom Business kepada kawan atau rakan sekerja?'
+      '#placeholder': 'Pilih penilaian anda dari 1 hingga 5'
+      '#options':
+        '5 - Sangat menggalakkan ': '5 - Sangat menggalakkan '
+        '4 - Akan menggalakkan ': '4 - Akan menggalakkan '
+        '3 - Tiada Komen ': '3 - Tiada Komen '
+        '2 - Tidak menggalakkan ': '2 - Tidak menggalakkan '
+        '1 - Sangat Tidak menggalakkan ': '1 - Sangat Tidak menggalakkan '
+      '#required': true
+      '#required_error': 'Sila pilih penilaian anda dari 1 hingga 5'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': survey_q_six
+    other_comment:
+      '#type': textarea
+      '#title': 'Masukkan saranan anda disini'
+      '#placeholder': 'Please state your comments'
+      '#multiple__sorting': false
+      '#multiple__operations': false
+      '#multiple__add': false
+      '#multiple__remove': false
+      '#multiple__add_more': false
+      '#multiple__add_more_input': false
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': other_enquiries
+    actions:
+      '#type': webform_actions
+      '#title': 'Submit button(s)'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#submit__label': Hantar
+      '#shop_key': submit
+    status:
+      '#type': item
+      '#title': status
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#markup': submitted
+    submission_type:
+      '#type': item
+      '#title': submission_type
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#markup': tech_week_terengganu
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: both
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

@@ -1,0 +1,21 @@
+uuid: af242591-d5ab-497c-8d32-240f45c43b00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_order
+    - paragraphs.paragraphs_type.story_telling
+  module:
+    - options
+id: paragraph.story_telling.field_layout_order
+field_name: field_layout_order
+entity_type: paragraph
+bundle: story_telling
+label: 'Layout Order'
+description: 'Please select the layout order.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

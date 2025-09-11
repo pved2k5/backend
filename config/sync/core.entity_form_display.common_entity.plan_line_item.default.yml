@@ -1,0 +1,58 @@
+uuid: bf957b21-57fa-4faa-b270-40e8893ea2d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - celcom_entity.common_entity_type.plan_line_item
+id: common_entity.plan_line_item.default
+targetEntityType: common_entity
+bundle: plan_line_item
+mode: default
+content:
+  desc_plain_primary:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 2
+      placeholder: 'Enter the Line Item Label'
+    third_party_settings:
+      field_states_ui:
+        form:
+          type: ''
+          list: ''
+          add: Add
+  desc_plain_secondary:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 2
+      placeholder: 'Enter the Tooltip Description'
+    third_party_settings:
+      field_states_ui:
+        form:
+          type: ''
+          list: ''
+          add: Add
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  desc_richtext_primary: true
+  desc_richtext_secondary: true
+  text_plain_primary: true
+  text_plain_secondary: true
+  weight: true

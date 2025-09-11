@@ -1,0 +1,34 @@
+uuid: bcb3ad98-ef9b-41ce-a000-88ad372ebbf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.latest_insights.field_description_formatted_long
+    - field.field.paragraph.latest_insights.field_is_available
+    - paragraphs.paragraphs_type.latest_insights
+  module:
+    - text
+id: paragraph.latest_insights.default
+targetEntityType: paragraph
+bundle: latest_insights
+mode: default
+content:
+  field_description_formatted_long:
+    type: text_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_is_available:
+    type: boolean
+    label: inline
+    settings:
+      format: true-false
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,21 @@
+uuid: 9b746a02-46b5-4012-85bf-c2dc0484fa72
+langcode: en
+status: true
+dependencies:
+  config:
+    - celcom_roaming.celcom_roaming_type.roamsaver
+    - field.storage.celcom_roaming.field_roam_saver_sms
+  module:
+    - celcom_roaming
+id: celcom_roaming.roamsaver.field_roam_saver_sms
+field_name: field_roam_saver_sms
+entity_type: celcom_roaming
+bundle: roamsaver
+label: 'Roam Saver SMS'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: combo_field

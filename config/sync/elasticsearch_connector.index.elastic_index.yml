@@ -1,0 +1,9 @@
+uuid: 506558e2-db58-41a0-a72d-e06575b24df3
+langcode: en
+status: true
+dependencies: {  }
+index_id: elastic_index
+name: 'Elastic Index'
+num_of_shards: 5
+num_of_replica: 1
+server: eos_cluster

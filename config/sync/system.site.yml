@@ -1,15 +1,15 @@
 _core:
-  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
 langcode: en
-uuid: d9616e55-5e39-4a17-9189-390d1fb2ddac
-name: SP
-mail: ved.nitd@gmail.com
+uuid: f78cd45d-8bd1-4cdd-b5ca-fb8493fe4f44
+name: 'Business Portal'
+mail: ved.prakash@axiatadigitallabs.com
 slogan: ''
 page:
   403: ''
-  404: ''
-  front: /node/52
+  404: /node/56
+  front: /node/1025
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
-mail_notification: null
+mail_notification: ''

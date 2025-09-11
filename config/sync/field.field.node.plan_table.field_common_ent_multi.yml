@@ -1,0 +1,29 @@
+uuid: 9853c2f9-e916-4d23-b4ba-9047af2a87f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - celcom_entity.common_entity_type.plan_popup
+    - field.storage.node.field_common_ent_multi
+    - node.type.plan_table
+id: node.plan_table.field_common_ent_multi
+field_name: field_common_ent_multi
+entity_type: node
+bundle: plan_table
+label: Subscribe
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:common_entity'
+  handler_settings:
+    target_bundles:
+      plan_popup: plan_popup
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

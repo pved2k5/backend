@@ -1,0 +1,10 @@
+uuid: cfa9473b-7d03-4c70-b7aa-a9ded76186c7
+langcode: en
+status: true
+dependencies: {  }
+id: device_cards
+label: 'Device Cards (Adv.)'
+icon_uuid: null
+icon_default: null
+description: 'Device Cards Paragraph Type'
+behavior_plugins: {  }

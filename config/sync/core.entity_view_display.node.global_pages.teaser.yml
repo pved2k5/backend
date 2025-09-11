@@ -1,11 +1,15 @@
-uuid: 6b4de9ef-e0fc-461b-9761-6f4952b428ea
+uuid: a8163f11-ce78-4044-90d6-aeabf60698e4
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.global_pages.field_content
+    - field.field.node.global_pages.field_component_list
+    - field.field.node.global_pages.field_footer
+    - field.field.node.global_pages.field_header
     - field.field.node.global_pages.field_meta_tags
+    - field.field.node.global_pages.field_page_language
+    - field.field.node.global_pages.field_title_plain
     - node.type.global_pages
   module:
     - user
@@ -14,11 +18,21 @@ targetEntityType: node
 bundle: global_pages
 mode: teaser
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
     region: content
 hidden:
-  field_content: true
+  field_component_list: true
+  field_footer: true
+  field_header: true
   field_meta_tags: true
+  field_page_language: true
+  field_title_plain: true
+  search_api_excerpt: true

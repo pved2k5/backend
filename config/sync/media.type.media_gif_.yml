@@ -1,0 +1,14 @@
+uuid: dc9e0e9a-b2b4-4b89-9817-a421b4ce325f
+langcode: en
+status: true
+dependencies: {  }
+id: media_gif_
+label: 'Media Gif '
+description: 'Use Gif images for reusable media.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name

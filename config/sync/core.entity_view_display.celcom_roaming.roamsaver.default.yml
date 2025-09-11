@@ -1,0 +1,216 @@
+uuid: b3a9977e-d0e3-45bf-a417-8843d38c588c
+langcode: en
+status: true
+dependencies:
+  config:
+    - celcom_roaming.celcom_roaming_type.roamsaver
+    - field.field.celcom_roaming.roamsaver.field_roam_saver_calls
+    - field.field.celcom_roaming.roamsaver.field_roam_saver_data
+    - field.field.celcom_roaming.roamsaver.field_roam_saver_sms
+    - field.field.celcom_roaming.roamsaver.field_roaming_pass
+  module:
+    - celcom_roaming
+    - field_group
+third_party_settings:
+  field_group:
+    group_country_detail:
+      children:
+        - name
+        - code
+        - iso_code
+        - network_operator
+      label: 'Country Detail'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: view-rs-country-detail
+        open: true
+        description: ''
+    group_roam_saver_data:
+      children:
+        - roamsaverdata_label
+        - field_roam_saver_data
+        - roamsaverdata_helptext
+      label: 'Roam Saver Data'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: view-rs-data
+        open: true
+        description: ''
+    group_roam_saver_calls:
+      children:
+        - roamsavercalls_label
+        - field_roam_saver_calls
+        - roamsavercalls_helptext
+      label: 'Roam Saver Calls'
+      parent_name: ''
+      region: content
+      weight: 2
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: view-rs-calls
+        open: true
+        description: ''
+        required_fields: false
+    group_roam_saver_sms:
+      children:
+        - roamsaversms_label
+        - field_roam_saver_sms
+        - roamsaversms_helptext
+      label: 'Roam Saver SMS'
+      parent_name: ''
+      region: content
+      weight: 3
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: view-rs-sms
+        open: true
+        description: ''
+        required_fields: false
+    group_roaming_passes:
+      children:
+        - field_roaming_pass
+      label: 'Roaming Passes'
+      parent_name: ''
+      region: content
+      weight: 4
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: view-rs-pass
+        open: true
+        description: ''
+        required_fields: false
+id: celcom_roaming.roamsaver.default
+targetEntityType: celcom_roaming
+bundle: roamsaver
+mode: default
+content:
+  code:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_roam_saver_calls:
+    type: combo_field_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_roam_saver_data:
+    type: combo_field_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_roam_saver_sms:
+    type: combo_field_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_roaming_pass:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  iso_code:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  network_operator:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  roamsavercalls_helptext:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  roamsavercalls_label:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  roamsaverdata_helptext:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  roamsaverdata_label:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  roamsaversms_helptext:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  roamsaversms_label:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+hidden:
+  search_api_excerpt: true
+  status: true
+  user_id: true

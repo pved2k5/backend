@@ -1,0 +1,25 @@
+uuid: f849ae65-1f8f-4159-8661-16a111bc5996
+langcode: en
+status: true
+dependencies:
+  config:
+    - celcom_entity.common_entity_type.roi_status_message
+    - field.storage.common_entity.field_roi_form
+  module:
+    - webform
+id: common_entity.roi_status_message.field_roi_form
+field_name: field_roi_form
+entity_type: common_entity
+bundle: roi_status_message
+label: 'ROI Form'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

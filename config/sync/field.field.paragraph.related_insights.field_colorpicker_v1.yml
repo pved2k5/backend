@@ -1,0 +1,21 @@
+uuid: 1fc9febe-ed69-4049-af0a-9f1d2262efad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_colorpicker_v1
+    - paragraphs.paragraphs_type.related_insights
+  module:
+    - celcom_common
+id: paragraph.related_insights.field_colorpicker_v1
+field_name: field_colorpicker_v1
+entity_type: paragraph
+bundle: related_insights
+label: 'Background Color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: celcom_common_colorpicker

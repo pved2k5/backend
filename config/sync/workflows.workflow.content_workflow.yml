@@ -1,0 +1,137 @@
+uuid: aff45d32-5435-4f93-b008-72948262ebc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.banner
+    - node.type.benefit_banner
+    - node.type.cards
+    - node.type.device_card
+    - node.type.email_template
+    - node.type.explore_products
+    - node.type.faq_layout
+    - node.type.free_text
+    - node.type.global_pages
+    - node.type.icon_layout
+    - node.type.insights
+    - node.type.plan_table
+    - node.type.solution_card
+    - node.type.tab_navigation
+    - node.type.video_banner
+  module:
+    - content_moderation
+id: content_workflow
+label: 'Content Workflow'
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Draft
+      weight: -3
+      published: false
+      default_revision: false
+    draft_to_publish:
+      label: 'Draft to publish'
+      weight: -1
+      published: true
+      default_revision: false
+    published:
+      label: Published
+      weight: 2
+      published: true
+      default_revision: true
+    review_again:
+      label: 'Review Again'
+      weight: 1
+      published: false
+      default_revision: false
+    review_again_to_draft:
+      label: 'Review Again to Draft'
+      weight: 3
+      published: false
+      default_revision: false
+    send_for_review:
+      label: 'Send for Review'
+      weight: -2
+      published: false
+      default_revision: false
+    send_to_draft:
+      label: 'Send to Draft'
+      weight: 0
+      published: false
+      default_revision: false
+  transitions:
+    create_new_draft:
+      label: 'Create New Draft'
+      from:
+        - draft
+        - published
+      to: draft
+      weight: -4
+    draft_to_publish:
+      label: 'Draft to Publish'
+      from:
+        - draft_to_publish
+      to: published
+      weight: 0
+    publish:
+      label: Publish
+      from:
+        - draft
+        - published
+      to: published
+      weight: 2
+    review_again:
+      label: 'Review Again'
+      from:
+        - send_to_draft
+      to: review_again
+      weight: 1
+    review_again_to_draft:
+      label: 'Review Again to Draft'
+      from:
+        - review_again
+      to: send_to_draft
+      weight: 4
+    review_again_to_publish:
+      label: 'Review Again to publish'
+      from:
+        - review_again
+      to: published
+      weight: 3
+    send_for_review:
+      label: 'Send for Review'
+      from:
+        - draft
+      to: send_for_review
+      weight: -3
+    send_for_review_to_draft:
+      label: 'Send for Review to Draft'
+      from:
+        - send_for_review
+      to: send_to_draft
+      weight: -1
+    send_for_review_to_publish:
+      label: 'Send for Review to Publish'
+      from:
+        - send_for_review
+      to: published
+      weight: -2
+  entity_types:
+    node:
+      - banner
+      - benefit_banner
+      - cards
+      - device_card
+      - email_template
+      - explore_products
+      - faq_layout
+      - free_text
+      - global_pages
+      - icon_layout
+      - insights
+      - plan_table
+      - solution_card
+      - tab_navigation
+      - video_banner
+  default_moderation_state: draft

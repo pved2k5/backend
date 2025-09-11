@@ -1,0 +1,15 @@
+uuid: 6bbec024-423b-4c28-b257-c004f071273d
+langcode: en
+status: true
+dependencies: {  }
+id: dev
+label: Dev
+description: 'Dev Configuration'
+weight: 0
+folder: ../config/split/dev
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

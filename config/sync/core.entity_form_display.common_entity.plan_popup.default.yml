@@ -1,0 +1,65 @@
+uuid: 0445c7cb-41bc-4614-82cc-97d794b0e844
+langcode: en
+status: true
+dependencies:
+  config:
+    - celcom_entity.common_entity_type.plan_popup
+    - field.field.common_entity.plan_popup.field_icon
+  module:
+    - file
+id: common_entity.plan_popup.default
+targetEntityType: common_entity
+bundle: plan_popup
+mode: default
+content:
+  desc_plain_primary:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 2
+      placeholder: 'Enter the Label HTML'
+    third_party_settings: {  }
+  field_icon:
+    type: file_generic
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  text_plain_primary:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Enter the Button Label'
+    third_party_settings: {  }
+  text_plain_secondary:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Enter the Dial Code'
+    third_party_settings: {  }
+hidden:
+  desc_plain_secondary: true
+  desc_richtext_primary: true
+  desc_richtext_secondary: true
+  weight: true

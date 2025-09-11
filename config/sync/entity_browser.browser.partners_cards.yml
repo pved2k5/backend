@@ -1,0 +1,31 @@
+uuid: 8630c649-2c41-476a-bc42-6da2b36d62fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.entity_browser
+  module:
+    - views
+name: partners_cards
+label: 'Partners Cards'
+display: modal
+display_configuration:
+  width: '1150'
+  height: '750'
+  link_text: 'Add Content'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  eb57bbf5-85e5-4fee-9dbf-9bb19cf5d01e:
+    id: view
+    uuid: eb57bbf5-85e5-4fee-9dbf-9bb19cf5d01e
+    label: view
+    weight: 1
+    settings:
+      submit_text: Select
+      auto_select: false
+      view: entity_browser
+      view_display: entity_browser_6

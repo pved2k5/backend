@@ -1,0 +1,21 @@
+uuid: 0983aa65-ce81-4e7a-823b-52a7ee2182d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_colorpicker_v2
+    - paragraphs.paragraphs_type.roaming_rates
+  module:
+    - celcom_common
+id: paragraph.roaming_rates.field_colorpicker_v2
+field_name: field_colorpicker_v2
+entity_type: paragraph
+bundle: roaming_rates
+label: 'Card Header Color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: celcom_common_colorpicker

@@ -1,0 +1,8 @@
+uuid: 0e9705ad-d70d-43eb-9c97-d5b83de0fd42
+langcode: en
+status: true
+dependencies: {  }
+id: generic-menu
+label: 'Generic Menu'
+description: 'Generic Menu'
+locked: false

@@ -1,0 +1,53 @@
+uuid: f694ddcc-885b-46d3-9cc0-7cf9cf50ad40
+langcode: en
+status: true
+dependencies:
+  config:
+    - celcom_entity.common_entity_type.cloudshop_api
+    - field.field.common_entity.cloudshop_api.field_plan_type
+  module:
+    - options
+id: common_entity.cloudshop_api.default
+targetEntityType: common_entity
+bundle: cloudshop_api
+mode: default
+content:
+  field_plan_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  status:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  text_plain_primary:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  desc_plain_primary: true
+  desc_plain_secondary: true
+  desc_richtext_primary: true
+  desc_richtext_secondary: true
+  text_plain_secondary: true
+  user_id: true
+  weight: true

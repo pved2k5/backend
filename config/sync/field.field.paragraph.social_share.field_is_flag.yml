@@ -1,0 +1,23 @@
+uuid: ac5a0f52-b34f-4f6a-8f85-70490d2333d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_is_flag
+    - paragraphs.paragraphs_type.social_share
+id: paragraph.social_share.field_is_flag
+field_name: field_is_flag
+entity_type: paragraph
+bundle: social_share
+label: 'Is Vertical?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

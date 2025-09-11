@@ -1,0 +1,19 @@
+uuid: 867e854b-aa7a-49ee-975e-23c1329115c0
+langcode: en
+status: '1'
+dependencies: {  }
+cluster_id: eos_cluster
+name: eos_cluster
+url: 'https://07591cb29b9f4960939280e775290821.southeastasia.azure.elastic-cloud.com:9243'
+options:
+  multiple_nodes_connection: false
+  use_authentication: 1
+  authentication_type: Basic
+  username: elastic
+  password: HXMfrmpw5cZqtWdLSS3FZJHf
+  timeout: '3'
+  rewrite:
+    rewrite_index: 1
+    index:
+      prefix: eos
+      suffix: ''

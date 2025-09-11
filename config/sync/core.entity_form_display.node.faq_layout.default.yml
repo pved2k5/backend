@@ -1,0 +1,51 @@
+uuid: eb528f2c-9793-4496-853c-20d3de6756e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.faq_layout.field_banner_text
+    - field.field.node.faq_layout.field_term_select
+    - node.type.faq_layout
+    - workflows.workflow.content_workflow
+  module:
+    - celcom_utility
+    - chosen_field
+    - content_moderation
+id: node.faq_layout.default
+targetEntityType: node
+bundle: faq_layout
+mode: default
+content:
+  field_banner_text:
+    type: id_title_rich_text_field_widget
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_term_select:
+    type: chosen_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

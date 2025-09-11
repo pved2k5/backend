@@ -1,4 +1,4 @@
-uuid: 11be2f80-141b-4922-b7fd-cdcf411d56a1
+uuid: d82402eb-70d9-4d82-906a-257d4b8b10f0
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ bundle: global_pages
 label: 'Meta Tags'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

@@ -1,0 +1,21 @@
+uuid: 1994b39d-592a-43e8-b91f-454802b7d829
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_colorpicker_v1
+    - paragraphs.paragraphs_type.video_banner
+  module:
+    - celcom_common
+id: paragraph.video_banner.field_colorpicker_v1
+field_name: field_colorpicker_v1
+entity_type: paragraph
+bundle: video_banner
+label: 'Play Button Color'
+description: 'Add the hex color code here which will be apply on Play button. by default color is #fff'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: celcom_common_colorpicker

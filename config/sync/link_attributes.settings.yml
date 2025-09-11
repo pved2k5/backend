@@ -1,0 +1,7 @@
+_core:
+  default_config_hash: hYIsaSGNAuYw51DDpgeVjrSevDXBf-OIMMKXdenbMxY
+langcode: en
+link_attributes_default_classes: ''
+la_btn_size: "text-primary|Link\r\nbtn-sm|Button Small\r\nbtn-lg|Button Large"
+la_btn_variant: "btn-primary|Primary Button\r\nbtn-secondary|Secondary Button\r\nbtn-outline-primary|Outline Primary Button"
+la_btn_icon: "icon-arrow|Chevron\r\nicon-arrow-animat|Animated Chevron"

@@ -1,0 +1,23 @@
+uuid: 63f255d3-dd0f-4e50-9d3d-bbce418c93f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_delay
+    - paragraphs.paragraphs_type.roi_forms
+  module:
+    - options
+id: paragraph.roi_forms.field_delay
+field_name: field_delay
+entity_type: paragraph
+bundle: roi_forms
+label: Delay
+description: 'Please Select the Delay in Second. Ex- 0 means no delay, 5- delay in 5 second.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings: {  }
+field_type: list_integer
