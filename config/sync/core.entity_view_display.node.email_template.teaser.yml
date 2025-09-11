@@ -1,0 +1,40 @@
+uuid: 218d5435-0d90-42c2-8d66-77ed99e75561
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.email_template.field_authored_by
+    - field.field.node.email_template.field_email_type
+    - field.field.node.email_template.field_rich_text
+    - field.field.node.email_template.field_roi_form
+    - field.field.node.email_template.field_title_plain
+    - field.field.node.email_template.field_title_plain_long
+    - field.field.node.email_template.field_title_plan_v1
+    - node.type.email_template
+  module:
+    - user
+id: node.email_template.teaser
+targetEntityType: node
+bundle: email_template
+mode: teaser
+content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_authored_by: true
+  field_email_type: true
+  field_rich_text: true
+  field_roi_form: true
+  field_title_plain: true
+  field_title_plain_long: true
+  field_title_plan_v1: true
+  search_api_excerpt: true

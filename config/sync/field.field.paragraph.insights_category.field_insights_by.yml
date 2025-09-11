@@ -1,0 +1,21 @@
+uuid: 24770002-9d8b-48a7-b268-7c0924b25b84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_insights_by
+    - paragraphs.paragraphs_type.insights_category
+  module:
+    - options
+id: paragraph.insights_category.field_insights_by
+field_name: field_insights_by
+entity_type: paragraph
+bundle: insights_category
+label: 'Insights By'
+description: 'Results is based on published date if none selected'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

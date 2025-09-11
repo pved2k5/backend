@@ -1,0 +1,19 @@
+uuid: ee0da9aa-69c0-465a-a074-c7e59abacfb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_plain
+    - paragraphs.paragraphs_type.campaign
+id: paragraph.campaign.field_title_plain
+field_name: field_title_plain
+entity_type: paragraph
+bundle: campaign
+label: Title
+description: 'Alter the Video Title'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

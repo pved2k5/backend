@@ -1,0 +1,40 @@
+uuid: d1be8b14-e87b-447d-b7b2-064f0a50ae86
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.benefit_banner.field_background_color
+    - field.field.node.benefit_banner.field_boolean
+    - field.field.node.benefit_banner.field_button_primary
+    - field.field.node.benefit_banner.field_desktop_image
+    - field.field.node.benefit_banner.field_font_color
+    - field.field.node.benefit_banner.field_paragraph_unlimited
+    - field.field.node.benefit_banner.field_rich_text
+    - node.type.benefit_banner
+  module:
+    - user
+id: node.benefit_banner.teaser
+targetEntityType: node
+bundle: benefit_banner
+mode: teaser
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_background_color: true
+  field_boolean: true
+  field_button_primary: true
+  field_desktop_image: true
+  field_font_color: true
+  field_paragraph_unlimited: true
+  field_rich_text: true
+  search_api_excerpt: true

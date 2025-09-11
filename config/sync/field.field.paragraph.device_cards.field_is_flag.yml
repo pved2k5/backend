@@ -1,0 +1,23 @@
+uuid: 2efe944f-1570-4417-adda-997f99de4dea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_is_flag
+    - paragraphs.paragraphs_type.device_cards
+id: paragraph.device_cards.field_is_flag
+field_name: field_is_flag
+entity_type: paragraph
+bundle: device_cards
+label: 'Is All Filter?'
+description: 'Check this box to add the All filter, the default Position of All filter is 0.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

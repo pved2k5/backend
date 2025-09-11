@@ -1,0 +1,42 @@
+uuid: 3038a599-44a1-405a-9e27-00f993fcdb5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - celcom_entity.common_entity_type.cloudshop_api
+    - field.field.common_entity.cloudshop_api.field_plan_type
+id: common_entity.cloudshop_api.default
+targetEntityType: common_entity
+bundle: cloudshop_api
+mode: default
+content:
+  desc_plain_primary:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 3
+      placeholder: 'Enter the Magento API URL here'
+    third_party_settings: {  }
+  field_plan_type:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Enter the Magento API Admin Title'
+    third_party_settings: {  }
+hidden:
+  desc_plain_secondary: true
+  desc_richtext_primary: true
+  desc_richtext_secondary: true
+  status: true
+  text_plain_primary: true
+  text_plain_secondary: true
+  weight: true

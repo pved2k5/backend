@@ -1,0 +1,19 @@
+uuid: d09cb3b8-ef34-43fc-943b-c38807cb3aff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_short_description
+    - system.menu.main-menu
+id: menu_link_content.main-menu.field_short_description
+field_name: field_short_description
+entity_type: menu_link_content
+bundle: main-menu
+label: 'Short Description'
+description: 'To be used as short description of the menu which display below the menu'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

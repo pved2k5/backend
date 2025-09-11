@@ -1,0 +1,23 @@
+uuid: f0849d9c-167e-4710-80d2-bcaf07d983c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_colorpicker_v2
+    - paragraphs.paragraphs_type.device_cards
+  module:
+    - celcom_common
+id: paragraph.device_cards.field_colorpicker_v2
+field_name: field_colorpicker_v2
+entity_type: paragraph
+bundle: device_cards
+label: 'Tab Color'
+description: 'Enter the hex code for tab color. by default tab color is #fff (white)'
+required: false
+translatable: true
+default_value:
+  -
+    value: '#ffffff'
+default_value_callback: ''
+settings: {  }
+field_type: celcom_common_colorpicker

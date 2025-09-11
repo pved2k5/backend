@@ -1,0 +1,21 @@
+uuid: f0c644f6-139d-45c1-8ca8-24c9c9f62ffb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_formatted_long
+    - paragraphs.paragraphs_type.roaming_rates
+  module:
+    - text
+id: paragraph.roaming_rates.field_description_formatted_long
+field_name: field_description_formatted_long
+entity_type: paragraph
+bundle: roaming_rates
+label: Header
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

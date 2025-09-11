@@ -1,0 +1,31 @@
+uuid: ad2e5f04-3f13-4445-8c9f-049356c9ca7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.entity_browser
+  module:
+    - views
+name: insights
+label: Insights
+display: modal
+display_configuration:
+  width: '1150'
+  height: '750'
+  link_text: 'Add Content'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  64d2b6c6-9ddb-44c8-8542-e39f19f1f3d5:
+    id: view
+    uuid: 64d2b6c6-9ddb-44c8-8542-e39f19f1f3d5
+    label: view
+    weight: 1
+    settings:
+      submit_text: Select
+      auto_select: false
+      view: entity_browser
+      view_display: entity_browser_1

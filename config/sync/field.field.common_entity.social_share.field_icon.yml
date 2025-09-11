@@ -1,0 +1,27 @@
+uuid: 90827e5c-ed06-4dad-a9b7-dfb6159fa3f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - celcom_entity.common_entity_type.social_share
+    - field.storage.common_entity.field_icon
+  module:
+    - file
+id: common_entity.social_share.field_icon
+field_name: field_icon
+entity_type: common_entity
+bundle: social_share
+label: Icon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: common-assets/attachment
+  file_extensions: 'png jpg svg'
+  max_filesize: ''
+  description_field: false
+field_type: file

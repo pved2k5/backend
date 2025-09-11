@@ -1,0 +1,41 @@
+uuid: b7437ad7-c351-4d26-b538-8a5a21c22832
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.explore_products.field_colorpicker_v1
+    - field.field.paragraph.explore_products.field_description_formatted_long
+    - field.field.paragraph.explore_products.field_entity_ref_multi_content
+    - paragraphs.paragraphs_type.explore_products
+  module:
+    - celcom_common
+    - text
+id: paragraph.explore_products.default
+targetEntityType: paragraph
+bundle: explore_products
+mode: default
+content:
+  field_colorpicker_v1:
+    type: celcom_common_colorswatch_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_description_formatted_long:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_entity_ref_multi_content:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true

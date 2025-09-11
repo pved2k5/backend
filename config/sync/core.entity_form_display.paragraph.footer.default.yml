@@ -1,0 +1,59 @@
+uuid: 54b82789-d3ff-4bc8-8fb8-1f8774644871
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.footer.field_entity_ref_single_content
+    - field.field.paragraph.footer.field_footer
+    - field.field.paragraph.footer.field_is_available
+    - field.field.paragraph.footer.field_is_flag
+    - field.field.paragraph.footer.field_roi_form_id
+    - paragraphs.paragraphs_type.footer
+  module:
+    - webform
+id: paragraph.footer.default
+targetEntityType: paragraph
+bundle: footer
+mode: default
+content:
+  field_entity_ref_single_content:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Enter the footer title'
+    third_party_settings: {  }
+  field_footer:
+    type: options_buttons
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_is_available:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_is_flag:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_roi_form_id:
+    type: webform_entity_reference_select
+    weight: 4
+    region: content
+    settings:
+      default_data: false
+      webforms: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,15 @@
+uuid: f6066f02-53a0-4c4e-b709-806733ad0c00
+langcode: en
+status: false
+dependencies: {  }
+id: stage
+label: Stage
+description: 'Stage Configuration'
+weight: 0
+folder: ../config/split/stage
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

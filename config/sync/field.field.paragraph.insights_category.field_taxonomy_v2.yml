@@ -1,0 +1,29 @@
+uuid: 7ed64ce6-4a61-47e1-8a35-39688377d7cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_taxonomy_v2
+    - paragraphs.paragraphs_type.insights_category
+    - taxonomy.vocabulary.insights_category
+id: paragraph.insights_category.field_taxonomy_v2
+field_name: field_taxonomy_v2
+entity_type: paragraph
+bundle: insights_category
+label: 'Category (Single Selection)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      insights_category: insights_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

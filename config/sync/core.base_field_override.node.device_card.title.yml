@@ -1,0 +1,18 @@
+uuid: f8933ea0-0042-4e80-a4b3-92239c2d5dff
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.device_card
+id: node.device_card.title
+field_name: title
+entity_type: node
+bundle: device_card
+label: 'Admin Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

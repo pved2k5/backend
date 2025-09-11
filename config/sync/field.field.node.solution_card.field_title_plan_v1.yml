@@ -1,0 +1,19 @@
+uuid: 2a58c2c2-10f8-4316-a404-0b62535adbee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title_plan_v1
+    - node.type.solution_card
+id: node.solution_card.field_title_plan_v1
+field_name: field_title_plan_v1
+entity_type: node
+bundle: solution_card
+label: 'Card Description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

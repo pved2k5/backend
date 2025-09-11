@@ -1,0 +1,15 @@
+uuid: 4b56acf9-dad6-4c46-b5bc-879888efec51
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: icon_title_description
+label: 'Icon, Title & Description'
+icon_uuid: null
+icon_default: null
+description: 'Icon, Title & Description Paragraph'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

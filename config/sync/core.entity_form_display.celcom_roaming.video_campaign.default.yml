@@ -1,0 +1,83 @@
+uuid: 9eb2f8bc-4bcd-451c-91aa-e2632c350bb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - celcom_roaming.celcom_roaming_type.video_campaign
+    - field.field.celcom_roaming.video_campaign.field_description
+  module:
+    - text
+id: celcom_roaming.video_campaign.default
+targetEntityType: celcom_roaming
+bundle: video_campaign
+mode: default
+content:
+  code:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  iso_code:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  network_operator:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  roamsavercalls_label:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  roamsaverdata_label:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  roamsaversms_label:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  roamsavercalls_helptext: true
+  roamsaverdata_helptext: true
+  roamsaversms_helptext: true
+  status: true
+  user_id: true

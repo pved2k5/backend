@@ -1,0 +1,96 @@
+uuid: 54e73e60-ddca-42d1-a9b8-d5f65bb7ff68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.explore_products.field_authored_by
+    - field.field.node.explore_products.field_background_color
+    - field.field.node.explore_products.field_desktop_image
+    - field.field.node.explore_products.field_font_color
+    - field.field.node.explore_products.field_pill_element
+    - field.field.node.explore_products.field_single_content_ref
+    - field.field.node.explore_products.field_title_plain
+    - field.field.node.explore_products.field_title_plain_long
+    - image.style.webp
+    - node.type.explore_products
+  module:
+    - celcom_utility
+    - media
+    - user
+id: node.explore_products.default
+targetEntityType: node
+bundle: explore_products
+mode: default
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_authored_by:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_background_color:
+    type: background_color_field_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_desktop_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: webp
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_font_color:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_pill_element:
+    type: background_color_field_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_single_content_ref:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_title_plain:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title_plain_long:
+    type: basic_string
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  links: true
+  search_api_excerpt: true

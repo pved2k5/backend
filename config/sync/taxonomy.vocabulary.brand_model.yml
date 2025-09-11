@@ -1,0 +1,9 @@
+uuid: 0d47838a-4cad-4cee-82a9-74e6dfb191a4
+langcode: en
+status: true
+dependencies: {  }
+name: 'Brand & Model'
+vid: brand_model
+description: 'Category used for Device Card Brand & Model'
+weight: 0
+new_revision: false

@@ -1,4 +1,4 @@
-uuid: bec7e8f0-5408-4795-946e-35107ced958b
+uuid: d8f92365-aa55-4357-9dd1-330aa2ac9e8e
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ id: hero_banner
 label: 'Hero Banner'
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'Hero Banner Paragraph Type'
 behavior_plugins:
   layout_paragraphs:
     enabled: false

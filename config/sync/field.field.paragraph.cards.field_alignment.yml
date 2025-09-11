@@ -1,0 +1,23 @@
+uuid: 7140a4a8-7020-4941-8e9b-730b40d87f57
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_alignment
+    - paragraphs.paragraphs_type.cards
+  module:
+    - options
+id: paragraph.cards.field_alignment
+field_name: field_alignment
+entity_type: paragraph
+bundle: cards
+label: Alignment
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,21 @@
+uuid: b06c91ac-2353-4832-9b29-1844f79e610c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_colorpicker_v1
+    - paragraphs.paragraphs_type.device_card
+  module:
+    - celcom_common
+id: paragraph.device_card.field_colorpicker_v1
+field_name: field_colorpicker_v1
+entity_type: paragraph
+bundle: device_card
+label: 'Background Color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: celcom_common_colorpicker

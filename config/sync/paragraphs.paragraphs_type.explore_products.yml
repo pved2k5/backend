@@ -1,0 +1,10 @@
+uuid: d07b7435-e8be-403e-8d6a-ba97ca207472
+langcode: en
+status: true
+dependencies: {  }
+id: explore_products
+label: 'Explore Products'
+icon_uuid: null
+icon_default: null
+description: 'Explore Products Paragraph Type'
+behavior_plugins: {  }

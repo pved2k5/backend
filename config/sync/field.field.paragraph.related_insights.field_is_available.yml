@@ -1,0 +1,23 @@
+uuid: 9e89fc41-2fa9-4ae0-bbed-615cd7d7f123
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_is_available
+    - paragraphs.paragraphs_type.related_insights
+id: paragraph.related_insights.field_is_available
+field_name: field_is_available
+entity_type: paragraph
+bundle: related_insights
+label: 'Is Related Articles?'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

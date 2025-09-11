@@ -1,0 +1,78 @@
+uuid: 9dc7f914-8848-4051-8ea0-b188864c642b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_category.field_colorpicker_v1
+    - field.field.paragraph.product_category.field_description_formatted_long
+    - field.field.paragraph.product_category.field_eos_attributes_override
+    - field.field.paragraph.product_category.field_is_available
+    - field.field.paragraph.product_category.field_product_attributes
+    - field.field.paragraph.product_category.field_product_category
+    - field.field.paragraph.product_category.field_selector
+    - paragraphs.paragraphs_type.product_category
+  module:
+    - celcom_common
+    - celcom_eos
+    - options
+    - text
+id: paragraph.product_category.default
+targetEntityType: paragraph
+bundle: product_category
+mode: default
+content:
+  field_colorpicker_v1:
+    type: celcom_common_colorswatch_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_description_formatted_long:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_eos_attributes_override:
+    type: product_attributes_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_is_available:
+    type: boolean
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_product_attributes:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_product_category:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_selector:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+hidden:
+  search_api_excerpt: true

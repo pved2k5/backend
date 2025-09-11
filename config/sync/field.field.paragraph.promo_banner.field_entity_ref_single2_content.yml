@@ -1,0 +1,29 @@
+uuid: 43764a0f-0278-42db-a77c-6cac12684776
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_entity_ref_single2_content
+    - node.type.cards
+    - paragraphs.paragraphs_type.promo_banner
+id: paragraph.promo_banner.field_entity_ref_single2_content
+field_name: field_entity_ref_single2_content
+entity_type: paragraph
+bundle: promo_banner
+label: 'Promo Cards'
+description: 'Enter the promo card title'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      cards: cards
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

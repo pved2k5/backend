@@ -1,0 +1,21 @@
+uuid: f63c2844-2f2b-4897-ac6e-ef94c074b0c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rich_text
+    - node.type.email_template
+  module:
+    - text
+id: node.email_template.field_rich_text
+field_name: field_rich_text
+entity_type: node
+bundle: email_template
+label: 'Email Body'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

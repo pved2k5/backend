@@ -1,0 +1,45 @@
+uuid: 406cad9b-5ca2-413b-a5c3-bd5fead4b5dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social_share.field_description_formatted_long
+    - field.field.paragraph.social_share.field_is_available
+    - field.field.paragraph.social_share.field_is_flag
+    - paragraphs.paragraphs_type.social_share
+  module:
+    - text
+id: paragraph.social_share.default
+targetEntityType: paragraph
+bundle: social_share
+mode: default
+content:
+  field_description_formatted_long:
+    type: text_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_is_available:
+    type: boolean
+    label: inline
+    settings:
+      format: true-false
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_is_flag:
+    type: boolean
+    label: inline
+    settings:
+      format: true-false
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true

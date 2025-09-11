@@ -1,0 +1,30 @@
+uuid: e48e9e4d-245c-40c9-bfd3-1fc58a96729e
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_search_filter
+field_name: field_search_filter
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: year
+      label: Year
+    -
+      value: month
+      label: Month
+    -
+      value: category
+      label: Category
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,4 +1,4 @@
-uuid: 5bccfbbd-a7d6-40ae-81d7-6f3d8407b2de
+uuid: 718ee94a-fee1-4f21-9799-852a89c338c4
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ third_party_settings:
     parent: ''
 name: Cards
 type: cards
-description: null
+description: 'Add Cards(Image Cards/Text Cards) Content Type'
 help: null
-new_revision: false
-preview_mode: 1
+new_revision: true
+preview_mode: 0
 display_submitted: false

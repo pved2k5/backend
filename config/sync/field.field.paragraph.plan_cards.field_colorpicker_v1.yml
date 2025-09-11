@@ -1,0 +1,21 @@
+uuid: 46b74214-33d9-47b4-a327-5f8c44032e53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_colorpicker_v1
+    - paragraphs.paragraphs_type.plan_cards
+  module:
+    - celcom_common
+id: paragraph.plan_cards.field_colorpicker_v1
+field_name: field_colorpicker_v1
+entity_type: paragraph
+bundle: plan_cards
+label: 'Background Color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: celcom_common_colorpicker

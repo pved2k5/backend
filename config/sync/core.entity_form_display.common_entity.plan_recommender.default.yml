@@ -1,0 +1,55 @@
+uuid: efb63047-5061-4000-8d49-e877b5a3582a
+langcode: en
+status: true
+dependencies:
+  config:
+    - celcom_entity.common_entity_type.plan_recommender
+id: common_entity.plan_recommender.default
+targetEntityType: common_entity
+bundle: plan_recommender
+mode: default
+content:
+  desc_plain_primary:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  desc_plain_secondary:
+    type: string_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  text_plain_primary:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  desc_richtext_primary: true
+  desc_richtext_secondary: true
+  text_plain_secondary: true
+  weight: true

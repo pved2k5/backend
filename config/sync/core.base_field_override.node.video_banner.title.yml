@@ -1,0 +1,18 @@
+uuid: 05402290-4c71-4ea1-b8bb-a69c94c69e00
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.video_banner
+id: node.video_banner.title
+field_name: title
+entity_type: node
+bundle: video_banner
+label: 'Admin Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

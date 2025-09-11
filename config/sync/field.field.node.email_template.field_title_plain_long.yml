@@ -1,0 +1,19 @@
+uuid: e094c86b-8ea0-4d63-a785-5cb763d540df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title_plain_long
+    - node.type.email_template
+id: node.email_template.field_title_plain_long
+field_name: field_title_plain_long
+entity_type: node
+bundle: email_template
+label: 'Support Email'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

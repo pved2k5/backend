@@ -1,63 +1,108 @@
 _core:
-  default_config_hash: 4GIX5Esnc_umpXUBj4IIocRX7Mt5fPhm4AgXfE3E56E
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   admin_toolbar: 0
+  admin_toolbar_tools: 0
   automated_cron: 0
   basic_auth: 0
   block: 0
   block_content: 0
   breakpoint: 0
-  ckeditor5: 0
+  celcom_common: 0
+  celcom_configuration: 0
+  celcom_entity: 0
+  celcom_eos: 0
+  celcom_recommender: 0
+  celcom_roaming: 0
+  celcom_roiforms: 0
+  celcom_utility: 0
+  chosen: 0
+  chosen_field: 0
+  chosen_lib: 0
+  ckeditor: 0
+  ckeditor_bootstrap_grid: 0
+  ckeditor_div_manager: 0
+  ckeditor_templates: 0
+  ckeditor_templates_ui: 0
   color: 0
-  color_field: 0
-  comment: 0
+  colorbutton: 0
+  colordialog: 0
+  component_layout: 0
   config: 0
+  config_filter: 0
+  config_split: 0
   consumers: 0
+  content_moderation: 0
   contextual: 0
+  cshs: 0
+  csv_serialization: 0
+  ctools: 0
   datetime: 0
+  datetime_range: 0
   dblog: 0
+  devel: 0
+  devel_entity_updates: 0
   editor: 0
+  elasticsearch_connector: 0
+  entity_browser: 0
+  entity_browser_enhanced: 0
   entity_reference_revisions: 0
   field: 0
+  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
+  hal: 0
+  hook_post_action: 0
   image: 0
   layout_discovery: 0
   layout_paragraphs: 0
   link: 0
+  link_attributes: 0
   media: 0
   media_library: 0
+  menu_item_extras: 0
   menu_link_content: 0
   menu_ui: 0
   metatag: 0
+  metatag_open_graph: 0
+  metatag_twitter_cards: 0
+  mysql: 0
   node: 0
   options: 0
+  panelbutton: 0
   path: 0
   path_alias: 0
+  phpass: 0
   quick_node_clone: 0
+  quickedit: 0
+  redis_client: 0
   rest: 0
   restui: 0
+  search_api: 0
+  sendgrid_mailer: 0
   serialization: 0
-  shortcut: 0
   simple_oauth: 0
-  sysop_common: 0
-  sysop_roiforms: 0
-  sysop_utility: 0
+  simple_sitemap: 0
+  status_messages: 0
   system: 0
   taxonomy: 0
   text: 0
   token: 0
   toolbar: 0
   user: 0
+  video_campaign: 0
+  views_data_export: 0
   views_ui: 0
   webform: 0
+  webform_submission_export_import: 0
   webform_ui: 0
+  workflows: 0
   pathauto: 1
   views: 10
   paragraphs: 11
   standard: 1000
 theme:
-  olivero: 0
+  seven: 0
   claro: 0
 profile: standard

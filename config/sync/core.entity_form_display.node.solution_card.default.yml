@@ -1,0 +1,146 @@
+uuid: b303935c-b8ce-448d-8f95-f0bd87ebcbde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.solution_card.field_button_primary
+    - field.field.node.solution_card.field_desktop_image
+    - field.field.node.solution_card.field_plan_long
+    - field.field.node.solution_card.field_rich_text
+    - field.field.node.solution_card.field_title_plain
+    - field.field.node.solution_card.field_title_plain_long
+    - field.field.node.solution_card.field_title_plan_v1
+    - node.type.solution_card
+    - workflows.workflow.content_workflow
+  module:
+    - content_moderation
+    - field_group
+    - link_attributes
+    - media_library
+    - text
+third_party_settings:
+  field_group:
+    group_card_details:
+      children:
+        - field_desktop_image
+        - field_title_plain
+        - field_title_plan_v1
+      label: 'Card Details'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: solution-card-detail
+        open: true
+        description: ''
+        required_fields: true
+    group_card_offering:
+      children:
+        - field_title_plain_long
+        - field_plan_long
+        - field_rich_text
+      label: 'Card Offering'
+      region: content
+      parent_name: ''
+      weight: 5
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: solution-card-offering
+        open: true
+        description: ''
+        required_fields: true
+id: node.solution_card.default
+targetEntityType: node
+bundle: solution_card
+mode: default
+content:
+  field_button_primary:
+    type: link_attribute_field_widget
+    weight: 9
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      link_attributes_link_size: 1
+      link_attributes_link_variant: 1
+      link_attributes_link_icon: ''
+      link_attributes_link_analytic: ''
+    third_party_settings: {  }
+  field_desktop_image:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_plan_long:
+    type: string_textarea
+    weight: 7
+    region: content
+    settings:
+      rows: 2
+      placeholder: 'Contract <span class="subline">24months</span>'
+    third_party_settings: {  }
+  field_rich_text:
+    type: text_textarea
+    weight: 8
+    region: content
+    settings:
+      rows: 2
+      placeholder: 'From <span class="subline">40GB</span>/monthly'
+    third_party_settings: {  }
+  field_title_plain:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Enter the Card Title'
+    third_party_settings: {  }
+  field_title_plain_long:
+    type: string_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 2
+      placeholder: 'Internet <span class="subline">40GB</span>'
+    third_party_settings: {  }
+  field_title_plan_v1:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 120
+      placeholder: 'Enter the Card Description'
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Enter the Card Title (for internal reference)'
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

@@ -1,0 +1,10 @@
+uuid: 09d0761b-e623-47a5-b02d-78168493786b
+langcode: en
+status: true
+dependencies: {  }
+id: image_cards
+label: 'Image Cards'
+icon_uuid: null
+icon_default: null
+description: 'Image Cards Paragraph Type'
+behavior_plugins: {  }

@@ -1,0 +1,21 @@
+uuid: a3483581-51cb-4931-a140-f3bd494cd5e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_formatted_long
+    - paragraphs.paragraphs_type.faq
+  module:
+    - text
+id: paragraph.faq.field_description_formatted_long
+field_name: field_description_formatted_long
+entity_type: paragraph
+bundle: faq
+label: Header
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

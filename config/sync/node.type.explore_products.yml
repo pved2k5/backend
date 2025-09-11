@@ -1,0 +1,17 @@
+uuid: 0da1606f-a819-4573-bf04-f327f8a91f95
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Explore Products'
+type: explore_products
+description: 'Use this Content Type for Explore Products & Solutions'
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: false

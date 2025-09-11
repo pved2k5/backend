@@ -1,0 +1,31 @@
+uuid: 38952dd0-ba2f-4c02-a38c-64daef05147e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.entity_browser
+  module:
+    - views
+name: promo_cards
+label: 'Promo Cards'
+display: modal
+display_configuration:
+  width: '1150'
+  height: '750'
+  link_text: 'Add Content'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  2fe6af22-ff54-4067-8ced-35ae27b36945:
+    id: view
+    uuid: 2fe6af22-ff54-4067-8ced-35ae27b36945
+    label: view
+    weight: 1
+    settings:
+      submit_text: Select
+      auto_select: false
+      view: entity_browser
+      view_display: entity_browser_5

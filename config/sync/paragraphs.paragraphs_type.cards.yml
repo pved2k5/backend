@@ -1,0 +1,15 @@
+uuid: 9c9eb558-5fd7-4532-a8d0-edeb255d01e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: cards
+label: 'Promo Cards'
+icon_uuid: null
+icon_default: null
+description: 'Promo Cards Paragraph Type'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

@@ -1,0 +1,20 @@
+uuid: e1990c24-49a0-4897-8b8d-02c74d262c2f
+langcode: en
+status: true
+dependencies:
+  module:
+    - celcom_entity
+    - node
+id: node.field_common_ent_multi_v1
+field_name: field_common_ent_multi_v1
+entity_type: node
+type: entity_reference
+settings:
+  target_type: common_entity
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

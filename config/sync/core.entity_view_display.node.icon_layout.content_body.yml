@@ -1,0 +1,47 @@
+uuid: c684390d-f09b-41e8-b64b-e045325fd741
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_body
+    - field.field.node.icon_layout.field_background_color
+    - field.field.node.icon_layout.field_paragraph_unlimited
+    - field.field.node.icon_layout.field_rich_text
+    - node.type.icon_layout
+  module:
+    - celcom_utility
+    - layout_paragraphs
+    - text
+    - user
+id: node.icon_layout.content_body
+targetEntityType: node
+bundle: icon_layout
+mode: content_body
+content:
+  field_background_color:
+    type: pill_color_field_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_paragraph_unlimited:
+    type: layout_paragraphs
+    label: hidden
+    settings:
+      view_mode: token
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_rich_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  content_moderation_control: true
+  links: true
+  search_api_excerpt: true

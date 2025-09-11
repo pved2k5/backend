@@ -1,0 +1,33 @@
+uuid: 7e0f4c26-0a06-4ef8-b9ed-a43d04bf5bbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.generic-menu.field_icon
+    - field.field.menu_link_content.generic-menu.field_menu_long
+    - system.menu.generic-menu
+id: menu_link_content.generic-menu.default
+targetEntityType: menu_link_content
+bundle: generic-menu
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_icon:
+    type: entity_reference_entity_id
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_menu_long:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

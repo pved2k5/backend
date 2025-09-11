@@ -1,0 +1,21 @@
+uuid: 41054e59-ac0a-47aa-861b-ed4808f10f83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_option_list
+    - paragraphs.paragraphs_type.header
+  module:
+    - options
+id: paragraph.header.field_option_list
+field_name: field_option_list
+entity_type: paragraph
+bundle: header
+label: Header
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

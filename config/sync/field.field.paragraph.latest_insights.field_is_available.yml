@@ -1,0 +1,23 @@
+uuid: 24d3d510-6c11-464f-8638-0ebebb27d189
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_is_available
+    - paragraphs.paragraphs_type.latest_insights
+id: paragraph.latest_insights.field_is_available
+field_name: field_is_available
+entity_type: paragraph
+bundle: latest_insights
+label: 'Is Latest Insights?'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,62 @@
+uuid: 19ea5fd1-2a07-4ff7-95c0-b12bc888fe79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.benefit_banner.field_alignment
+    - field.field.paragraph.benefit_banner.field_entity_ref_single_content
+    - field.field.paragraph.benefit_banner.field_is_available
+    - field.field.paragraph.benefit_banner.field_number
+    - field.field.paragraph.benefit_banner.field_selector
+    - paragraphs.paragraphs_type.benefit_banner
+  module:
+    - options
+id: paragraph.benefit_banner.default
+targetEntityType: paragraph
+bundle: benefit_banner
+mode: default
+content:
+  field_alignment:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_entity_ref_single_content:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_is_available:
+    type: boolean
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_number:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_selector:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,51 @@
+uuid: 3e7e97ce-c74a-4327-b8af-37bfda44b72a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_branding_color_scheme
+field_name: field_branding_color_scheme
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: unlimited_plan_853C98
+      label: 'Unlimited Plan #853C98'
+    -
+      value: unlimited_plan_642C87
+      label: 'Unlimited Plan #642C87'
+    -
+      value: unlimited_plan_482464
+      label: 'Unlimited Plan #482464'
+    -
+      value: lightning_plan_58AEE0
+      label: 'Lightning Plan #58AEE0'
+    -
+      value: lightning_plan_4569AB
+      label: 'Lightning Plan #4569AB'
+    -
+      value: lightning_plan_164396
+      label: 'Lightning Plan #164396'
+    -
+      value: lightning_plan_123678
+      label: 'Lightning Plan #123678'
+    -
+      value: lightning_plan_1e3f7d
+      label: 'Lightning Plan #1e3f7d'
+    -
+      value: lightning_plan_221767
+      label: 'Lightning Plan #221767'
+    -
+      value: roaming_plan_123678
+      label: 'Roaming Plan #123678'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

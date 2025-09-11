@@ -1,0 +1,123 @@
+uuid: ec0330d1-3225-4f80-a380-5b3ac6135959
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_footer
+    - node.type.insights
+    - paragraphs.paragraphs_type.footer
+    - paragraphs.paragraphs_type.related_insights
+  module:
+    - entity_reference_revisions
+id: node.insights.field_footer
+field_name: field_footer
+entity_type: node
+bundle: insights
+label: Footer
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      related_insights: related_insights
+      footer: footer
+    negate: 0
+    target_bundles_drag_drop:
+      benefit_banner:
+        weight: -61
+        enabled: false
+      cards:
+        weight: -60
+        enabled: false
+      cloudshop_plan:
+        weight: -59
+        enabled: false
+      device_cards:
+        weight: -58
+        enabled: false
+      faq:
+        weight: -57
+        enabled: false
+      featured_insights:
+        weight: -56
+        enabled: false
+      fiber_checker:
+        weight: -55
+        enabled: false
+      flip_card:
+        weight: -54
+        enabled: false
+      footer:
+        weight: -62
+        enabled: true
+      free_text:
+        weight: -53
+        enabled: false
+      header:
+        weight: -52
+        enabled: false
+      hero_banner:
+        weight: -51
+        enabled: false
+      icon_layout:
+        weight: -50
+        enabled: false
+      icon_title_description:
+        weight: -49
+        enabled: false
+      image_cards:
+        weight: -48
+        enabled: false
+      insights_category:
+        weight: -47
+        enabled: false
+      latest_insights:
+        weight: -46
+        enabled: false
+      partners_cards:
+        weight: -45
+        enabled: false
+      plan_cards:
+        weight: -44
+        enabled: false
+      plan_recommender:
+        weight: -43
+        enabled: false
+      plan_table_cms:
+        weight: -42
+        enabled: false
+      product_category:
+        weight: -41
+        enabled: false
+      promo_banner:
+        weight: -40
+        enabled: false
+      promo_card_layout_wrapper:
+        weight: -39
+        enabled: false
+      related_insights:
+        weight: -63
+        enabled: true
+      roaming_rates:
+        weight: -38
+        enabled: false
+      roi_forms:
+        weight: -37
+        enabled: false
+      social_share:
+        weight: -36
+        enabled: false
+      story_telling:
+        weight: -35
+        enabled: false
+      tab_navigation:
+        weight: -34
+        enabled: false
+      twitter_feed:
+        weight: -33
+        enabled: false
+field_type: entity_reference_revisions

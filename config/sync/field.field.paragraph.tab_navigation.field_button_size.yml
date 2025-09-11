@@ -1,0 +1,21 @@
+uuid: 99c4cb54-99bc-4d6d-b9a2-93e0946da784
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_button_size
+    - paragraphs.paragraphs_type.tab_navigation
+  module:
+    - options
+id: paragraph.tab_navigation.field_button_size
+field_name: field_button_size
+entity_type: paragraph
+bundle: tab_navigation
+label: 'Tab Size'
+description: 'Select the Tab Size'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,27 @@
+uuid: 420b9278-e906-484a-b8ae-bb42386f6aa4
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_footer
+field_name: field_footer
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: footer
+      label: Footer
+    -
+      value: mini_footer
+      label: 'Mini Footer'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

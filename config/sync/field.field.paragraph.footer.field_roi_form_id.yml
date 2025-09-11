@@ -1,0 +1,25 @@
+uuid: 7eb0cee3-c3ff-4e60-a0f2-ab74775f7bb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_roi_form_id
+    - paragraphs.paragraphs_type.footer
+  module:
+    - webform
+id: paragraph.footer.field_roi_form_id
+field_name: field_roi_form_id
+entity_type: paragraph
+bundle: footer
+label: 'Roi Form'
+description: 'Select the Contact us ROI Form'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

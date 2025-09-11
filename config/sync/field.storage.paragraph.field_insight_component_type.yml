@@ -1,0 +1,30 @@
+uuid: 7082fbbc-83ee-491e-9a50-0dfd1e0f425e
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_insight_component_type
+field_name: field_insight_component_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: insights_category
+      label: 'Insight by Categories'
+    -
+      value: insight_by_published_date
+      label: 'Top Insights'
+    -
+      value: insights_search
+      label: 'Insight Search'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

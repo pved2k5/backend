@@ -1,0 +1,32 @@
+uuid: 89ff6e8e-8b7e-4d57-a556-51abf7559e8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.header.field_option_list
+    - field.field.paragraph.header.field_title_plain
+    - paragraphs.paragraphs_type.header
+  module:
+    - options
+id: paragraph.header.default
+targetEntityType: paragraph
+bundle: header
+mode: default
+content:
+  field_option_list:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title_plain:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

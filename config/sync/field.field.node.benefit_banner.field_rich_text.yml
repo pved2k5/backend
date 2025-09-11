@@ -1,0 +1,21 @@
+uuid: 806fcd7c-773e-4ce0-a04f-c0b7376c51b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rich_text
+    - node.type.benefit_banner
+  module:
+    - text
+id: node.benefit_banner.field_rich_text
+field_name: field_rich_text
+entity_type: node
+bundle: benefit_banner
+label: Header
+description: 'Add the Headline/Subhead line here'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

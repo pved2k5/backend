@@ -1,0 +1,17 @@
+uuid: b5451247-5c62-4da1-8924-90ce39092179
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Email Template'
+type: email_template
+description: 'ROI & RSVP Email Template'
+help: null
+new_revision: false
+preview_mode: 0
+display_submitted: false

@@ -1,4 +1,4 @@
-uuid: db78028d-d1d8-40f4-aa9c-b5233b43eaa5
+uuid: 65847c8b-5f74-46a7-b7cd-2e086f3aff16
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - media
     - user
 _core:
-  default_config_hash: kOTUk5XWeupgBOJuRRarCiDcFKVZcvaW-FT5MTzrML8
+  default_config_hash: UZP23LgBdE1XbvscbLCdd9uTk5t4qqA1Z56koqbvYP0
 id: media
 label: Media
 module: views
@@ -20,7 +20,7 @@ base_field: mid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: Master
     display_plugin: default
     position: 0
     display_options:
@@ -449,7 +449,7 @@ display:
             custom_date_format: ''
             timezone: ''
             tooltip:
-              date_format: long
+              date_format: ''
               custom_date_format: ''
             time_diff:
               enabled: false
@@ -522,7 +522,6 @@ display:
         type: full
         options:
           offset: 0
-          pagination_heading_level: h4
           items_per_page: 50
           total_pages: null
           id: 0
@@ -540,6 +539,7 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
+          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:

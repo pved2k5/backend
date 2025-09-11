@@ -1,0 +1,27 @@
+uuid: 4099fc3b-6bac-43de-bc37-b0285cc57da3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_page_language
+field_name: field_page_language
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: malay
+      label: Malay
+    -
+      value: english
+      label: English
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

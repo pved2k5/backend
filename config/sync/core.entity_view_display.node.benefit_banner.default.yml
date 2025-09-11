@@ -1,0 +1,96 @@
+uuid: 83a90e3a-53c3-4498-9392-7bee4b310454
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.benefit_banner.field_background_color
+    - field.field.node.benefit_banner.field_boolean
+    - field.field.node.benefit_banner.field_button_primary
+    - field.field.node.benefit_banner.field_desktop_image
+    - field.field.node.benefit_banner.field_font_color
+    - field.field.node.benefit_banner.field_paragraph_unlimited
+    - field.field.node.benefit_banner.field_rich_text
+    - image.style.webp
+    - node.type.benefit_banner
+  module:
+    - celcom_utility
+    - entity_reference_revisions
+    - media
+    - text
+    - user
+id: node.benefit_banner.default
+targetEntityType: node
+bundle: benefit_banner
+mode: default
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_background_color:
+    type: background_color_field_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_boolean:
+    type: boolean
+    label: inline
+    settings:
+      format: true-false
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_button_primary:
+    type: link_attributes_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_desktop_image:
+    type: media_thumbnail
+    label: above
+    settings:
+      image_link: ''
+      image_style: webp
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_font_color:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_paragraph_unlimited:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_rich_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

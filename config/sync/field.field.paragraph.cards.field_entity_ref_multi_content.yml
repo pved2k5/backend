@@ -1,0 +1,29 @@
+uuid: 07a2a09f-86fd-45cd-a9b5-58513c78958b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_entity_ref_multi_content
+    - node.type.cards
+    - paragraphs.paragraphs_type.cards
+id: paragraph.cards.field_entity_ref_multi_content
+field_name: field_entity_ref_multi_content
+entity_type: paragraph
+bundle: cards
+label: Card
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      cards: cards
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: cards
+field_type: entity_reference

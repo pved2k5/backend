@@ -1,0 +1,82 @@
+uuid: ba3faa7a-855c-4986-abf0-b855b81ffe71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tab_navigation.field_button_size
+    - field.field.paragraph.tab_navigation.field_colorpicker_v1
+    - field.field.paragraph.tab_navigation.field_colorpicker_v2
+    - field.field.paragraph.tab_navigation.field_colorpicker_v3
+    - field.field.paragraph.tab_navigation.field_colorpicker_v4
+    - field.field.paragraph.tab_navigation.field_colorpicker_v5
+    - field.field.paragraph.tab_navigation.field_entity_ref_multi_content
+    - field.field.paragraph.tab_navigation.field_tab_style
+    - paragraphs.paragraphs_type.tab_navigation
+  module:
+    - celcom_common
+    - options
+id: paragraph.tab_navigation.default
+targetEntityType: paragraph
+bundle: tab_navigation
+mode: default
+content:
+  field_button_size:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_colorpicker_v1:
+    type: celcom_common_colorswatch_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_colorpicker_v2:
+    type: celcom_common_colorswatch_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_colorpicker_v3:
+    type: celcom_common_colorswatch_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_colorpicker_v4:
+    type: celcom_common_colorswatch_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_colorpicker_v5:
+    type: celcom_common_colorswatch_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_entity_ref_multi_content:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_tab_style:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_number: true
+  search_api_excerpt: true

@@ -1,0 +1,18 @@
+uuid: b93c66f8-9d68-4b4c-b699-6aeb3f8cdabd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.faq_layout
+id: node.faq_layout.title
+field_name: title
+entity_type: node
+bundle: faq_layout
+label: 'Admin Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

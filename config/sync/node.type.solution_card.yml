@@ -1,0 +1,17 @@
+uuid: 5dda6c10-52c3-4980-bde0-c6f9377be81f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Solution Card'
+type: solution_card
+description: 'Use this Content Type for Solution Card'
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,7 @@
+uuid: c7413679-83bc-4638-a5eb-c50b50b2816f
+langcode: en
+status: true
+dependencies: {  }
+id: video_campaign
+label: 'Video Campaign'
+description: null

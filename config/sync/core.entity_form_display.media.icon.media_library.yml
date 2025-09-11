@@ -1,0 +1,20 @@
+uuid: 1a92b95b-e833-4cc4-a216-f07220cce9b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.icon.field_media_document
+    - media.type.icon
+id: media.icon.media_library
+targetEntityType: media
+bundle: icon
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_media_document: true
+  name: true
+  path: true
+  status: true
+  uid: true

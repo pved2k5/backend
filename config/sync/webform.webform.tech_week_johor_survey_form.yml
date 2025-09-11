@@ -1,0 +1,522 @@
+uuid: 55d0ffe0-c5f6-41b5-bf53-075902d0cf35
+langcode: en
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 47
+template: false
+archive: false
+id: tech_week_johor_survey_form
+title: 'Tech Week @Johor Survey Form_v1'
+description: ''
+categories: {  }
+elements: |-
+  personal_details:
+    '#type': webform_section
+    '#title': 'Tech Week Survey Form'
+    '#access_create_roles': {  }
+    '#access_update_roles': {  }
+    '#access_view_roles': {  }
+    '#access': false
+    name:
+      '#type': textfield
+      '#title': Name
+      '#title_display': before
+      '#placeholder': 'Full name as per MyKad/Passport'
+      '#required': true
+      '#required_error': 'Please enter your full name '
+      '#multiple__sorting': false
+      '#multiple__operations': false
+      '#multiple__add': false
+      '#multiple__remove': false
+      '#multiple__add_more': false
+      '#multiple__add_more_input': false
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': name
+    contact_number:
+      '#type': textfield
+      '#title': 'Contact Number'
+      '#title_display': before
+      '#placeholder': 'Enter your mobile number'
+      '#required': true
+      '#required_error': 'Please enter your mobile number'
+      '#pattern': '[0-9]{10,11}'
+      '#pattern_error': 'Please enter the correct mobile number'
+      '#multiple__sorting': false
+      '#multiple__operations': false
+      '#multiple__add': false
+      '#multiple__remove': false
+      '#multiple__add_more': false
+      '#multiple__add_more_input': false
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': mob_number
+    company_name:
+      '#type': textfield
+      '#title': 'Company Name'
+      '#title_display': before
+      '#placeholder': 'Enter the name of your company'
+      '#required': true
+      '#required_error': 'Please enter the name of your company'
+      '#multiple__sorting': false
+      '#multiple__operations': false
+      '#multiple__add': false
+      '#multiple__remove': false
+      '#multiple__add_more': false
+      '#multiple__add_more_input': false
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': company
+    email_address:
+      '#type': textfield
+      '#title': 'Email Address'
+      '#title_display': before
+      '#placeholder': 'Enter your email address'
+      '#required': true
+      '#required_error': 'Please enter your email address'
+      '#pattern': '^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+      '#pattern_error': 'Use only alphanumeric, - , @ , ( _ ), ( . )'
+      '#multiple__sorting': false
+      '#multiple__operations': false
+      '#multiple__add': false
+      '#multiple__remove': false
+      '#multiple__add_more': false
+      '#multiple__add_more_input': false
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': email
+    survey_q0:
+      '#type': select
+      '#title': 'Which use cases are you interested in?'
+      '#placeholder': 'Select the use case that you are interested in'
+      '#options':
+        'Cloud Solutions ': 'Cloud Solutions '
+        'Cybersecurity Solutions': 'Cybersecurity Solutions'
+        'Metaverse Experience': 'Metaverse Experience'
+        'Mixed Reality Hololens (IoT)': 'Mixed Reality Hololens (IoT)'
+        'Mobile and Fixed solutions': 'Mobile and Fixed solutions'
+        'PeopleTracker for Retail': 'PeopleTracker for Retail'
+        'Robotic arm (IoT)': 'Robotic arm (IoT)'
+        'Smart Fleet Management (IoT)': 'Smart Fleet Management (IoT)'
+        'Smart Poultry (IoT)': 'Smart Poultry (IoT)'
+        'Smart Surveillance (IoT)': 'Smart Surveillance (IoT)'
+        'VR Education / Training ': 'VR Education / Training '
+        'VR Gaming ': 'VR Gaming '
+      '#required': true
+      '#required_error': 'Please select the use case that you are interested in'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': survey_q_zeros
+    survey_q1:
+      '#type': select
+      '#title': 'Rate your overall event experience?'
+      '#placeholder': 'Select your rating from 1 to 5'
+      '#options':
+        '5 - Excellent': '5 - Excellent'
+        '4 - Good': '4 - Good'
+        '3 - Average': '3 - Average'
+        '2 - Poor': '2 - Poor'
+        '1 - Very Poor': '1 - Very Poor'
+      '#required': true
+      '#required_error': 'Please select your rating from 1 to 5'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': survey_q_one
+    survey_q2a:
+      '#type': select
+      '#title': 'Rate the quality of use cases?'
+      '#placeholder': 'Select your rating from 1 to 5'
+      '#options':
+        '5 - Excellent': '5 - Excellent'
+        '4 - Good': '4 - Good'
+        '3 - Average': '3 - Average'
+        '2 - Poor': '2 - Poor'
+        '1 - Very Poor': '1 - Very Poor'
+      '#required': true
+      '#required_error': 'Please select your rating from 1 to 5'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': survey_q_twoa
+    survey_q2b:
+      '#type': select
+      '#title': 'Rate the quality of information?'
+      '#placeholder': 'Select your rating from 1 to 5'
+      '#options':
+        '5 - Excellent': '5 - Excellent'
+        '4 - Good': '4 - Good'
+        '3 - Average': '3 - Average'
+        '2 - Poor': '2 - Poor'
+        '1 - Very Poor': '1 - Very Poor'
+      '#required': true
+      '#required_error': 'Please select your rating from 1 to 5'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': survey_q_twob
+    survey_q3:
+      '#type': select
+      '#title': 'How relevant are the use cases to Malaysian businesses?'
+      '#placeholder': 'Select your rating from 1 to 5'
+      '#options':
+        '5 - Very Relevant': '5 - Very Relevant'
+        '4 - Relevent': '4 - Relevent'
+        '3 - Average': '3 - Average'
+        '2 - Irrelevant': '2 - Irrelevant'
+        '1 - Very Irrelevant': '1 - Very Irrelevant'
+      '#required': true
+      '#required_error': 'Please select your rating from 1 to 5'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': survey_q_three
+    survey_q4a:
+      '#type': select
+      '#title': '1st showcase that appealed to you the most '
+      '#placeholder': 'Select your ranking '
+      '#options':
+        'Cloud Solutions ': 'Cloud Solutions '
+        'Cybersecurity Solutions': 'Cybersecurity Solutions'
+        'Metaverse Experience': 'Metaverse Experience'
+        'Mixed Reality Hololens (IoT)': 'Mixed Reality Hololens (IoT)'
+        'Mobile and Fixed solutions': 'Mobile and Fixed solutions'
+        'PeopleTracker for Retail': 'PeopleTracker for Retail'
+        'Robotic arm (IoT)': 'Robotic arm (IoT)'
+        'Smart Fleet Management (IoT)': 'Smart Fleet Management (IoT)'
+        'Smart Poultry (IoT)': 'Smart Poultry (IoT)'
+        'Smart Surveillance (IoT)': 'Smart Surveillance (IoT)'
+        'VR Education / Training ': 'VR Education / Training '
+        'VR Gaming ': 'VR Gaming '
+      '#required': true
+      '#required_error': 'Please select your ranking '
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': survey_q_foura
+    survey_q4b:
+      '#type': select
+      '#title': '2nd showcase that appealed to you the most '
+      '#placeholder': 'Select your ranking '
+      '#options':
+        'Cloud Solutions ': 'Cloud Solutions '
+        'Cybersecurity Solutions': 'Cybersecurity Solutions'
+        'Metaverse Experience': 'Metaverse Experience'
+        'Mixed Reality Hololens (IoT)': 'Mixed Reality Hololens (IoT)'
+        'Mobile and Fixed solutions': 'Mobile and Fixed solutions'
+        'PeopleTracker for Retail': 'PeopleTracker for Retail'
+        'Robotic arm (IoT)': 'Robotic arm (IoT)'
+        'Smart Fleet Management (IoT)': 'Smart Fleet Management (IoT)'
+        'Smart Poultry (IoT)': 'Smart Poultry (IoT)'
+        'Smart Surveillance (IoT)': 'Smart Surveillance (IoT)'
+        'VR Education / Training ': 'VR Education / Training '
+        'VR Gaming ': 'VR Gaming '
+      '#required': true
+      '#required_error': 'Please select your ranking '
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': survey_q_fourb
+    survey_q4c:
+      '#type': select
+      '#title': '3rd showcase that appealed to you the most'
+      '#placeholder': 'Select your ranking '
+      '#options':
+        'Cloud Solutions ': 'Cloud Solutions '
+        'Cybersecurity Solutions': 'Cybersecurity Solutions'
+        'Metaverse Experience': 'Metaverse Experience'
+        'Mixed Reality Hololens (IoT)': 'Mixed Reality Hololens (IoT)'
+        'Mobile and Fixed solutions': 'Mobile and Fixed solutions'
+        'PeopleTracker for Retail': 'PeopleTracker for Retail'
+        'Robotic arm (IoT)': 'Robotic arm (IoT)'
+        'Smart Fleet Management (IoT)': 'Smart Fleet Management (IoT)'
+        'Smart Poultry (IoT)': 'Smart Poultry (IoT)'
+        'Smart Surveillance (IoT)': 'Smart Surveillance (IoT)'
+        'VR Education / Training ': 'VR Education / Training '
+        'VR Gaming ': 'VR Gaming '
+      '#required': true
+      '#required_error': 'Please select your ranking '
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': survey_q_fourc
+    survey_q5:
+      '#type': textarea
+      '#title': 'What type of use cases would you like to see more of in the future?'
+      '#placeholder': 'Please specify'
+      '#required': true
+      '#required_error': 'Please specify the type of use cases you would like to see more of in the future'
+      '#multiple__sorting': false
+      '#multiple__operations': false
+      '#multiple__add': false
+      '#multiple__remove': false
+      '#multiple__add_more': false
+      '#multiple__add_more_input': false
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': survey_q_five
+    survey_q6:
+      '#type': select
+      '#title': 'How likely are you to recommend Celcom Business to your friends or colleagues? '
+      '#placeholder': 'Select your recommended rating'
+      '#options':
+        '5 - Definitely Yes': '5 - Definitely Yes'
+        '4 - Likely ': '4 - Likely '
+        '3 - Neutral': '3 - Neutral'
+        '2 - Unlikely  ': '2 - Unlikely  '
+        '1 - Definitely Not  ': '1 - Definitely Not  '
+      '#required': true
+      '#required_error': 'Please select your recommended rating'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': survey_q_six
+    other_comment:
+      '#type': textarea
+      '#title': 'Any other comments '
+      '#placeholder': 'Please state your comments'
+      '#required_error': 'Please state your comments'
+      '#multiple__sorting': false
+      '#multiple__operations': false
+      '#multiple__add': false
+      '#multiple__remove': false
+      '#multiple__add_more': false
+      '#multiple__add_more_input': false
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#shop_key': other_enquiries
+    actions:
+      '#type': webform_actions
+      '#title': 'Submit button(s)'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#submit__label': Submit
+      '#shop_key': submit
+    status:
+      '#type': item
+      '#title': status
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#markup': submitted
+    submission_type:
+      '#type': item
+      '#title': submission_type
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles': {  }
+      '#access': false
+      '#markup': tech_week_johor
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: both
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

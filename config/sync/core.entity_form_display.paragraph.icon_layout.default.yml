@@ -1,0 +1,65 @@
+uuid: a4b9b2be-4c49-46e4-bf18-4943eccf370c
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.common_reference_node_
+    - field.field.paragraph.icon_layout.field_alignment
+    - field.field.paragraph.icon_layout.field_animation
+    - field.field.paragraph.icon_layout.field_colorpicker_v1
+    - field.field.paragraph.icon_layout.field_entity_ref_single_content
+    - field.field.paragraph.icon_layout.field_selector
+    - paragraphs.paragraphs_type.icon_layout
+  module:
+    - celcom_common
+    - chosen_field
+    - entity_browser
+id: paragraph.icon_layout.default
+targetEntityType: paragraph
+bundle: icon_layout
+mode: default
+content:
+  field_alignment:
+    type: chosen_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_animation:
+    type: chosen_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_colorpicker_v1:
+    type: celcom_common_colorpicker_widget
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_entity_ref_single_content:
+    type: entity_browser_entity_reference
+    weight: 4
+    region: content
+    settings:
+      entity_browser: common_reference_node_
+      field_widget_display: rendered_entity
+      field_widget_edit: false
+      field_widget_remove: true
+      field_widget_replace: true
+      open: true
+      field_widget_display_settings:
+        view_mode: content_body
+      selection_mode: selection_append
+    third_party_settings: {  }
+  field_selector:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 30
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

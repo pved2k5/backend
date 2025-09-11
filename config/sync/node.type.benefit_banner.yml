@@ -1,0 +1,17 @@
+uuid: 1ec03743-c981-4bba-b779-b407c1b32234
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Benefit Banner'
+type: benefit_banner
+description: 'Use this banner for your Benefit Banner content.'
+help: null
+new_revision: false
+preview_mode: 0
+display_submitted: false

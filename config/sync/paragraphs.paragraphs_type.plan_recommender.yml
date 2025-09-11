@@ -1,0 +1,10 @@
+uuid: 0140e482-155e-476f-bd8a-3fc992f26b38
+langcode: en
+status: true
+dependencies: {  }
+id: plan_recommender
+label: 'Plan Recommender'
+icon_uuid: null
+icon_default: null
+description: 'Plan Recommender Paragraph Type'
+behavior_plugins: {  }

@@ -1,0 +1,19 @@
+uuid: fc2fde3e-8257-4fac-a604-67e572b865bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title_plain_long
+    - node.type.solution_card
+id: node.solution_card.field_title_plain_long
+field_name: field_title_plain_long
+entity_type: node
+bundle: solution_card
+label: 'Primary Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,41 @@
+uuid: 3b0b8b7a-9efd-4875-9c65-db5fee97f2e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.free_text.field_colorpicker_v1
+    - field.field.paragraph.free_text.field_entity_ref_single_content
+    - field.field.paragraph.free_text.field_selector
+    - paragraphs.paragraphs_type.free_text
+  module:
+    - celcom_common
+id: paragraph.free_text.default
+targetEntityType: paragraph
+bundle: free_text
+mode: default
+content:
+  field_colorpicker_v1:
+    type: celcom_common_colorswatch_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_entity_ref_single_content:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_selector:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  search_api_excerpt: true

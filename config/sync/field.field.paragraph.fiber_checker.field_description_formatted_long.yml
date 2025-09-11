@@ -1,0 +1,21 @@
+uuid: fe4d8f40-9da6-4240-a1d7-c5199583967a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_formatted_long
+    - paragraphs.paragraphs_type.fiber_checker
+  module:
+    - text
+id: paragraph.fiber_checker.field_description_formatted_long
+field_name: field_description_formatted_long
+entity_type: paragraph
+bundle: fiber_checker
+label: Header
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

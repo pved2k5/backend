@@ -1,0 +1,39 @@
+uuid: da089260-77fd-4e84-a4c0-40fcbecf7124
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.faq_layout.field_banner_text
+    - field.field.node.faq_layout.field_term_select
+    - node.type.faq_layout
+  module:
+    - celcom_utility
+    - user
+id: node.faq_layout.default
+targetEntityType: node
+bundle: faq_layout
+mode: default
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_banner_text:
+    type: id_title_rich_text_field_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_term_select:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  links: true
+  search_api_excerpt: true

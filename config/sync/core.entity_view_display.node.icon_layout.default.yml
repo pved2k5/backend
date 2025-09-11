@@ -1,0 +1,54 @@
+uuid: 7a99ac45-78d2-44c2-8a98-ee66b73322f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.icon_layout.field_background_color
+    - field.field.node.icon_layout.field_paragraph_unlimited
+    - field.field.node.icon_layout.field_rich_text
+    - node.type.icon_layout
+  module:
+    - celcom_utility
+    - entity_reference_revisions
+    - text
+    - user
+id: node.icon_layout.default
+targetEntityType: node
+bundle: icon_layout
+mode: default
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_background_color:
+    type: pill_color_field_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_paragraph_unlimited:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_rich_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  search_api_excerpt: true

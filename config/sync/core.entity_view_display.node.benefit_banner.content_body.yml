@@ -1,0 +1,72 @@
+uuid: f14c6d31-c9ea-44a9-9956-bad39ff8d0c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_body
+    - field.field.node.benefit_banner.field_background_color
+    - field.field.node.benefit_banner.field_boolean
+    - field.field.node.benefit_banner.field_button_primary
+    - field.field.node.benefit_banner.field_desktop_image
+    - field.field.node.benefit_banner.field_font_color
+    - field.field.node.benefit_banner.field_paragraph_unlimited
+    - field.field.node.benefit_banner.field_rich_text
+    - image.style.media_library
+    - node.type.benefit_banner
+  module:
+    - celcom_utility
+    - entity_reference_revisions
+    - media
+    - text
+    - user
+id: node.benefit_banner.content_body
+targetEntityType: node
+bundle: benefit_banner
+mode: content_body
+content:
+  field_background_color:
+    type: background_color_field_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_desktop_image:
+    type: media_thumbnail
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: media_library
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_font_color:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_paragraph_unlimited:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_rich_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  content_moderation_control: true
+  field_boolean: true
+  field_button_primary: true
+  links: true
+  search_api_excerpt: true

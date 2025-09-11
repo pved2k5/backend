@@ -1,14 +1,17 @@
-uuid: a88b336a-c8d0-4a5f-99e6-817781b4dd1d
+uuid: c6ee1600-dc65-4c7b-b087-b99d71d5e04d
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
   module:
     - editor
+    - media
 _core:
-  default_config_hash: vpZysv3RHJjhYzq7O_q5q8mVlHdrSzKELmXyiX6RtV0
+  default_config_hash: WNeK5FbcY8pXgEpbD_KgRzlF1-5PL3BJXwqaBctPTqw
 name: 'Full HTML'
 format: full_html
-weight: 2
+weight: -10
 filters:
   editor_file_reference:
     id: editor_file_reference
@@ -28,6 +31,15 @@ filters:
     status: true
     weight: 9
     settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h3 id> <h4 id> <h5 id> <h6 id> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <p> <pre> <span> <u> <h1 class="text-center"> <h2 id class="text-center"> <div class="text-center freetext-padding">'
+      filter_html_help: true
+      filter_html_nofollow: false
   filter_htmlcorrector:
     id: filter_htmlcorrector
     provider: filter
@@ -38,5 +50,17 @@ filters:
     id: filter_image_lazy_load
     provider: filter
     status: true
-    weight: 15
+    weight: 12
     settings: {  }
+  media_embed:
+    id: media_embed
+    provider: media
+    status: false
+    weight: 100
+    settings:
+      default_view_mode: media_library
+      allowed_view_modes:
+        media_library: media_library
+      allowed_media_types:
+        image: image
+        mobile_images: mobile_images

@@ -1,0 +1,9 @@
+uuid: 3679f651-ea89-43c7-bbd0-48753965fc04
+langcode: en
+status: true
+dependencies: {  }
+name: 'Insights Category'
+vid: insights_category
+description: 'Insights Category'
+weight: 0
+new_revision: false

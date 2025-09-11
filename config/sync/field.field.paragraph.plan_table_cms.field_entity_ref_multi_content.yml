@@ -1,0 +1,29 @@
+uuid: d0129fc5-c8ef-41d1-be27-02a8cbe93e1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_entity_ref_multi_content
+    - node.type.plan_table
+    - paragraphs.paragraphs_type.plan_table_cms
+id: paragraph.plan_table_cms.field_entity_ref_multi_content
+field_name: field_entity_ref_multi_content
+entity_type: paragraph
+bundle: plan_table_cms
+label: Plan
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      plan_table: plan_table
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

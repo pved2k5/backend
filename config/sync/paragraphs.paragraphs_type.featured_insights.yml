@@ -1,0 +1,10 @@
+uuid: 45e7351f-8e6a-407e-b7b3-d6561f372ced
+langcode: en
+status: true
+dependencies: {  }
+id: featured_insights
+label: 'Featured Insights'
+icon_uuid: null
+icon_default: null
+description: 'Featured Insights Paragraph Type'
+behavior_plugins: {  }

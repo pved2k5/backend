@@ -1,0 +1,27 @@
+uuid: a309ced7-00c1-4b63-92d2-7912096d7214
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_document
+    - media.type.icon
+  module:
+    - file
+id: media.icon.field_media_document
+field_name: field_media_document
+entity_type: media
+bundle: icon
+label: File
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: cms-assets/icon
+  file_extensions: 'svg png gif'
+  max_filesize: '1 MB'
+  description_field: false
+field_type: file

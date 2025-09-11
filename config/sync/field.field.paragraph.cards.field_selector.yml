@@ -1,0 +1,19 @@
+uuid: a9ce8dcc-747a-41d6-9299-acaf9711cddd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_selector
+    - paragraphs.paragraphs_type.cards
+id: paragraph.cards.field_selector
+field_name: field_selector
+entity_type: paragraph
+bundle: cards
+label: 'ID Selector'
+description: 'System will accept the number & alphabets in small letters (a-z) only. no special characters allowed in ID selector.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

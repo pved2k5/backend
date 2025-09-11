@@ -1,0 +1,78 @@
+uuid: 508a1bb6-afaf-465e-bd4c-d3cac2655a24
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_body
+    - field.field.node.cards.field_background_color
+    - field.field.node.cards.field_banner_text
+    - field.field.node.cards.field_button_primary
+    - field.field.node.cards.field_button_secondry
+    - field.field.node.cards.field_card_type
+    - field.field.node.cards.field_desktop_image
+    - field.field.node.cards.field_group_richtext
+    - field.field.node.cards.field_mobile_image
+    - field.field.node.cards.field_pill_element
+    - image.style.media_library
+    - node.type.cards
+  module:
+    - celcom_utility
+    - media
+    - options
+    - user
+id: node.cards.content_body
+targetEntityType: node
+bundle: cards
+mode: content_body
+content:
+  field_background_color:
+    type: title_desc_field_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_banner_text:
+    type: title_sub_color_field_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_button_primary:
+    type: link_attributes_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_card_type:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_desktop_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: media_library
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pill_element:
+    type: pill_color_field_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  content_moderation_control: true
+  field_button_secondry: true
+  field_group_richtext: true
+  field_mobile_image: true
+  links: true
+  search_api_excerpt: true

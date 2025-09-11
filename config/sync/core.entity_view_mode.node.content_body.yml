@@ -1,0 +1,11 @@
+uuid: 32143049-26f5-450c-801a-54906f6b2066
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.content_body
+label: 'Content Body'
+description: ''
+targetEntityType: node
+cache: true

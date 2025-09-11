@@ -1,0 +1,12 @@
+uuid: b193a978-fe3e-4787-a053-368cde41cebe
+langcode: en
+status: true
+dependencies: {  }
+id: storytelling_image_right
+label: 'StoryTelling Image Right'
+image: 'public://ckeditor-templates/storytelling_image_right.png'
+description: 'Predefined HTML Template for StoryTelling Image Right'
+html:
+  value: "<div class=\"row justify-content-center align-items-center\">\r\n<div class=\"d-flex justify-content-center col-12 col-md-6 my-auto\">\r\n<div class=\"row d-flex flex-column\">\r\n<h2 style=\"color: black; font-size: 28px\">What is Celcom MEGA™ UNLIMITED?</h2>\r\n\r\n<p class=\"text-justify pt-1\" style=\"color: black; font-size: 16px\">Forget about saving your data for another day, or relying on WiFi to watch videos. With Celcom MEGA™ UNLIMITED, you get to enjoy the Internet on the best 4G LTE network for as long as you like, any day of the week.</p>\r\n\r\n<div class=\"d-block my-2\"><a class=\"btn btn-primary\" href=\"#\" target=\"_blank\" type=\"button\">Learn More</a></div>\r\n</div>\r\n</div>\r\n\r\n<div class=\"col-12 col-md-4\">\r\n<div class=\"img-responsive text-center\"><img alt=\"\" class=\"img-responsive\" src=\"/sites/default/files/cms-assets/desktop/sdwan_storytelling_2.png\" style=\"width: 100%; height: auto\" /></div>\r\n</div>\r\n</div>\r\n"
+  format: full_html
+weight: 4

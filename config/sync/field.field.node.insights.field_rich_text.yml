@@ -1,0 +1,21 @@
+uuid: 689c698d-125b-46d8-bd67-5ffc81cc8286
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rich_text
+    - node.type.insights
+  module:
+    - text
+id: node.insights.field_rich_text
+field_name: field_rich_text
+entity_type: node
+bundle: insights
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,20 @@
+uuid: 617864e7-fa5f-44b0-9244-ead743f29d7b
+langcode: en
+status: false
+dependencies:
+  module:
+    - hal
+    - serialization
+    - system
+    - user
+id: entity.menu
+plugin_id: 'entity:menu'
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - hal_json
+    - json
+  authentication:
+    - cookie

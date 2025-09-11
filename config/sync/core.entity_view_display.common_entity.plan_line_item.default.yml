@@ -1,0 +1,53 @@
+uuid: e75cd5ce-eb48-4d40-9d1a-83edaf216f63
+langcode: en
+status: true
+dependencies:
+  config:
+    - celcom_entity.common_entity_type.plan_line_item
+id: common_entity.plan_line_item.default
+targetEntityType: common_entity
+bundle: plan_line_item
+mode: default
+content:
+  desc_plain_primary:
+    type: basic_string
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+    width: 400px
+  desc_plain_secondary:
+    type: basic_string
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+    width: 400px
+  name:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  status:
+    type: boolean
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  desc_richtext_primary: true
+  desc_richtext_secondary: true
+  search_api_excerpt: true
+  text_plain_primary: true
+  text_plain_secondary: true
+  user_id: true
+  weight: true

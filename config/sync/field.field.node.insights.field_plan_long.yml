@@ -1,0 +1,19 @@
+uuid: 371716b5-fb26-4414-8e28-018e92f73aee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plan_long
+    - node.type.insights
+id: node.insights.field_plan_long
+field_name: field_plan_long
+entity_type: node
+bundle: insights
+label: 'Index Data'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

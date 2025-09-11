@@ -1,0 +1,21 @@
+uuid: d7dff613-aa80-4ba5-afa6-53e7aff7d5fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_formatted_long
+    - paragraphs.paragraphs_type.story_telling
+  module:
+    - text
+id: paragraph.story_telling.field_description_formatted_long
+field_name: field_description_formatted_long
+entity_type: paragraph
+bundle: story_telling
+label: Header
+description: 'Enter the Header Text'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

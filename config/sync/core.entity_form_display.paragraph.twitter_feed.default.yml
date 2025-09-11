@@ -1,0 +1,22 @@
+uuid: a5675abf-f389-4c05-a690-f0345d824d78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.twitter_feed.field_is_available
+    - paragraphs.paragraphs_type.twitter_feed
+id: paragraph.twitter_feed.default
+targetEntityType: paragraph
+bundle: twitter_feed
+mode: default
+content:
+  field_is_available:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

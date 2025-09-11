@@ -1,0 +1,18 @@
+uuid: 8eb9fdb4-79ef-4830-961a-3be85bf53925
+langcode: en
+status: true
+dependencies:
+  module:
+    - celcom_roaming
+id: celcom_roaming.field_roam_saver_data
+field_name: field_roam_saver_data
+entity_type: celcom_roaming
+type: combo_field
+settings: {  }
+module: celcom_roaming
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,152 @@
+uuid: fd81e295-7757-4ff0-ab60-fd4d57d7ae95
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_component_list
+    - node.type.tab_navigation
+    - paragraphs.paragraphs_type.benefit_banner
+    - paragraphs.paragraphs_type.cards
+    - paragraphs.paragraphs_type.device_cards
+    - paragraphs.paragraphs_type.faq
+    - paragraphs.paragraphs_type.free_text
+    - paragraphs.paragraphs_type.hero_banner
+    - paragraphs.paragraphs_type.icon_layout
+    - paragraphs.paragraphs_type.plan_cards
+    - paragraphs.paragraphs_type.plan_table_cms
+    - paragraphs.paragraphs_type.product_category
+    - paragraphs.paragraphs_type.roi_forms
+    - paragraphs.paragraphs_type.story_telling
+  module:
+    - entity_reference_revisions
+id: node.tab_navigation.field_component_list
+field_name: field_component_list
+entity_type: node
+bundle: tab_navigation
+label: Component
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      plan_cards: plan_cards
+      product_category: product_category
+      free_text: free_text
+      story_telling: story_telling
+      cards: cards
+      hero_banner: hero_banner
+      benefit_banner: benefit_banner
+      icon_layout: icon_layout
+      plan_table_cms: plan_table_cms
+      device_cards: device_cards
+      faq: faq
+      roi_forms: roi_forms
+    negate: 0
+    target_bundles_drag_drop:
+      advertisement_banner:
+        weight: -38
+        enabled: false
+      benefit_banner:
+        weight: -63
+        enabled: true
+      campaign:
+        weight: -37
+        enabled: false
+      cards:
+        weight: -65
+        enabled: true
+      cloudshop_plan:
+        weight: -56
+        enabled: false
+      device_cards:
+        weight: -60
+        enabled: true
+      faq:
+        weight: -59
+        enabled: true
+      featured_insights:
+        weight: -47
+        enabled: false
+      fiber_checker:
+        weight: -46
+        enabled: false
+      flip_card:
+        weight: -45
+        enabled: false
+      footer:
+        weight: -57
+        enabled: false
+      free_text:
+        weight: -67
+        enabled: true
+      header:
+        weight: -55
+        enabled: false
+      hero_banner:
+        weight: -64
+        enabled: true
+      icon_layout:
+        weight: -62
+        enabled: true
+      icon_title_description:
+        weight: -54
+        enabled: false
+      image_cards:
+        weight: -44
+        enabled: false
+      insights_category:
+        weight: -50
+        enabled: false
+      latest_insights:
+        weight: -43
+        enabled: false
+      partners_cards:
+        weight: -53
+        enabled: false
+      plan_cards:
+        weight: -69
+        enabled: true
+      plan_recommender:
+        weight: -49
+        enabled: false
+      plan_table_cms:
+        weight: -61
+        enabled: true
+      product_category:
+        weight: -68
+        enabled: true
+      promo_banner:
+        weight: -52
+        enabled: false
+      promo_card_layout_wrapper:
+        weight: -48
+        enabled: false
+      related_insights:
+        weight: -42
+        enabled: false
+      roaming_rates:
+        weight: -41
+        enabled: false
+      roi_forms:
+        weight: -58
+        enabled: true
+      social_share:
+        weight: -40
+        enabled: false
+      story_telling:
+        weight: -66
+        enabled: true
+      tab_navigation:
+        weight: -51
+        enabled: false
+      twitter_feed:
+        weight: -39
+        enabled: false
+      video_campaign:
+        weight: -36
+        enabled: false
+field_type: entity_reference_revisions

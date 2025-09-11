@@ -1,0 +1,56 @@
+uuid: 17fc9c59-2951-47e9-a441-89ba6470bc4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.insights.field_authored_by
+    - field.field.node.insights.field_button_primary
+    - field.field.node.insights.field_component_list
+    - field.field.node.insights.field_desktop_image
+    - field.field.node.insights.field_footer
+    - field.field.node.insights.field_left_sidebar
+    - field.field.node.insights.field_meta_tags
+    - field.field.node.insights.field_pill_element
+    - field.field.node.insights.field_plan_long
+    - field.field.node.insights.field_published_date
+    - field.field.node.insights.field_rich_text
+    - field.field.node.insights.field_right_sidebar
+    - field.field.node.insights.field_term_select
+    - field.field.node.insights.field_title_plain
+    - field.field.node.insights.field_title_plain_long
+    - node.type.insights
+  module:
+    - user
+id: node.insights.teaser
+targetEntityType: node
+bundle: insights
+mode: teaser
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_authored_by: true
+  field_button_primary: true
+  field_component_list: true
+  field_desktop_image: true
+  field_footer: true
+  field_left_sidebar: true
+  field_meta_tags: true
+  field_pill_element: true
+  field_plan_long: true
+  field_published_date: true
+  field_rich_text: true
+  field_right_sidebar: true
+  field_term_select: true
+  field_title_plain: true
+  field_title_plain_long: true
+  search_api_excerpt: true

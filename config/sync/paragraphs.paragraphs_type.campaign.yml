@@ -1,0 +1,10 @@
+uuid: e7f87c8a-95a2-4cd0-a880-37cc6233501c
+langcode: en
+status: true
+dependencies: {  }
+id: campaign
+label: Campaign
+icon_uuid: null
+icon_default: null
+description: 'Campaign Paragraph Type'
+behavior_plugins: {  }

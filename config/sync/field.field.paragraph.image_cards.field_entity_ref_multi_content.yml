@@ -1,0 +1,29 @@
+uuid: d69ac4bf-9dc1-4f0d-a38c-2b6ef31dc05b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_entity_ref_multi_content
+    - node.type.cards
+    - paragraphs.paragraphs_type.image_cards
+id: paragraph.image_cards.field_entity_ref_multi_content
+field_name: field_entity_ref_multi_content
+entity_type: paragraph
+bundle: image_cards
+label: 'Image Card'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      cards: cards
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

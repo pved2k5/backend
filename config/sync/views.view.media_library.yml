@@ -1,4 +1,4 @@
-uuid: 4dbbde6e-50ca-49e3-bf3b-c38bb3722f85
+uuid: cf3ea60d-6825-4a16-9f80-e7ddcf9e6c2d
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,7 @@ dependencies:
     module:
       - media_library
 _core:
-  default_config_hash: 9u9hwW-Q0-uQJz1vgenJTQhZGYN0FBZoOogwPD6kgkQ
+  default_config_hash: dHOSWSHbMJNke0ZBGh1O5KrnwynSOCOpQycITW-pwfs
 id: media_library
 label: 'Media library'
 module: views
@@ -25,7 +25,7 @@ base_field: mid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: Master
     display_plugin: default
     position: 0
     display_options:
@@ -139,7 +139,6 @@ display:
         type: mini
         options:
           offset: 0
-          pagination_heading_level: h4
           items_per_page: 24
           total_pages: null
           id: 0
@@ -154,6 +153,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
+          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:
@@ -1133,7 +1133,7 @@ display:
             image_link: ''
             image_style: media_library
             image_loading:
-              attribute: eager
+              attribute: lazy
         name:
           id: name
           table: media_field_data
@@ -1173,7 +1173,7 @@ display:
             custom_date_format: ''
             timezone: ''
             tooltip:
-              date_format: long
+              date_format: ''
               custom_date_format: ''
             time_diff:
               enabled: false

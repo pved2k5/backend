@@ -1,0 +1,78 @@
+uuid: 3ed9259a-2a8c-445e-8e6b-1e218c3a1afa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_cards.field_alignment
+    - field.field.paragraph.image_cards.field_animation
+    - field.field.paragraph.image_cards.field_colorpicker_v1
+    - field.field.paragraph.image_cards.field_description_formatted_long
+    - field.field.paragraph.image_cards.field_entity_ref_multi_content
+    - field.field.paragraph.image_cards.field_is_available
+    - field.field.paragraph.image_cards.field_selector
+    - paragraphs.paragraphs_type.image_cards
+  module:
+    - celcom_common
+    - options
+    - text
+id: paragraph.image_cards.default
+targetEntityType: paragraph
+bundle: image_cards
+mode: default
+content:
+  field_alignment:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_animation:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_colorpicker_v1:
+    type: celcom_common_colorpicker_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_description_formatted_long:
+    type: text_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_entity_ref_multi_content:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_is_available:
+    type: boolean
+    label: inline
+    settings:
+      format: true-false
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_selector:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true

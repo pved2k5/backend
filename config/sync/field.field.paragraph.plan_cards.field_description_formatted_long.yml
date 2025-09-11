@@ -1,0 +1,21 @@
+uuid: 712750cd-da6e-4513-b291-c8f6b980811f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_formatted_long
+    - paragraphs.paragraphs_type.plan_cards
+  module:
+    - text
+id: paragraph.plan_cards.field_description_formatted_long
+field_name: field_description_formatted_long
+entity_type: paragraph
+bundle: plan_cards
+label: Header
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

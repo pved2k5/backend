@@ -1,0 +1,29 @@
+uuid: 4e65fd26-9e44-495c-92ab-98456c4348a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_desktop_image
+    - media.type.image
+    - node.type.solution_card
+id: node.solution_card.field_desktop_image
+field_name: field_desktop_image
+entity_type: node
+bundle: solution_card
+label: 'Card Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

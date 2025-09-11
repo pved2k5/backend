@@ -1,0 +1,23 @@
+uuid: f892834e-069d-4e0e-b251-080a372a22b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_alignment
+    - paragraphs.paragraphs_type.icon_layout
+  module:
+    - options
+id: paragraph.icon_layout.field_alignment
+field_name: field_alignment
+entity_type: paragraph
+bundle: icon_layout
+label: Alignment
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: center
+default_value_callback: ''
+settings: {  }
+field_type: list_string

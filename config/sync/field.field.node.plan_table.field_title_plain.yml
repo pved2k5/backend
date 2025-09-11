@@ -1,0 +1,19 @@
+uuid: 01485513-a453-4c31-bd16-9bb5576c878f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title_plain
+    - node.type.plan_table
+id: node.plan_table.field_title_plain
+field_name: field_title_plain
+entity_type: node
+bundle: plan_table
+label: 'Product Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

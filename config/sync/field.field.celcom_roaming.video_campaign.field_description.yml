@@ -1,0 +1,21 @@
+uuid: 341e2a27-46d3-40d5-9d0b-a4d50fc76bc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - celcom_roaming.celcom_roaming_type.video_campaign
+    - field.storage.celcom_roaming.field_description
+  module:
+    - text
+id: celcom_roaming.video_campaign.field_description
+field_name: field_description
+entity_type: celcom_roaming
+bundle: video_campaign
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

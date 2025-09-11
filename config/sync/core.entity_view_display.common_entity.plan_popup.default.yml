@@ -1,0 +1,62 @@
+uuid: 33389380-5b83-42c8-a78e-3b7e5b97c0fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - celcom_entity.common_entity_type.plan_popup
+    - field.field.common_entity.plan_popup.field_icon
+  module:
+    - file
+id: common_entity.plan_popup.default
+targetEntityType: common_entity
+bundle: plan_popup
+mode: default
+content:
+  desc_plain_primary:
+    type: basic_string
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+    width: 400px
+  field_icon:
+    type: file_default
+    label: inline
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  text_plain_primary:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  text_plain_secondary:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  desc_plain_secondary: true
+  desc_richtext_primary: true
+  desc_richtext_secondary: true
+  search_api_excerpt: true
+  status: true
+  user_id: true
+  weight: true

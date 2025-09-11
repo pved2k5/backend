@@ -1,0 +1,21 @@
+uuid: 1398889d-cdb6-4754-9e64-722a7c4ecbc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_search_filter
+    - paragraphs.paragraphs_type.insights_category
+  module:
+    - options
+id: paragraph.insights_category.field_search_filter
+field_name: field_search_filter
+entity_type: paragraph
+bundle: insights_category
+label: Filter
+description: 'Please choose the search filter'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

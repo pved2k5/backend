@@ -1,0 +1,19 @@
+uuid: 6899c43a-ff65-484d-ab21-2993d3c52021
+langcode: en
+status: true
+dependencies:
+  config:
+    - rest.resource.common_post_rest_resource
+  module:
+    - file
+    - rest
+    - simple_oauth
+id: oauth_user
+label: 'Oauth User'
+weight: 8
+is_admin: null
+permissions:
+  - 'add simple_oauth entities'
+  - 'delete own files'
+  - 'restful post common_post_rest_resource'
+  - 'view own simple_oauth entities'

@@ -1,0 +1,23 @@
+uuid: 1ee1e7bd-bbf8-44ac-8a62-deba94c3d34c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_is_available
+    - paragraphs.paragraphs_type.roi_forms
+id: paragraph.roi_forms.field_is_available
+field_name: field_is_available
+entity_type: paragraph
+bundle: roi_forms
+label: 'Inline Confirmation Message'
+description: 'Override confirmation message display as inline text.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

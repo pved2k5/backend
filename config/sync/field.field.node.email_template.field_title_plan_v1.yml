@@ -1,0 +1,21 @@
+uuid: cc63ab4d-e34e-4b15-ad85-deb4ee0da2d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title_plan_v1
+    - node.type.email_template
+id: node.email_template.field_title_plan_v1
+field_name: field_title_plan_v1
+entity_type: node
+bundle: email_template
+label: 'Email From Label'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 'Celcom Team'
+default_value_callback: ''
+settings: {  }
+field_type: string

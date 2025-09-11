@@ -1,0 +1,266 @@
+uuid: 4f538d55-93e9-4ea0-8747-bb12ef0371ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.advertisement_banner
+    - entity_browser.browser.common_reference_node_
+    - entity_browser.browser.detail_banner
+    - entity_browser.browser.flip_cards
+    - entity_browser.browser.free_text
+    - entity_browser.browser.hero_banner
+    - entity_browser.browser.image_cards
+    - entity_browser.browser.partners_cards
+    - entity_browser.browser.promo_banner
+    - entity_browser.browser.promo_cards
+    - entity_browser.browser.story_banner
+    - entity_browser.browser.video_banner
+    - filter.format.full_html
+    - media.type.document
+    - media.type.icon
+    - media.type.image
+    - media.type.media_gif_
+    - media.type.media_youtube
+    - media.type.mobile_images
+    - node.type.banner
+    - node.type.benefit_banner
+    - node.type.cards
+    - node.type.device_card
+    - node.type.explore_products
+    - node.type.faq_layout
+    - node.type.free_text
+    - node.type.global_pages
+    - node.type.icon_layout
+    - node.type.insights
+    - node.type.plan_table
+    - node.type.solution_card
+    - node.type.tab_navigation
+    - node.type.video_banner
+    - taxonomy.vocabulary.brand_model
+    - taxonomy.vocabulary.faq_category
+    - taxonomy.vocabulary.insights_category
+    - workflows.workflow.content_workflow
+  module:
+    - celcom_common
+    - content_moderation
+    - contextual
+    - entity_browser
+    - file
+    - filter
+    - media
+    - node
+    - path
+    - quick_node_clone
+    - quickedit
+    - system
+    - taxonomy
+    - toolbar
+    - webform
+id: content_publisher
+label: 'Content Publisher'
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access advertisement_banner entity browser pages'
+  - 'access common_reference_node_ entity browser pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access detail_banner entity browser pages'
+  - 'access files overview'
+  - 'access flip_cards entity browser pages'
+  - 'access free_text entity browser pages'
+  - 'access hero_banner entity browser pages'
+  - 'access image_cards entity browser pages'
+  - 'access in-place editing'
+  - 'access media overview'
+  - 'access partners_cards entity browser pages'
+  - 'access promo_banner entity browser pages'
+  - 'access promo_cards entity browser pages'
+  - 'access story_banner entity browser pages'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access video_banner entity browser pages'
+  - 'access webform overview'
+  - 'access webform submission user'
+  - 'add api response entities'
+  - 'administer menu'
+  - 'administer nodes'
+  - 'administer webform'
+  - 'administer webform element access'
+  - 'clone banner content'
+  - 'clone benefit_banner content'
+  - 'clone cards content'
+  - 'clone faq_layout content'
+  - 'clone free_text content'
+  - 'clone global_pages content'
+  - 'clone icon_layout content'
+  - 'clone insights content'
+  - 'clone tab_navigation content'
+  - 'clone video_banner content'
+  - 'create banner content'
+  - 'create benefit_banner content'
+  - 'create cards content'
+  - 'create device_card content'
+  - 'create document media'
+  - 'create explore_products content'
+  - 'create faq_layout content'
+  - 'create free_text content'
+  - 'create global_pages content'
+  - 'create icon media'
+  - 'create icon_layout content'
+  - 'create image media'
+  - 'create insights content'
+  - 'create media'
+  - 'create media_gif_ media'
+  - 'create media_youtube media'
+  - 'create mobile_images media'
+  - 'create plan_table content'
+  - 'create solution_card content'
+  - 'create tab_navigation content'
+  - 'create terms in brand_model'
+  - 'create terms in faq_category'
+  - 'create terms in insights_category'
+  - 'create url aliases'
+  - 'create video_banner content'
+  - 'create webform'
+  - 'delete any banner content'
+  - 'delete any benefit_banner content'
+  - 'delete any cards content'
+  - 'delete any device_card content'
+  - 'delete any explore_products content'
+  - 'delete any faq_layout content'
+  - 'delete any free_text content'
+  - 'delete any global_pages content'
+  - 'delete any icon_layout content'
+  - 'delete any insights content'
+  - 'delete any plan_table content'
+  - 'delete any solution_card content'
+  - 'delete any tab_navigation content'
+  - 'delete any video_banner content'
+  - 'delete any webform'
+  - 'delete any webform submission'
+  - 'delete api response entities'
+  - 'delete banner revisions'
+  - 'delete benefit_banner revisions'
+  - 'delete cards revisions'
+  - 'delete device_card revisions'
+  - 'delete explore_products revisions'
+  - 'delete faq_layout revisions'
+  - 'delete free_text revisions'
+  - 'delete global_pages revisions'
+  - 'delete icon_layout revisions'
+  - 'delete own banner content'
+  - 'delete own benefit_banner content'
+  - 'delete own cards content'
+  - 'delete own device_card content'
+  - 'delete own explore_products content'
+  - 'delete own faq_layout content'
+  - 'delete own files'
+  - 'delete own free_text content'
+  - 'delete own global_pages content'
+  - 'delete own icon_layout content'
+  - 'delete own insights content'
+  - 'delete own plan_table content'
+  - 'delete own solution_card content'
+  - 'delete own tab_navigation content'
+  - 'delete own video_banner content'
+  - 'delete own webform'
+  - 'delete own webform submission'
+  - 'delete solution_card revisions'
+  - 'delete tab_navigation revisions'
+  - 'delete video_banner revisions'
+  - 'edit any banner content'
+  - 'edit any benefit_banner content'
+  - 'edit any cards content'
+  - 'edit any device_card content'
+  - 'edit any document media'
+  - 'edit any explore_products content'
+  - 'edit any faq_layout content'
+  - 'edit any free_text content'
+  - 'edit any global_pages content'
+  - 'edit any icon media'
+  - 'edit any icon_layout content'
+  - 'edit any image media'
+  - 'edit any insights content'
+  - 'edit any media_gif_ media'
+  - 'edit any media_youtube media'
+  - 'edit any mobile_images media'
+  - 'edit any plan_table content'
+  - 'edit any solution_card content'
+  - 'edit any tab_navigation content'
+  - 'edit any video_banner content'
+  - 'edit any webform'
+  - 'edit any webform submission'
+  - 'edit api response entities'
+  - 'edit own banner content'
+  - 'edit own benefit_banner content'
+  - 'edit own cards content'
+  - 'edit own device_card content'
+  - 'edit own document media'
+  - 'edit own explore_products content'
+  - 'edit own faq_layout content'
+  - 'edit own free_text content'
+  - 'edit own global_pages content'
+  - 'edit own icon media'
+  - 'edit own icon_layout content'
+  - 'edit own image media'
+  - 'edit own insights content'
+  - 'edit own media_gif_ media'
+  - 'edit own media_youtube media'
+  - 'edit own mobile_images media'
+  - 'edit own plan_table content'
+  - 'edit own solution_card content'
+  - 'edit own tab_navigation content'
+  - 'edit own video_banner content'
+  - 'edit own webform'
+  - 'edit own webform submission'
+  - 'edit terms in brand_model'
+  - 'edit terms in faq_category'
+  - 'edit terms in insights_category'
+  - 'revert banner revisions'
+  - 'revert benefit_banner revisions'
+  - 'revert cards revisions'
+  - 'revert device_card revisions'
+  - 'revert explore_products revisions'
+  - 'revert faq_layout revisions'
+  - 'revert free_text revisions'
+  - 'revert global_pages revisions'
+  - 'revert icon_layout revisions'
+  - 'revert insights revisions'
+  - 'revert solution_card revisions'
+  - 'revert tab_navigation revisions'
+  - 'update any media'
+  - 'update media'
+  - 'use content_workflow transition create_new_draft'
+  - 'use content_workflow transition draft_to_publish'
+  - 'use content_workflow transition publish'
+  - 'use content_workflow transition review_again'
+  - 'use content_workflow transition review_again_to_draft'
+  - 'use content_workflow transition review_again_to_publish'
+  - 'use content_workflow transition send_for_review_to_draft'
+  - 'use content_workflow transition send_for_review_to_publish'
+  - 'use text format full_html'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view any webform submission'
+  - 'view banner revisions'
+  - 'view benefit_banner revisions'
+  - 'view cards revisions'
+  - 'view device_card revisions'
+  - 'view explore_products revisions'
+  - 'view faq_layout revisions'
+  - 'view free_text revisions'
+  - 'view global_pages revisions'
+  - 'view icon_layout revisions'
+  - 'view insights revisions'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view own webform submission'
+  - 'view plan_table revisions'
+  - 'view published api response entities'
+  - 'view solution_card revisions'
+  - 'view tab_navigation revisions'
+  - 'view the administration theme'
+  - 'view video_banner revisions'

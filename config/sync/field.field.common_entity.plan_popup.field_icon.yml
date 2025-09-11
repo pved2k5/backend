@@ -1,0 +1,27 @@
+uuid: 69d9d735-eb9a-4453-88bf-cc919b4fda61
+langcode: en
+status: true
+dependencies:
+  config:
+    - celcom_entity.common_entity_type.plan_popup
+    - field.storage.common_entity.field_icon
+  module:
+    - file
+id: common_entity.plan_popup.field_icon
+field_name: field_icon
+entity_type: common_entity
+bundle: plan_popup
+label: Icon
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: common-assets/attachment
+  file_extensions: 'svg png'
+  max_filesize: ''
+  description_field: false
+field_type: file

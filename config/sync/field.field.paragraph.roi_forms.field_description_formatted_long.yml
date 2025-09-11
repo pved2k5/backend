@@ -1,0 +1,21 @@
+uuid: 0a2f1144-0808-415d-81f3-f10fccc4c155
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_formatted_long
+    - paragraphs.paragraphs_type.roi_forms
+  module:
+    - text
+id: paragraph.roi_forms.field_description_formatted_long
+field_name: field_description_formatted_long
+entity_type: paragraph
+bundle: roi_forms
+label: Header
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
