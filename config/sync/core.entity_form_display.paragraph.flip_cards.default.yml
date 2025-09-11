@@ -1,0 +1,30 @@
+uuid: faf6831a-d5e2-45f2-95e6-68f381866038
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.flip_cards.field_multi_content
+    - paragraphs.paragraphs_type.flip_cards
+id: paragraph.flip_cards.default
+targetEntityType: paragraph
+bundle: flip_cards
+mode: default
+content:
+  field_multi_content:
+    type: entity_reference_autocomplete
+    weight: -199
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  layout_paragraphs_fields:
+    weight: -200
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

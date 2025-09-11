@@ -1,0 +1,19 @@
+uuid: 41a6afce-ecc3-4418-8fa4-3f41b4f30abb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_header
+    - paragraphs.paragraphs_type.roi_forms
+id: paragraph.roi_forms.field_header
+field_name: field_header
+entity_type: paragraph
+bundle: roi_forms
+label: Header
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

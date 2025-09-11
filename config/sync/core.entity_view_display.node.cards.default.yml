@@ -1,56 +1,49 @@
-uuid: 468e4b66-a749-46e5-acc0-07ecb08ca887
+uuid: 49fecd82-940e-453c-b311-8bdf1621b2ad
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.cards.body
     - field.field.node.cards.field_background_color
-    - field.field.node.cards.field_banner_text
-    - field.field.node.cards.field_button_primary
-    - field.field.node.cards.field_button_secondry
-    - field.field.node.cards.field_card_type
-    - field.field.node.cards.field_desktop_image
-    - field.field.node.cards.field_group_richtext
-    - field.field.node.cards.field_mobile_image
-    - field.field.node.cards.field_pill_element
+    - field.field.node.cards.field_card_image
+    - field.field.node.cards.field_cta
     - node.type.cards
   module:
-    - celcom_utility
+    - color_field
     - link
-    - media
-    - options
+    - text
     - user
 id: node.cards.default
 targetEntityType: node
 bundle: cards
 mode: default
 content:
-  content_moderation_control:
+  body:
+    type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 101
     region: content
   field_background_color:
-    type: title_desc_field_formatter
+    type: color_field_formatter_text
     label: above
-    settings: {  }
+    settings:
+      format: hex
+      opacity: true
     third_party_settings: {  }
-    weight: 7
+    weight: 103
     region: content
-  field_banner_text:
-    type: title_sub_color_field_formatter
+  field_card_image:
+    type: entity_reference_entity_view
     label: above
-    settings: {  }
+    settings:
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    weight: 4
+    weight: 102
     region: content
-  field_button_primary:
-    type: link_attributes_formatter
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 5
-    region: content
-  field_button_secondry:
+  field_cta:
     type: link
     label: above
     settings:
@@ -60,47 +53,11 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 8
+    weight: 104
     region: content
-  field_card_type:
-    type: list_default
-    label: above
+  links:
     settings: {  }
     third_party_settings: {  }
-    weight: 6
+    weight: 100
     region: content
-  field_desktop_image:
-    type: media_thumbnail
-    label: above
-    settings:
-      image_link: ''
-      image_style: ''
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_group_richtext:
-    type: title_desc_field_formatter
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 9
-    region: content
-  field_mobile_image:
-    type: media_thumbnail
-    label: above
-    settings:
-      image_link: ''
-      image_style: ''
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_pill_element:
-    type: pill_color_field_formatter
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 3
-    region: content
-hidden:
-  links: true
-  search_api_excerpt: true
+hidden: {  }

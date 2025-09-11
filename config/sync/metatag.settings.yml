@@ -1,12 +1,9 @@
-entity_type_groups:
-  node:
-    global_pages:
-      basic: basic
-      advanced: advanced
-      open_graph: open_graph
-      twitter_cards: twitter_cards
-    insights:
-      basic: basic
-      advanced: advanced
-      open_graph: open_graph
-      twitter_cards: twitter_cards
+_core:
+  default_config_hash: DrYt8PcXA0xB3C3L1SvtefnkO5SwUonhY3n4Ld8yun4
+entity_type_groups: {  }
+separator: ''
+tag_trim_method: beforeValue
+tag_trim_maxlength: {  }
+tag_scroll_max_height: ''
+use_maxlength: true
+tag_trim_end: '|.,-:;/+&([{"'''

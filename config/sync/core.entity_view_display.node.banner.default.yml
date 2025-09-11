@@ -1,89 +1,52 @@
-uuid: 44c7ad31-f389-4cdd-b77c-a990e89bd16f
+uuid: 0d3fb160-0e16-42a4-a38f-4f97e31a522a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.banner.field_banner_text
-    - field.field.node.banner.field_banner_type
-    - field.field.node.banner.field_button_primary
-    - field.field.node.banner.field_button_secondry
-    - field.field.node.banner.field_desktop_image
-    - field.field.node.banner.field_mobile_image
-    - field.field.node.banner.field_pill_element
-    - image.style.webp
+    - field.field.node.banner.body
+    - field.field.node.banner.field_card_image
+    - field.field.node.banner.field_cta
     - node.type.banner
   module:
-    - celcom_utility
-    - media
-    - options
+    - link
+    - text
     - user
 id: node.banner.default
 targetEntityType: node
 bundle: banner
 mode: default
 content:
-  content_moderation_control:
+  body:
+    type: text_default
+    label: hidden
     settings: {  }
-    third_party_settings: {  }
-    weight: -20
-    region: content
-  field_banner_text:
-    type: color_title_rich_text_field_formatter
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 104
-    region: content
-  field_banner_type:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 107
-    region: content
-  field_button_primary:
-    type: link_attributes_formatter
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 105
-    region: content
-  field_button_secondry:
-    type: link_attributes_formatter
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 106
-    region: content
-  field_desktop_image:
-    type: media_thumbnail
-    label: above
-    settings:
-      image_link: ''
-      image_style: webp
     third_party_settings: {  }
     weight: 101
     region: content
-  field_mobile_image:
-    type: media_thumbnail
+  field_card_image:
+    type: entity_reference_entity_view
     label: above
     settings:
-      image_link: ''
-      image_style: webp
+      view_mode: default
+      link: false
     third_party_settings: {  }
     weight: 102
     region: content
-  field_pill_element:
-    type: title_desc_field_formatter
+  field_cta:
+    type: link
     label: above
-    settings: {  }
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
-    weight: 103
+    weight: 104
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
     region: content
-hidden:
-  search_api_excerpt: true
+hidden: {  }

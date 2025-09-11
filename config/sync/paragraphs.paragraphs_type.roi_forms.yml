@@ -1,4 +1,4 @@
-uuid: 007bb1a8-53bd-47fe-ae09-d38833af5690
+uuid: d289103e-e1aa-4f63-b2ac-5e7594c7a09d
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ id: roi_forms
 label: 'Roi Forms'
 icon_uuid: null
 icon_default: null
-description: 'Roi Forms Paragraph Type'
+description: ''
 behavior_plugins:
   layout_paragraphs:
     enabled: false

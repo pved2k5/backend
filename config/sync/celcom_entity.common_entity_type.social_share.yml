@@ -1,7 +1,0 @@
-uuid: 5609f633-ddcc-4c79-87eb-8960ba377bc1
-langcode: en
-status: true
-dependencies: {  }
-id: social_share
-label: 'Social Share'
-description: 'Social Share '

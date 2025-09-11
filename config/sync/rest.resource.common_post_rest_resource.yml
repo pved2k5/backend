@@ -1,24 +1,17 @@
-uuid: f95ff21e-5aa7-4cc1-ac95-ed0d2cc14b91
+uuid: 7e09e2a2-2b1b-4681-a3c7-239fc2918b0a
 langcode: en
 status: true
 dependencies:
   module:
-    - basic_auth
-    - celcom_common
-    - hal
     - serialization
     - simple_oauth
-    - user
+    - sysop_common
 id: common_post_rest_resource
 plugin_id: common_post_rest_resource
-granularity: resource
+granularity: method
 configuration:
-  methods:
-    - POST
-  formats:
-    - hal_json
-    - json
-  authentication:
-    - basic_auth
-    - oauth2
-    - cookie
+  POST:
+    supported_formats:
+      - json
+    supported_auth:
+      - oauth2

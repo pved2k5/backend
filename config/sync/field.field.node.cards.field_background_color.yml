@@ -1,4 +1,4 @@
-uuid: b4a2b7e7-6872-4931-b547-fbab3c1f3889
+uuid: 4fee55e6-0c9f-482d-8942-1e6a9d626089
 langcode: en
 status: true
 dependencies:
@@ -6,16 +6,17 @@ dependencies:
     - field.storage.node.field_background_color
     - node.type.cards
   module:
-    - celcom_utility
+    - color_field
 id: node.cards.field_background_color
 field_name: field_background_color
 entity_type: node
 bundle: cards
-label: 'Card Base Color'
+label: 'Background Color'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: title_desc_field
+settings:
+  opacity: 1
+field_type: color_field_type

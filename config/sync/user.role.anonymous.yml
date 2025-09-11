@@ -1,24 +1,22 @@
-uuid: 0c32b961-cfc2-4dba-8388-73f03d86b790
+uuid: a18ab8cb-bc80-437a-9f50-8b0a4dffd1a3
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.restricted_html
   module:
-    - celcom_common
+    - comment
     - filter
     - media
     - system
 _core:
-  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
 id: anonymous
 label: 'Anonymous user'
 weight: 0
 is_admin: false
 permissions:
+  - 'access comments'
   - 'access content'
-  - 'administer api response entities'
-  - 'administer menu'
   - 'use text format restricted_html'
   - 'view media'
-  - 'view published api response entities'
