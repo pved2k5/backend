@@ -1,4 +1,4 @@
-uuid: 19d18566-b7fa-4b10-84b7-866d06016046
+uuid: bbb873e7-5d68-47f8-89ad-7220cadacffe
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
     module:
       - media
 _core:
-  default_config_hash: pzPA-2JwyxlJ3qMb4L9viAnhNhbEhl2couH8A3FO020
+  default_config_hash: P7CkVOgjDXiN26Fm2hniNei-XPK3iuZTlcBGqreTbJ0
 id: media.image.field_media_image
 field_name: field_media_image
 entity_type: media
@@ -25,9 +25,9 @@ default_value_callback: ''
 settings:
   handler: 'default:file'
   handler_settings: {  }
-  file_directory: cms-assets/desktop
-  file_extensions: 'png jpg jpeg'
-  max_filesize: '300 KB'
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
   max_resolution: ''
   min_resolution: ''
   alt_field: true
@@ -35,7 +35,7 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: ''
+    uuid: null
     alt: ''
     title: ''
     width: null

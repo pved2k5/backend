@@ -1,108 +1,55 @@
-uuid: e1a83e91-7bc2-44e0-84ca-a2ba562d44e5
+uuid: 12bffe7d-5004-4cb0-abee-5cef726aca4a
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.cards.body
     - field.field.node.cards.field_background_color
-    - field.field.node.cards.field_banner_text
-    - field.field.node.cards.field_button_primary
-    - field.field.node.cards.field_button_secondry
-    - field.field.node.cards.field_card_type
-    - field.field.node.cards.field_desktop_image
-    - field.field.node.cards.field_group_richtext
-    - field.field.node.cards.field_mobile_image
-    - field.field.node.cards.field_pill_element
+    - field.field.node.cards.field_card_image
+    - field.field.node.cards.field_cta
     - node.type.cards
-    - workflows.workflow.content_workflow
   module:
-    - celcom_utility
-    - chosen_field
-    - content_moderation
-    - link_attributes
+    - color_field
+    - link
     - media_library
+    - text
 id: node.cards.default
 targetEntityType: node
 bundle: cards
 mode: default
 content:
-  field_background_color:
-    type: background_color_field_widget
+  body:
+    type: text_textarea_with_summary
     weight: 2
     region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_banner_text:
-    type: title_sub_color_field_widget
-    weight: 6
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_button_primary:
-    type: link_attribute_field_widget
-    weight: 8
-    region: content
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
-      link_attributes_link_size: '1'
-      link_attributes_link_variant: '1'
-      link_attributes_link_icon: 0
-      link_attributes_link_analytic: 0
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
     third_party_settings: {  }
-  field_button_secondry:
-    type: link_attribute_field_widget
-    weight: 9
-    region: content
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-      link_attributes_link_size: '1'
-      link_attributes_link_variant: '1'
-      link_attributes_link_icon: 0
-      link_attributes_link_analytic: 0
-    third_party_settings: {  }
-  field_card_type:
-    type: chosen_select
+  field_background_color:
+    type: color_field_widget_default
     weight: 1
     region: content
-    settings: {  }
+    settings:
+      placeholder_color: ''
+      placeholder_opacity: ''
     third_party_settings: {  }
-  field_desktop_image:
+  field_card_image:
     type: media_library_widget
     weight: 3
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-  field_group_richtext:
-    type: color_title_rich_text_field_widget
-    weight: 7
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_mobile_image:
-    type: media_library_widget
+  field_cta:
+    type: link_default
     weight: 4
     region: content
     settings:
-      media_types: {  }
-    third_party_settings: {  }
-  field_pill_element:
-    type: pill_color_field_widget
-    weight: 5
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  moderation_state:
-    type: moderation_state_default
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  simple_sitemap:
-    weight: 10
-    region: content
-    settings: {  }
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   title:
     type: string_textfield

@@ -1,9 +1,9 @@
-uuid: ef4ecbac-a084-4521-8cc7-c22b6948023a
+uuid: 2919eae1-ab75-405f-8c99-a017faf24fcb
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: zYKaSl4QZrKMFj7aIhSGDRcBy4SoNjvY2EZlT7amrBk
+  default_config_hash: zlxpI1nUDS46lrOkyHiD-72D5OFvlADLiyXT5B1iErk
 id: auth_code
 label: 'Auth code'
 description: 'The auth code type.'

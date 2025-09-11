@@ -1,0 +1,14 @@
+uuid: 9410a7a0-d1de-42b2-ba95-78ec7112085f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.apiaccessuser
+  module:
+    - user
+id: user_add_role_action.apiaccessuser
+label: 'Add the APIAccessUser role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: apiaccessuser

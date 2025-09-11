@@ -1,7 +1,0 @@
-uuid: 05629b40-9e34-4f0a-bef7-87ea11fcf4bb
-langcode: en
-status: true
-dependencies: {  }
-id: cloudshop_api
-label: 'Cloudshop API'
-description: 'Entity Type is used for Cloudshop API management'

@@ -1,12 +1,12 @@
-uuid: 90705b9f-087f-427a-a550-b2ad71bf72ae
+uuid: cfa89a90-2ecf-4f5b-8569-74cbb3272e4d
 langcode: en
-status: false
+status: true
 dependencies: {  }
 _core:
   default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
 id: node
 label: Content
 tags:
-  canonical_url: '[node:url]'
-  description: '[node:summary]'
   title: '[node:title] | [site:name]'
+  description: '[node:summary]'
+  canonical_url: '[node:url]'

@@ -1,7 +1,0 @@
-uuid: 51db1418-d835-411e-b25e-bb86e16ebbb9
-langcode: en
-status: true
-dependencies: {  }
-id: plan_line_item
-label: 'Plan Line Item'
-description: 'Reusable Plan Line Item'

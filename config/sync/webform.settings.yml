@@ -1,5 +1,5 @@
 _core:
-  default_config_hash: oC7TYXEhOXalMR0QEAF8lrN1cWHT28dAlJa6S0sZ_KQ
+  default_config_hash: eZgcriT-utjDI1pjl-24jYFW2DmCxMXaFSnJd0XoU-0
 langcode: en
 settings:
   default_status: open
@@ -18,7 +18,7 @@ settings:
   default_form_close_message: 'Sorry… This form is closed to new submissions.'
   default_form_exception_message: 'Unable to display this webform. Please contact the site administrator.'
   default_form_confidential_message: 'This form is confidential. You must <a href="[site:login-url]/logout?destination=[current-page:url:relative]">Log out</a> to submit it.'
-  default_form_access_denied_message: 'Please login to access this form.'
+  default_form_access_denied_message: 'Please log in to access this form.'
   default_form_disable_remote_addr: false
   default_form_novalidate: false
   default_form_disable_inline_errors: false
@@ -66,7 +66,7 @@ settings:
       - entity.node.webform.user.drafts
       - entity.node.webform.user.submissions
   default_results_customize: false
-  default_submission_access_denied_message: 'Please login to access this submission.'
+  default_submission_access_denied_message: 'Please log in to access this submission.'
   default_submission_exception_message: 'Unable to process this submission. Please contact the site administrator.'
   default_submission_locked_message: 'This submission has been locked.'
   default_previous_submission_message: 'You have already submitted this webform. <a href="#">View your previous submission</a>.'
@@ -231,9 +231,9 @@ html_editor:
   tidy: true
   make_unused_managed_files_temporary: true
 file:
-  file_public: true
+  file_public: false
   file_private_redirect: true
-  file_private_redirect_message: 'Please login to access the uploaded file.'
+  file_private_redirect_message: '<p>Please log in to access the uploaded file.</p>'
   default_max_filesize: ''
   default_managed_file_extensions: 'gif jpg jpeg png bmp eps tif pict psd txt rtf html odf pdf doc docx ppt pptx xls xlsx xml avi mov mp3 mp4 ogg wav bz2 dmg gz jar rar sit svg tar zip'
   default_image_file_extensions: 'gif jpg jpeg png'
@@ -393,7 +393,7 @@ libraries:
     - choices
     - jquery.chosen
 requirements:
-  cdn: false
+  cdn: true
   clientside_validation: true
   bootstrap: true
   spam: true

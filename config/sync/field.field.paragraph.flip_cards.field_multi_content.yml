@@ -1,0 +1,29 @@
+uuid: ed7b7cf1-7bd6-4143-98ee-721e4bb13715
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_multi_content
+    - node.type.cards
+    - paragraphs.paragraphs_type.flip_cards
+id: paragraph.flip_cards.field_multi_content
+field_name: field_multi_content
+entity_type: paragraph
+bundle: flip_cards
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      cards: cards
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

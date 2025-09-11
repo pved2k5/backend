@@ -1,7 +1,0 @@
-uuid: 86c02053-dc08-47e9-b69e-b4c6f1d316ac
-langcode: en
-status: true
-dependencies: {  }
-id: plan_popup
-label: 'Plan Popup'
-description: 'Plan Popup'

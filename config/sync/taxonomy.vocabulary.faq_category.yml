@@ -1,9 +1,0 @@
-uuid: 5d2fbcbe-21d8-4ce2-9c35-64e375643a79
-langcode: en
-status: true
-dependencies: {  }
-name: 'FAQ Category'
-vid: faq_category
-description: 'FAQ Category'
-weight: 0
-new_revision: false

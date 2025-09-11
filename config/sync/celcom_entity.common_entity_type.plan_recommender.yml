@@ -1,7 +1,0 @@
-uuid: 2f09d476-03aa-422b-91e1-3c79faf9a268
-langcode: en
-status: true
-dependencies: {  }
-id: plan_recommender
-label: 'Plan Recommender'
-description: 'Plan Recommender Entity Type'

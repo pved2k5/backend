@@ -1,4 +1,4 @@
-uuid: 62fdf9cd-dc13-4292-83eb-8e34fd568510
+uuid: d97cc7b0-c0fd-4426-9fab-566927eb8271
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ third_party_settings:
     parent: ''
 name: Banner
 type: banner
-description: 'Use this Content Type for Banner/Promo Banner'
+description: null
 help: null
-new_revision: true
-preview_mode: 0
+new_revision: false
+preview_mode: 1
 display_submitted: false

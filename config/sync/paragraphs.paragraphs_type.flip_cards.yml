@@ -1,0 +1,15 @@
+uuid: b676911b-a9f5-4660-a76c-e50928d53e3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: flip_cards
+label: 'Flip Cards'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }
