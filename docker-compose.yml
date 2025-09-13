@@ -1,0 +1,44 @@
+version: '3'
+services:
+  php-fpm:
+    build: .
+    image: php:local
+    container_name: php-fpm
+    command:
+    - /usr/local/bin/script.sh
+    networks:
+      - dockernet
+    volumes:
+      - ./d8:/var/www/html
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    depends_on:
+      - php-fpm
+    ports:
+      - 3122:80
+    networks:
+      - dockernet
+    volumes:
+      - ./configs:/etc/nginx/conf.d
+      - ./d8:/var/www/html
+#  mariadb:
+###    image: mariadb:10.3
+#    environment:
+#      MYSQL_ROOT_PASSWORD: supersecretroot123
+#      MYSQL_DATABASE: drupaldb
+#      MYSQL_USER: drupaluser
+#      MYSQL_PASSWORD: drupaluserpassword123
+#    networks:
+#      - dockernet
+#  redis:
+#    image: redis
+#    container_name: redis
+#    volumes: 
+#      - ./redis:/data
+#    networks:
+#      - dockernet
+
+networks:
+    dockernet:
+        external: true
